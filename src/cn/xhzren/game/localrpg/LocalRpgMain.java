@@ -73,23 +73,24 @@ public class LocalRpgMain extends SimpleApplication implements ActionListener {
     }
 
     private void initLife() {
-        Spatial player = SpatialBuild.getTextureSpatial("player");
+        Node player = (Node)SpatialBuild.getTextureSpatial("player");
         player.setUserData("life", LifeTemplate.HUMANOID("test"));
         Life playLife = player.getUserData("life");
         System.out.println(playLife);
         player.move(settings.getWidth()/2, settings.getHeight()/2, 0);
+        Picture picture = (Picture)player.getChild("player_pic");
         dynamicNode.attachChild(player);
     }
 
     private void initGui() {
-        GuiGlobals.initialize(this);
-        BaseStyles.loadGlassStyle();
-
-        Container rootWindow = new Container();
-        staticNode.attachChild(rootWindow);
-        Button start = new Button("Start");
-        start.setSize(new Vector3f(10, 10, 20));
-        rootWindow.attachChild(start);
+//        GuiGlobals.initialize(this);
+//        BaseStyles.loadGlassStyle();
+//
+//        Container rootWindow = new Container();
+//        staticNode.attachChild(rootWindow);
+//        Button start = new Button("Start");
+//        start.setSize(new Vector3f(10, 10, 20));
+//        rootWindow.attachChild(start);
     }
 
     @Override

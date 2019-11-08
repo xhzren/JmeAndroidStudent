@@ -1,0 +1,20 @@
+package cn.xhzren.game.localrpg.entity;
+
+import com.jme3.export.*;
+
+import java.io.IOException;
+
+public class #className# implements Savable {
+    @Override
+    public void read(JmeImporter im) throws IOException{
+        InputCapsule capsule = im.getCapsule(this);
+        #readCapsule#
+    }
+    @Override
+    public void write(JmeExporter ex) throws IOException {
+        OutputCapsule capsule = ex.getCapsule(this);
+        #writeCapsule#
+    }
+
+    #fieldBuffer#
+ }

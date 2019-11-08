@@ -23,7 +23,7 @@ public class SpatialBuild {
 
     public static Spatial getTextureSpatial(String name) {
         Node node = new Node(name);
-        Picture pic = new Picture(name);
+        Picture pic = new Picture(name + "_pic");
         Texture2D tex = (Texture2D) assetManager.loadTexture("Textures/"+name+".png");
         pic.setTexture(assetManager,tex,true);
  

@@ -10,13 +10,13 @@ public class Life implements Savable {
     public void read(JmeImporter im) throws IOException{
         InputCapsule capsule = im.getCapsule(this);
         name = capsule.readString("name", "");
-        name = capsule.readString("name", "");
         hp = capsule.readInt("hp", 0);
         attack = capsule.readFloat("attack", 1F);
         defense = capsule.readFloat("defense", 1F);
         selfState = capsule.readEnum("selfState", SelfState.class, SelfState.HEALTH);
         nameArray = capsule.readStringArray("nameArray", null);
         nameArray2D = capsule.readStringArray2D("nameArray2D", null);
+
     }
     @Override
     public void write(JmeExporter ex) throws IOException {
@@ -31,21 +31,20 @@ public class Life implements Savable {
     }
 
     private String name;
-    private ActiveUserVo activeUserVo;
     private String[] nameArray;
     private String[][] nameArray2D;
     private Integer hp;
-    private Integer[] hpArray;
-    private Integer[][] hpArray2D;
+//    private Integer[] hpArray;
+//    private Integer[][] hpArray2D;
     private Float attack;
-    private float[] attackArray;
-    private float[][] attackArray2D;
-    private Life savable;
-    private Life[] savableArray;
-    private Life[][] savableArray2D;
-    private List<Life> savableArrayList;
-    private List<Life>[] savableArrayListArray;
-    private List<Life>[][] savableArrayListArray2D;
+//    private float[] attackArray;
+//    private float[][] attackArray2D;
+//    private Life savable;
+//    private Life[] savableArray;
+//    private Life[][] savableArray2D;
+//    private List<Life> savableArrayList;
+//    private List<Life>[] savableArrayListArray;
+//    private List<Life>[][] savableArrayListArray2D;
     private Float defense;
     private SelfState selfState;
 

@@ -15,7 +15,6 @@ import com.jme3.scene.Geometry;
 import com.jme3.scene.VertexBuffer;
 import com.jme3.scene.shape.Sphere;
 import com.jme3.util.BufferUtils;
-import com.sun.scenario.effect.light.Light;
 import java.nio.FloatBuffer;
 import java.util.Arrays;
 import java.util.List;
