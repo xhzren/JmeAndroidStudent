@@ -1,0 +1,4 @@
+{
+  "read":"capsule.write(#fieldName#, #fieldName#, #value#);",
+  "write":""
+}
