@@ -103,6 +103,7 @@ public class TestChatClient extends JFrame {
         
         TestChatClient app = new TestChatClient(host);
         app.setVisible(true);
+
     }
 
     public static String getHost(Component owner, String title, String message, String initialValue) {

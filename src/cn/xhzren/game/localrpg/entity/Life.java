@@ -16,7 +16,6 @@ public class Life implements Savable {
         selfState = capsule.readEnum("selfState", SelfState.class, SelfState.HEALTH);
         nameArray = capsule.readStringArray("nameArray", null);
         nameArray2D = capsule.readStringArray2D("nameArray2D", null);
-
     }
     @Override
     public void write(JmeExporter ex) throws IOException {

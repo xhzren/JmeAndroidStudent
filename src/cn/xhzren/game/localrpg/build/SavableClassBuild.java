@@ -1,24 +1,22 @@
 package cn.xhzren.game.localrpg.build;
 
-import cn.xhzren.game.localrpg.entity.Life;
-import cn.xhzren.game.localrpg.entity.LifeCopy;
-import com.jme3.environment.util.LightsDebugState;
-import com.jme3.export.Savable;
+import cn.xhzren.game.localrpg.entity.ActiveUserVo;
 
 import java.io.*;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
 import java.util.List;
 
 public class SavableClassBuild {
 
     private static StringBuffer read = new StringBuffer();
     private static StringBuffer write = new StringBuffer();
+    //字段
     private static StringBuffer fieldBuffer = new StringBuffer();
     private static final String savalbleClassTemplatePath = "/src/cn/xhzren/game/localrpg/template/SavableTemplate.dt";
+    //写入模板
     private static final String writeTemplate = "capsule.write(#fieldName#, #fieldStrName#, #value#);\n";
+    //读取模板
     private static final String readTemplate = "#fieldName# = capsule.read#type##array#(#fieldStrName#, #value#);\n";
 
 
@@ -40,7 +38,6 @@ public class SavableClassBuild {
             outStr.append(s).append("\n");
         }
         bufferedReader.close();
-        System.out.println(c.getSimpleName());
 
         String fileText = outStr.toString().replace("#className#", c.getSimpleName() + "Savable");
         fileText = fileText.replace("#readCapsule#", read.toString());
@@ -98,9 +95,6 @@ public class SavableClassBuild {
             } else {
                 readTemp = readTemp.replace("#array#", "Array2D");
             }
-            readTemp = readTemp.replace("#type#", unPackType(two[0]));
-            writeTemp = writeTemp.replace("#value#", "null");
-
         }
 
 
@@ -132,6 +126,7 @@ public class SavableClassBuild {
         return one[one.length - 1];
     }
 
+    //首字母大写
     public static String unPackType(String str) {
         if (str != null && str != "") {
             str = str.substring(0, 1).toUpperCase() + str.substring(1);
@@ -139,17 +134,7 @@ public class SavableClassBuild {
         return str;
     }
 
-//    public static String aloneType(Field field, String type) {
-//        String writeTemp = writeTemplate.replace("#fieldName#", field.getName());
-//        writeTemp = readTemplate.replace("#fieldStrName#", "\"" + field.getName() + "\"");
-//
-//        String readTemp = readTemplate.replace("#fieldName#", field.getName());
-//        readTemp = readTemplate.replace("#fieldStrName#", "\"" + field.getName() + "\"");
-//        return writeTemp;
-//    }
-
     public static void main(String[] args) throws Exception {
-        createSavableClass(LifeCopy.class);
-
+        createSavableClass(ActiveUserVo.class);
     }
 }

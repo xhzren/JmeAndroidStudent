@@ -5,29 +5,17 @@
  */
 package cn.xhzren.game.localrpg;
 
+import cn.xhzren.game.localrpg.appstate.PlayerAppState;
 import cn.xhzren.game.localrpg.build.SpatialBuild;
 import cn.xhzren.game.localrpg.entity.Life;
 import cn.xhzren.game.localrpg.template.LifeTemplate;
 import com.jme3.app.SimpleApplication;
 import com.jme3.asset.AssetManager;
 import com.jme3.input.controls.ActionListener;
-import com.jme3.material.Material;
-import com.jme3.material.RenderState;   
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.queue.RenderQueue;
-import com.jme3.scene.Geometry;
 import com.jme3.scene.Node;
-import com.jme3.scene.Spatial;
-import com.jme3.scene.shape.Box;
-import com.jme3.texture.Texture;
-import com.jme3.texture.Texture2D;
 import com.jme3.ui.Picture;
-import com.simsilica.lemur.Button;
-import com.simsilica.lemur.Container;
-import com.simsilica.lemur.GuiGlobals;
-import com.simsilica.lemur.Label;
-import com.simsilica.lemur.style.BaseStyles;
-import jme3tools.optimize.TextureAtlas;
 
 /**
  *
@@ -45,8 +33,13 @@ public class LocalRpgMain extends SimpleApplication implements ActionListener {
         app.start();
     }
 
+
     @Override
     public void simpleInitApp() {
+        stateManager.attach(new PlayerAppState());
+        stateManager.detach(new PlayerAppState());
+        stateManager.cleanup();
+        new PlayerAppState();
         assetManagerClose = assetManager;
         init2DSettings();
         initLife();

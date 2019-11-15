@@ -6,7 +6,9 @@
 package cn.xhzren.game.localrpg.build;
 
 import cn.xhzren.game.localrpg.LocalRpgMain;
+import com.jme3.animation.AnimationFactory;
 import com.jme3.asset.AssetManager;
+import com.jme3.asset.ModelKey;
 import com.jme3.material.Material;
 import com.jme3.material.RenderState;
 import com.jme3.scene.Node;
@@ -20,6 +22,13 @@ import com.jme3.ui.Picture;
  */
 public class SpatialBuild {
     private static AssetManager assetManager = LocalRpgMain.assetManagerClose;
+
+    static AnimationFactory factory;
+
+    public static void main(String[] args) {
+        Spatial model = assetManager.loadModel("");
+    }
+
 
     public static Spatial getTextureSpatial(String name) {
         Node node = new Node(name);
