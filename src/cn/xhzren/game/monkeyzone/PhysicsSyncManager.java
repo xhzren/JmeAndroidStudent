@@ -2,8 +2,8 @@ package cn.xhzren.game.monkeyzone;
 
 import cn.xhzren.game.monkeyzone.message.SyncCharacterMessage;
 import cn.xhzren.game.monkeyzone.message.SyncRigidBodyMessage;
-import cn.xhzren.game.monkeyzone.physicssync.PhysicsSyncMessage;
-import cn.xhzren.game.monkeyzone.physicssync.SyncMessageValidator;
+import cn.xhzren.game.monkeyzone.network.physicssync.PhysicsSyncMessage;
+import cn.xhzren.game.monkeyzone.network.physicssync.SyncMessageValidator;
 import com.jme3.app.Application;
 import com.jme3.app.state.AbstractAppState;
 import com.jme3.bullet.control.CharacterControl;

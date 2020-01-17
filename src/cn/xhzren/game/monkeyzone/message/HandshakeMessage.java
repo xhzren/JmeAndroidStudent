@@ -4,7 +4,10 @@ import com.jme3.network.AbstractMessage;
 import com.jme3.network.serializing.Serializable;
 
 /**
- * 第一次握手消息,
+ * used for first handshake. contains protocol, client and server version.
+ * should never change.
+ * 用于第一次握手。 包含协议，客户端和服务器版本。永远不要更改。
+ * @author normenhansen
  */
 @Serializable
 public class HandshakeMessage extends AbstractMessage {

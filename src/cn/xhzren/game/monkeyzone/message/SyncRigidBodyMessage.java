@@ -1,11 +1,12 @@
 package cn.xhzren.game.monkeyzone.message;
 
-import cn.xhzren.game.monkeyzone.physicssync.PhysicsSyncMessage;
+import cn.xhzren.game.monkeyzone.network.physicssync.PhysicsSyncMessage;
 import com.jme3.bullet.control.RigidBodyControl;
 import com.jme3.bullet.control.VehicleControl;
 import com.jme3.bullet.objects.PhysicsRigidBody;
 import com.jme3.math.Matrix3f;
 import com.jme3.math.Vector3f;
+import com.jme3.network.serializing.Serializable;
 import com.jme3.scene.Spatial;
 
 /**
@@ -13,6 +14,7 @@ import com.jme3.scene.Spatial;
  * 同步物理对象的消息.
  * @author normenhansen
  */
+@Serializable()
 public class SyncRigidBodyMessage extends PhysicsSyncMessage {
 
     public Vector3f location;

@@ -9,5 +9,10 @@ import com.jme3.scene.control.Control;
  */
 public interface NetworkActionEnabled extends Control {
 
+    /**
+     * 执行动作
+     * @param action
+     * @param activate
+     */
     void doPerformAction(int action, boolean activate);
 }
