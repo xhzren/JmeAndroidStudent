@@ -1,7 +1,7 @@
 package cn.xhzren.game.monkeyzone.message;
 
 import cn.xhzren.game.monkeyzone.control.NetworkActionEnabled;
-import cn.xhzren.game.monkeyzone.physicssync.PhysicsSyncMessage;
+import cn.xhzren.game.monkeyzone.network.physicssync.PhysicsSyncMessage;
 import com.jme3.network.serializing.Serializable;
 import com.jme3.scene.Spatial;
 

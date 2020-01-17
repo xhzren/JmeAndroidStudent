@@ -3,6 +3,11 @@ package cn.xhzren.game.monkeyzone.message;
 import com.jme3.network.AbstractMessage;
 import com.jme3.network.serializing.Serializable;
 
+/**
+ * sent from client to join server
+ * 从客户端发送加入服务器的消息
+ * @author normenhansen
+ */
 @Serializable
 public class ClientJoinMessage extends AbstractMessage {
 

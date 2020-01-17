@@ -1,8 +1,9 @@
 package cn.xhzren.game.monkeyzone.message;
 
-import cn.xhzren.game.monkeyzone.physicssync.PhysicsSyncMessage;
+import cn.xhzren.game.monkeyzone.network.physicssync.PhysicsSyncMessage;
 import com.jme3.bullet.control.CharacterControl;
 import com.jme3.math.Vector3f;
+import com.jme3.network.serializing.Serializable;
 import com.jme3.scene.Spatial;
 
 /**
@@ -10,6 +11,7 @@ import com.jme3.scene.Spatial;
  * 角色对象的同步消息.
  * @author normenhansen
  */
+@Serializable()
 public class SyncCharacterMessage extends PhysicsSyncMessage {
 
     public Vector3f location = new Vector3f();

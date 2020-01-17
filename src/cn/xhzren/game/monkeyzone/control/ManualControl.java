@@ -6,7 +6,7 @@ import com.jme3.math.Vector3f;
 /**
  * Interface for manual movement controls, used by humans locally and via network
  * @author normenhansen
- * 手动运动控制的接口, 供人类在本地和通过网络使用.
+ * 人工运动控制的接口, 供人类在本地和通过网络使用.
  */
 public interface ManualControl extends MovementControl  {
 

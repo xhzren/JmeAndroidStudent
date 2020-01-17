@@ -10,6 +10,9 @@ import com.jme3.bullet.control.PhysicsControl;
 import com.jme3.math.Vector3f;
 import com.jme3.scene.Spatial;
 
+/**
+ * Simple 攻击命令
+ */
 public class AttackCommand extends AbstractCommand {
 
     private float timer = 0f;
