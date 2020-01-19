@@ -2,6 +2,7 @@ package cn.xhzren.game.monkeyzone.message;
 
 import com.jme3.network.AbstractMessage;
 import com.jme3.network.serializing.Serializable;
+import lombok.ToString;
 
 /**
  * sent from client to join server
@@ -9,6 +10,7 @@ import com.jme3.network.serializing.Serializable;
  * @author normenhansen
  */
 @Serializable
+@ToString
 public class ClientJoinMessage extends AbstractMessage {
 
     public String name;

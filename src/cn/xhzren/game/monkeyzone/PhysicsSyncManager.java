@@ -301,4 +301,12 @@ public class PhysicsSyncManager extends AbstractAppState implements MessageListe
     public void setMaxDelay(double maxDelay) {
         this.maxDelay = maxDelay;
     }
+
+    public Server getServer() {
+        return server;
+    }
+
+    public Client getClient() {
+        return client;
+    }
 }

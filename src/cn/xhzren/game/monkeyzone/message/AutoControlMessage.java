@@ -5,11 +5,13 @@ import cn.xhzren.game.monkeyzone.network.physicssync.PhysicsSyncMessage;
 import com.jme3.math.Vector3f;
 import com.jme3.network.serializing.Serializable;
 import com.jme3.scene.Spatial;
+import lombok.ToString;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 @Serializable()
+@ToString
 public class AutoControlMessage extends PhysicsSyncMessage {
 
     public Vector3f aimAt = Vector3f.ZERO;

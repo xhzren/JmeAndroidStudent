@@ -3,6 +3,7 @@ package cn.xhzren.game.monkeyzone.message;
 import cn.xhzren.game.monkeyzone.WorldManager;
 import cn.xhzren.game.monkeyzone.network.physicssync.PhysicsSyncMessage;
 import com.jme3.network.serializing.Serializable;
+import lombok.ToString;
 
 /**
  * used by the server to add an entity on the client
@@ -10,6 +11,7 @@ import com.jme3.network.serializing.Serializable;
  * @author normenhansen
  */
 @Serializable
+@ToString
 public class ServerDisableEntityMessage extends PhysicsSyncMessage {
 
     public long entityId;

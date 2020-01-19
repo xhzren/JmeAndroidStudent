@@ -10,6 +10,7 @@ import cn.xhzren.game.monkeyzone.util.NavMesh;
 import com.jme3.app.Application;
 import com.jme3.app.state.AbstractAppState;
 import com.jme3.asset.AssetManager;
+import com.jme3.bullet.BulletAppState;
 import com.jme3.bullet.PhysicsSpace;
 import com.jme3.bullet.collision.PhysicsCollisionObject;
 import com.jme3.bullet.control.CharacterControl;
@@ -24,10 +25,7 @@ import com.jme3.scene.Spatial;
 import com.jme3.scene.control.Control;
 import groovyjarjarantlr.collections.impl.Vector;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -47,6 +45,28 @@ public class WorldManager extends AbstractAppState implements SyncMessageValidat
     private PhysicsSpace space;
     private List<Control> userControls = new ArrayList<>();
     private PhysicsSyncManager syncManager;
+    private UserCommandControl commandInterface;
+
+    public WorldManager(Application app, Node rootNode) {
+        this.app = app;
+        this.rootNode = rootNode;
+        this.assetManager = app.getAssetManager();
+        this.space = app.getStateManager().getState(BulletAppState.class).getPhysicsSpace();
+        this.server = app.getStateManager().getState(PhysicsSyncManager.class).getServer();
+        syncManager = app.getStateManager().getState(PhysicsSyncManager.class);
+    }
+    public WorldManager(Application app, Node rootNode,UserCommandControl commandControl) {
+        this.app = app;
+        this.rootNode = rootNode;
+        this.assetManager = app.getAssetManager();
+        this.space = app.getStateManager().getState(BulletAppState.class).getPhysicsSpace();
+        this.client = app.getStateManager().getState(PhysicsSyncManager.class).getClient();
+        this.commandInterface = commandControl;
+        //TODO: criss-crossing of references between ai and world manager not nice..
+        this.commandInterface.setWorldManager(this);
+        syncManager = app.getStateManager().getState(PhysicsSyncManager.class);
+    }
+
     @Override
     public boolean checkMessage(PhysicsSyncMessage message) {
         return false;
@@ -68,6 +88,10 @@ public class WorldManager extends AbstractAppState implements SyncMessageValidat
         this.myPlayerId = myPlayerId;
     }
 
+    public PhysicsSyncManager getSyncManager() {
+        return syncManager;
+    }
+
     public long getMyGroupId() {
         return myGroupId;
     }
@@ -75,10 +99,34 @@ public class WorldManager extends AbstractAppState implements SyncMessageValidat
     public void setMyGroupId(long myGroupId) {
         this.myGroupId = myGroupId;
     }
+    /**
+     * get the world root node (not necessarily the application rootNode!)
+     * 获取世界的根节点(不一定是rootNode)
+     * @return
+     */
+    public Node getWorldRoot() {
+        return worldNode;
+    }
 
     /**
+     * loads the specified level node
+     * 加载指定级别的节点
+     * @param name
+     */
+    public void loadLevel(String name) {
+        worldNode = (Node) assetManager.loadModel(name);
+    }
+    /**
+     * attaches the level node to the rootnode
+     * 将指定级别的节点添加到rootNode
+     */
+    public void attachLevel() {
+        space.addAll(worldNode);
+        rootNode.attachChild(worldNode);
+    }
+    /**
      * gets the entity with the specified id
-     *      *
+     * 获取具有指定id的实体
      * @param id
      * @return
      */
@@ -175,9 +223,41 @@ public class WorldManager extends AbstractAppState implements SyncMessageValidat
     }
 
 
+    public void removeEntity(long id) {
+        Logger.getLogger(this.getClass().getName()).log(Level.INFO,
+                "Remove entity: {0}", id);
+        if(isServer()) {
+            Logger.getLogger(this.getClass().getName()).log(Level.INFO,
+                    "Broadcast removing entity: {0}", id);
+            syncManager.broadcast(new ServerRemoveEntityMessage(id));
+        }
+        syncManager.removeObject(id);
+        Spatial spatial = entities.remove(id);
+        if(spatial == null) {
+            Logger.getLogger(this.getClass().getName()).log(Level.WARNING,
+                    "try removing entity thats not there: {0}", id);
+            return;
+        }
+        Long playerId = spatial.getUserData("player_id");
+        removeTransientControls(spatial);
+        removeAIControls(spatial);
+        if(playerId == myPlayerId) {
+           removeUserControls(spatial);
+        }
+        if(playerId != -1) {
+            PlayerData.setData(playerId,"entity_id", -1);
+        }
+        //TODO: removing from aiManager w/o checking if necessary
+        if(!isServer()) {
+            commandInterface.removePlayerEntity(playerId);
+        }
+        spatial.removeFromParent();
+        space.removeAll(spatial);
+    }
+
     /**
      *  adds a player (sends message if server)
-     *  添加角色, (如果拥有Server对象, 则发送消息)
+     *  添加一个玩家, (如果拥有Server对象, 则发送消息)
      * @param id
      * @param groupId
      * @param name
@@ -191,6 +271,66 @@ public class WorldManager extends AbstractAppState implements SyncMessageValidat
         PlayerData playerData = null;
         playerData = new PlayerData(id, groupId, name, aiId);
         PlayerData.add(id, playerData);
+    }
+
+    /**
+     * removes a player
+     * 删除一个玩家
+     * @param id
+     */
+    public void removePlayer(long id) {
+        Logger.getLogger(this.getClass().getName()).log(Level.INFO,
+                "Remove player : {0}", id);
+        if(isServer()) {
+            //TODO: remove other (AI) entities if this is a human client..
+            //如果这是人控制的, 则删除其他(AI)实体
+            syncManager.broadcast(new ServerRemovePlayerMessage(id));
+            long entityId = PlayerData.getLongData(id, "entity_id");
+            if(entityId != -1){
+                enterEntity(id, -1);
+            }
+            long characterId = PlayerData.getLongData(id, "character_entity_id");
+            removePlayer(characterId);
+        }
+        PlayerData.remove(id);
+    }
+
+    /**
+     * adds a control to the list of controls that are added to the spatial
+     * currently controlled by the user (chasecam, ui control etc.)
+     * 将control添加到列表, 该control列表将添加到用户当前控制的Spatial中
+     * @param control
+     */
+    public void addUserControl(Control control) {
+        userControls.add(control);
+    }
+
+    /**
+     * detaches the level and clears the cache
+     * 分离节点并清除缓存
+     */
+    public void closeLevel() {
+        for (Iterator<PlayerData> it = PlayerData.getPlayers().iterator();it.hasNext();) {
+            PlayerData data = it.next();
+            data.setData("entity_id", -1);
+        }
+        if(isServer()) {
+            for (Iterator<PlayerData> it = PlayerData.getPlayers().iterator();it.hasNext();) {
+                PlayerData data = it.next();
+                removePlayer(data.getId());
+            }
+        }
+
+        for (Iterator<Long> et = new LinkedList(entities.keySet()).iterator();et.hasNext();) {
+            Long entry = et.next();
+            syncManager.removeObject(entry);
+        }
+        syncManager.clearObjects();
+        entities.clear();
+        newId = 0;
+        space.removeAll(worldNode);
+        rootNode.detachChild(worldNode);
+        assetManager.clearCache();
     }
 
     /**

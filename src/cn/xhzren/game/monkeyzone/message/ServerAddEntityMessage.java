@@ -5,6 +5,7 @@ import cn.xhzren.game.monkeyzone.network.physicssync.PhysicsSyncMessage;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
 import com.jme3.network.serializing.Serializable;
+import lombok.ToString;
 
 /**
  * used by the server to add an entity on the client
@@ -12,6 +13,7 @@ import com.jme3.network.serializing.Serializable;
  * @author normenhansen
  */
 @Serializable()
+@ToString
 public class ServerAddEntityMessage extends PhysicsSyncMessage {
 
     public long entity_id;

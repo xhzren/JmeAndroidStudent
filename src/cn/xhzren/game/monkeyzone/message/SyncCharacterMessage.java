@@ -5,6 +5,7 @@ import com.jme3.bullet.control.CharacterControl;
 import com.jme3.math.Vector3f;
 import com.jme3.network.serializing.Serializable;
 import com.jme3.scene.Spatial;
+import lombok.ToString;
 
 /**
  * Sync message for character objects
@@ -12,6 +13,7 @@ import com.jme3.scene.Spatial;
  * @author normenhansen
  */
 @Serializable()
+@ToString
 public class SyncCharacterMessage extends PhysicsSyncMessage {
 
     public Vector3f location = new Vector3f();

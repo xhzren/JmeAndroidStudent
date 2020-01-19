@@ -2,6 +2,7 @@ package cn.xhzren.game.monkeyzone.message;
 
 import com.jme3.network.AbstractMessage;
 import com.jme3.network.serializing.Serializable;
+import lombok.ToString;
 
 /**
  * used for first handshake. contains protocol, client and server version.
@@ -10,6 +11,7 @@ import com.jme3.network.serializing.Serializable;
  * @author normenhansen
  */
 @Serializable
+@ToString
 public class HandshakeMessage extends AbstractMessage {
     public int protocol_version;
     public int client_version;

@@ -87,6 +87,8 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jsr305.jar!/" />
+      <root url="file://$USER_HOME$/Documents/jME3.2-stable/sources" />
     </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Documents/jME3.2-stable/sources" recursive="false" type="SOURCES" />
   </library>
 </component>

@@ -71,6 +71,10 @@ public class UserCommandControl implements Control, ActionListener {
         //通过菜单应用球体命令类型
     }
 
+    public void removePlayerEntity(long id) {
+        selectedEntitles.remove(players.remove(id));
+    }
+
     @Override
     public void onAction(String s, boolean b, float v) {
 

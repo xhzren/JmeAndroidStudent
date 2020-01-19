@@ -2,15 +2,17 @@ package cn.xhzren.game.monkeyzone.message;
 
 import com.jme3.network.AbstractMessage;
 import com.jme3.network.serializing.Serializable;
+import lombok.ToString;
 
 /**
  * 基础聊天消息
  */
 @Serializable
+@ToString
 public class ChatMessage extends AbstractMessage {
 
-    private String text;
-    private String name;
+    public String text;
+    public String name;
 
     public ChatMessage() {
     }

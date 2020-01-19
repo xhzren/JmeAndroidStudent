@@ -2,6 +2,7 @@ package cn.xhzren.game.monkeyzone.message;
 
 import cn.xhzren.game.monkeyzone.network.physicssync.PhysicsSyncMessage;
 import com.jme3.network.serializing.Serializable;
+import lombok.ToString;
 
 /**
  * Manual (human) control message, used bidirectional
@@ -9,6 +10,7 @@ import com.jme3.network.serializing.Serializable;
  * @author normenhansen
  */
 @Serializable()
+@ToString
 public class ManualControlMessage extends PhysicsSyncMessage {
 
     public float aimX;

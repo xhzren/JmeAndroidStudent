@@ -6,6 +6,7 @@ import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
 import com.jme3.network.serializing.Serializable;
 import jogamp.graph.font.typecast.ot.table.ID;
+import lombok.ToString;
 
 /**
  * used by the server to add an entity on the client
@@ -13,6 +14,7 @@ import jogamp.graph.font.typecast.ot.table.ID;
  * @author normenhansen
  */
 @Serializable()
+@ToString
 public class ServerEnableEntityMessage extends PhysicsSyncMessage {
 
     public long entityId;

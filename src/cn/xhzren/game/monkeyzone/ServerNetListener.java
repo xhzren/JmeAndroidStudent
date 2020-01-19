@@ -2,12 +2,8 @@ package cn.xhzren.game.monkeyzone;
 
 import cn.xhzren.game.monkeyzone.data.PlayerData;
 import cn.xhzren.game.monkeyzone.data.ServerClientData;
-import cn.xhzren.game.monkeyzone.message.ChatMessage;
-import cn.xhzren.game.monkeyzone.message.ClientJoinMessage;
-import cn.xhzren.game.monkeyzone.message.HandshakeMessage;
-import cn.xhzren.game.monkeyzone.message.ServerJoinMessage;
+import cn.xhzren.game.monkeyzone.message.*;
 import com.jme3.network.*;
-import de.jarnbjo.oggtools.Player;
 
 import java.util.concurrent.Callable;
 import java.util.logging.Level;
@@ -15,15 +11,24 @@ import java.util.logging.Logger;
 
 public class ServerNetListener implements MessageListener<HostedConnection>, ConnectionListener {
 
-    private ZoneServerMain app;
+    private ServerMain app;
     private Server server;
+    private WorldManager worldManager;
+    private ServerGameManager gameManager;
     private Logger LOGGER =  Logger.getLogger(this.getClass().getName());
 
-    public ServerNetListener(ZoneServerMain app,  Server server) {
+    public ServerNetListener(ServerMain app,  Server server, WorldManager worldManager,ServerGameManager gameManager) {
         this.app = app;
         this.server = server;
+        this.worldManager = worldManager;
+        this.gameManager = gameManager;
         server.addConnectionListener(this);
-        server.addMessageListener(this);
+        server.addMessageListener(this,
+                HandshakeMessage.class,
+                ClientJoinMessage.class,
+                ChatMessage.class,
+                StartGameMessage.class,
+                ActionMessage.class);
     }
 
 
@@ -44,20 +49,15 @@ public class ServerNetListener implements MessageListener<HostedConnection>, Con
         final long playerId = ServerClientData.getPlayerId(clientId);
         ServerClientData.remove(clientId);
 
-        app.enqueue(new Callable<Void>() {
-            @Override
-            public Void call() {
-                String name = PlayerData.getStringData(playerId, "name");
-
-                //TODO worldManager
-
-                server.broadcast(new ChatMessage("Server", name + "left the world"));
-                LOGGER.log(Level.INFO, "Broadcast player left message");
-                if(PlayerData.getHumanPlayers().isEmpty()) {
-                    //TODO gameManager
-                }
-                return null;
+        app.enqueue(() -> {
+            String name = PlayerData.getStringData(playerId, "name");
+            //TODO worldManager
+            server.broadcast(new ChatMessage("Server", name + "left the world"));
+            LOGGER.log(Level.INFO, "Broadcast player left message");
+            if(PlayerData.getHumanPlayers().isEmpty()) {
+                //TODO gameManager
             }
+            return null;
         });
     }
 
@@ -106,6 +106,15 @@ public class ServerNetListener implements MessageListener<HostedConnection>, Con
                     return null;
                 }
             });
+        }else if(message instanceof ChatMessage) {
+            ChatMessage msg = (ChatMessage)message;
+            System.out.println(msg);
+        }else if(message instanceof StartGameMessage) {
+            StartGameMessage msg = (StartGameMessage)message;
+            System.out.println(msg);
+        }else if(message instanceof ActionMessage) {
+            ActionMessage msg = (ActionMessage)message;
+            System.out.println(msg);
         }
     }
 }
