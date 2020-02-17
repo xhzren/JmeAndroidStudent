@@ -1,0 +1,121 @@
+  {
+    "id":"one dialog_01",
+    "position":"beijing",
+    "chapter":"one dialog",
+    "character":[
+      "Sin","Xhz"
+    ],
+     "dialogList":[
+       {
+         "id":"one dialog_01_text_01",
+         "name":"Sin",
+         "type":"text",
+         "index":1,
+         "content":[
+           "I am fine!",
+           "Thanks you."
+         ]
+       },
+       {
+         "id":"one dialog_01_option_01",
+         "type":"option",
+         "index":2,
+         "name":"Select You Mood",
+         "optionItems":[
+           {
+             "content":"Happy",
+             "event":"Happy",
+             "jump":"one dialog_01_text_03",
+             "jumpIndex":3,
+             "dialogList":[
+               {
+                 "id":"one dialog_01_option_01_Happy_01",
+                 "index":1,
+                 "name":"Sin",
+                 "type":"text",
+                 "content":[
+                   "No, This is Children!",
+                   "You is bes."
+                 ]
+               },{
+                 "id":"one dialog_01_option_01_Happy_02",
+                 "index":2,
+                 "name":"Xhz",
+                 "type":"text",
+                 "content":[
+                   "Yes, you love me.",
+                   "We is know."
+                 ]
+               }
+             ]
+           },
+           {
+             "content":"Sad",
+             "event":"Sad",
+             "jump":"one dialog_01_text_04",
+             "jumpIndex":4,
+             "dialogList":[
+               {
+                 "id":"one dialog_01_option_01_Sad_01",
+                 "index":1,
+                 "name":"Sin",
+                 "type":"text",
+                 "content":[
+                   "Ha Ha You is ben dan!",
+                   "You is bes."
+                 ]
+               },{
+                 "id":"one dialog_01_option_01_Sad_02",
+                 "index":2,
+                 "name":"Xhz",
+                 "type":"text",
+                 "content":[
+                   "I xiang sha si ni.",
+                   "We is know."
+                 ]
+               }
+             ]
+           },
+           {
+             "content":"Anger",
+             "event":"Anger"
+           }
+         ]
+       },
+       {
+         "id":"one dialog_01_text_03",
+         "index":3,
+         "name":"Sin",
+         "type":"text",
+         "content":[
+           "S X THis FDS!",
+           "NO NO No."
+         ]
+       },
+       {
+         "id":"one dialog_01_text_04",
+         "index":4,
+         "name":"XAX4",
+         "type":"text",
+         "content":[
+           "I am die!"
+         ]
+       }
+     ],
+    "ending":[
+      {
+        "id":"one dialog_ending_01",
+        "type":"ending",
+        "endingType":"Good",
+        "name":"This is Good Ending",
+        "content":"You is noodle, I love you!"
+      },
+      {
+        "id":"one dialog_ending_02",
+        "type":"ending",
+        "endingType":"Bad",
+        "name":"This is Bad Ending",
+        "content":"You is noodle, I want going to kill you!"
+      }
+    ]
+  }
