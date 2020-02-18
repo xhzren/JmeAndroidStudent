@@ -7,6 +7,7 @@ public class DialogBase {
     private String id;
     private String name;
     private String type;
+    private String jump;
     private int index;
     private int currentIndex = 0;
 }

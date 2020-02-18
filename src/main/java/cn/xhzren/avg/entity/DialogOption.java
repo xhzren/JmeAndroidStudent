@@ -9,6 +9,5 @@ import java.util.List;
  */
 @Data
 public class DialogOption extends DialogBase {
-    private String jump;
     private List<OptionItem> optionItems;
 }

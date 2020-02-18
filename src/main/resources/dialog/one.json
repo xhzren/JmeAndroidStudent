@@ -1,5 +1,6 @@
   {
     "id":"one dialog_01",
+    "name":"one chapter",
     "position":"beijing",
     "chapter":"one dialog",
     "character":[
@@ -10,7 +11,7 @@
          "id":"one dialog_01_text_01",
          "name":"Sin",
          "type":"text",
-         "index":1,
+         "index":0,
          "content":[
            "I am fine!",
            "Thanks you."
@@ -19,18 +20,18 @@
        {
          "id":"one dialog_01_option_01",
          "type":"option",
-         "index":2,
+         "index":1,
          "name":"Select You Mood",
          "optionItems":[
            {
              "content":"Happy",
              "event":"Happy",
-             "jump":"one dialog_01_text_03",
-             "jumpIndex":3,
+             "jump":"one dialog_01_text_02",
+             "jumpIndex":7,
              "dialogList":[
                {
                  "id":"one dialog_01_option_01_Happy_01",
-                 "index":1,
+                 "index":3,
                  "name":"Sin",
                  "type":"text",
                  "content":[
@@ -39,7 +40,7 @@
                  ]
                },{
                  "id":"one dialog_01_option_01_Happy_02",
-                 "index":2,
+                 "index":4,
                  "name":"Xhz",
                  "type":"text",
                  "content":[
@@ -52,12 +53,12 @@
            {
              "content":"Sad",
              "event":"Sad",
-             "jump":"one dialog_01_text_04",
-             "jumpIndex":4,
+             "jump":"one dialog_01_text_03",
+             "jumpIndex":8,
              "dialogList":[
                {
                  "id":"one dialog_01_option_01_Sad_01",
-                 "index":1,
+                 "index":5,
                  "name":"Sin",
                  "type":"text",
                  "content":[
@@ -66,7 +67,7 @@
                  ]
                },{
                  "id":"one dialog_01_option_01_Sad_02",
-                 "index":2,
+                 "index":6,
                  "name":"Xhz",
                  "type":"text",
                  "content":[
@@ -83,8 +84,8 @@
          ]
        },
        {
-         "id":"one dialog_01_text_03",
-         "index":3,
+         "id":"one dialog_01_text_02",
+         "index":7,
          "name":"Sin",
          "type":"text",
          "content":[
@@ -93,10 +94,11 @@
          ]
        },
        {
-         "id":"one dialog_01_text_04",
-         "index":4,
+         "id":"one dialog_01_text_03",
+         "index":8,
          "name":"XAX4",
-         "type":"text",
+         "type":"ending",
+         "jump":"one dialog_ending_default_01",
          "content":[
            "I am die!"
          ]
@@ -104,16 +106,20 @@
      ],
     "ending":[
       {
-        "id":"one dialog_ending_01",
+        "id":"one dialog_ending_default_01",
         "type":"ending",
+        "index":1,
         "endingType":"Good",
+        "image":"Textures/player.png",
         "name":"This is Good Ending",
         "content":"You is noodle, I love you!"
       },
       {
         "id":"one dialog_ending_02",
         "type":"ending",
+        "index":2,
         "endingType":"Bad",
+        "image":"Texture/Cursors/nyancat.ico",
         "name":"This is Bad Ending",
         "content":"You is noodle, I want going to kill you!"
       }
