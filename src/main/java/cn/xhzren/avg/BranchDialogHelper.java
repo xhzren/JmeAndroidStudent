@@ -23,6 +23,7 @@ public class BranchDialogHelper {
      * 初始化分支对话数据
      */
     public static void init() {
+//        currentBranchIndex = DialogHelper.currentIndex+1;
         currentBranchId = branchDialogList.getJSONObject(0).getString("id");
         currentBranchDialog = JSON.parseObject(branchDialogList.getJSONObject(currentBranchIndex).toJSONString(),
                 DialogEnter.class);

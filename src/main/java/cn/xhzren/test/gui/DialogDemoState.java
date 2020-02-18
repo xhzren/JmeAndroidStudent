@@ -80,9 +80,12 @@ public class DialogDemoState extends BaseAppState {
         buttons.addChild(new Button("save"),1).addClickCommands((e)-> {
             log.info("保存");
             ArchiveRecords save = new ArchiveRecords();
-            save.setName(DialogHelper.chapterContent.getString("name"));
-            save.setDialogId(DialogHelper.currentId);
-            save.setDialogIndex(DialogHelper.currentIndex);
+            save.setRecordName(DialogHelper.chapterContent.getString("name"));
+            if(storyType == 1) {
+                save.setCurrentDialog(DialogHelper.currentDialog);
+            }else {
+                save.setCurrentDialog(BranchDialogHelper.currentBranchDialog);
+            }
             save.setTime(DateUtils.nowDateToString(DateUtils.TranRule.YMDHMS));
             getState(ScreenshotAppState.class).takeScreenshot();
             try {
