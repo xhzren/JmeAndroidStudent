@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5e89edd-64b0-4a41-86d9-b12cd2ba6a3d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/JmeAndroidStudent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JmeAndroidStudent.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/slf4j-api-1.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/xhzren/test/TestCameraNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/xhzren/test/TestChaseCamera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/xhzren/test/WorldManagerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/UnshadedArray.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/UnshadedArray.j3md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/UnshadedArray.vert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/newtpl_anim.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/tex3D.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/tex3D.j3md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/tex3D.vert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/tex3DThumb.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/tex3DThumb.j3md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/tex3DThumb.vert" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,49 +46,56 @@
           <entry key="dummy" value="59" />
           <entry key="gitignore" value="12" />
           <entry key="j3odata" value="2" />
-          <entry key="java" value="38055" />
+          <entry key="java" value="51741" />
           <entry key="md" value="165" />
-          <entry key="txt" value="83" />
+          <entry key="txt" value="111" />
+          <entry key="xml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="38055" />
+          <entry key="JAVA" value="51741" />
           <entry key="Markdown" value="165" />
-          <entry key="PLAIN_TEXT" value="156" />
+          <entry key="PLAIN_TEXT" value="184" />
+          <entry key="XML" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="MF" value="1" />
-          <entry key="class" value="59" />
+          <entry key="class" value="70" />
+          <entry key="dt" value="1" />
           <entry key="gif" value="1" />
           <entry key="gitignore" value="3" />
           <entry key="j3m" value="2" />
           <entry key="j3odata" value="3" />
-          <entry key="java" value="173" />
+          <entry key="java" value="244" />
           <entry key="jnlp" value="1" />
           <entry key="jpg" value="4" />
+          <entry key="json" value="1" />
           <entry key="log" value="1" />
-          <entry key="md" value="2" />
+          <entry key="md" value="3" />
+          <entry key="png" value="6" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="1" />
+          <entry key="version" value="1" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="59" />
-          <entry key="Image" value="5" />
-          <entry key="JAVA" value="173" />
+          <entry key="CLASS" value="70" />
+          <entry key="Image" value="11" />
+          <entry key="JAVA" value="244" />
+          <entry key="JSON" value="1" />
           <entry key="Manifest" value="1" />
-          <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="10" />
-          <entry key="XML" value="2" />
+          <entry key="Markdown" value="3" />
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.2" value="4" />
@@ -81,8 +103,9 @@
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.77" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -93,131 +116,28 @@
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="JmeAndroidStudent" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerAddPlayerMessage.java">
+        <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLemur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state relative-caret-position="189">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="19" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/WorldManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="274" column="60" selection-start-line="274" selection-start-column="60" selection-end-line="274" selection-end-column="60" />
-              <folding>
-                <element signature="e#2293#2294#0" expanded="true" />
-                <element signature="e#2326#2327#0" expanded="true" />
-                <element signature="e#2376#2377#0" expanded="true" />
-                <element signature="e#2420#2421#0" expanded="true" />
-                <element signature="e#2454#2455#0" expanded="true" />
-                <element signature="e#2486#2487#0" expanded="true" />
-                <element signature="e#2534#2535#0" expanded="true" />
-                <element signature="e#2576#2577#0" expanded="true" />
-                <element signature="e#2004#2005#0" expanded="true" />
-                <element signature="e#2043#2044#0" expanded="true" />
-                <element signature="method#getEntity#0;class#WorldManager#0" />
-                <element signature="method#disableEntity#0;class#WorldManager#0" />
-                <element signature="method#enableEntity#0;class#WorldManager#0" />
-                <element signature="method#addEntity#0;class#WorldManager#0" />
-                <element signature="method#addPlayer#0;class#WorldManager#0" />
-                <element signature="method#setEntityTranslation#0;class#WorldManager#0" />
-                <element signature="method#removeTransientControls#0;class#WorldManager#0" />
-                <element signature="method#removeUserControls#0;class#WorldManager#0" />
-                <element signature="method#removeAIControls#0;class#WorldManager#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/ManualVehicleControl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="154" column="9" selection-start-line="154" selection-start-column="9" selection-end-line="154" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#829#830#0" expanded="true" />
-                <element signature="e#869#870#0" expanded="true" />
-                <element signature="e#1340#1341#0" expanded="true" />
-                <element signature="e#1383#1384#0" expanded="true" />
-                <element signature="method#doPerformAction#0;class#ManualVehicleControl#0" />
-                <element signature="e#1369#1370#0" expanded="true" />
-                <element signature="e#1396#1397#0" expanded="true" />
-                <element signature="e#1447#1448#0" expanded="true" />
-                <element signature="e#1474#1475#0" expanded="true" />
-                <element signature="e#2651#2652#0" expanded="true" />
-                <element signature="e#2689#2690#0" expanded="true" />
-                <element signature="e#2737#2738#0" expanded="true" />
-                <element signature="e#2777#2778#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLemurLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/physics/PhysicsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/ManualCharacterControl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-              <folding>
-                <element signature="e#1338#1339#0" expanded="true" />
-                <element signature="e#1378#1379#0" expanded="true" />
-                <element signature="e#1485#1486#0" expanded="true" />
-                <element signature="e#1541#1542#0" expanded="true" />
-                <element signature="e#1525#1526#0" expanded="true" />
-                <element signature="e#1559#1560#0" expanded="true" />
-                <element signature="e#1615#1616#0" expanded="true" />
-                <element signature="e#1634#1635#0" expanded="true" />
-                <element signature="method#doMoveY#0;class#ManualCharacterControl#0" />
-                <element signature="e#1769#1770#0" expanded="true" />
-                <element signature="e#1804#1805#0" expanded="true" />
-                <element signature="e#710#711#0" expanded="true" />
-                <element signature="e#737#738#0" expanded="true" />
-                <element signature="e#2231#2232#0" expanded="true" />
-                <element signature="e#2269#2270#0" expanded="true" />
-                <element signature="e#2920#2921#0" expanded="true" />
-                <element signature="e#2961#2962#0" expanded="true" />
-                <element signature="e#3009#3010#0" expanded="true" />
-                <element signature="e#3049#3050#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerEnterEntityMessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="330">
+              <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -241,7 +161,17 @@
       <find>getPhysicsLocation</find>
       <find>SimpleGrassTest</find>
       <find>getName</find>
+      <find>liveEmiters</find>
+      <find>@ToString</find>
+      <find>@Data</find>
+      <find>nifty-default-styles.xml</find>
+      <find>aurulent-sans-16</find>
+      <find>VersionedReference</find>
     </findStrings>
+    <replaceStrings>
+      <replace>liveEmitters</replace>
+      <replace>@ToString</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -254,57 +184,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/physicssync/SyncMessageValidator.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/physicssync/PhysicsSyncMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/PhysicsSyncManager.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/HUDControl.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/DefaultHUDControl.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/MovementControl.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/Globals.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ActionMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/UserInputControl.java" />
-        <option value="$PROJECT_DIR$/assets/Effects/ExplosionA.j3odata" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ai/Command.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/UserCommandControl.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ai/TriggerControl.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/CommandControl.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ai/AbstractCommand.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ai/SphereTrigger.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/AutoNomousControl.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/AutonomousControl.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ai/commands/MoveCommand.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ai/commands/EnterCommand.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/test/TestChaseCamera.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/test/TestCameraNode.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/test/netting/TestLatency.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ai/commands/FollowCommand.java" />
         <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ai/commands/AttackCommand.java" />
         <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/NetworkActorEnable.java" />
         <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/NetworkActionEnabled.java" />
         <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/NetworkedAutonomousControl.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ClientJoinMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/HandshakeMessage.java" />
         <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/ManualControl.java" />
         <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/NetworkedManualControl.java" />
         <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/CharacterAnimControl.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerAddPlayerMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/AutoControlMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ManualControlMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerAddEntityMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/SyncCharacterMessage.java" />
         <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/SyncRigidBodyMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerDisableEntityMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerEnableEntityMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerEnterEntityMessage.java" />
         <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/ManualCharacterControl.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/WorldManager.java" />
         <option value="$PROJECT_DIR$/src/cn/xhzren/test/physics/PhysicsTestHelper.java" />
         <option value="$PROJECT_DIR$/assets/Models/Sinbad/README-LICENSE.txt" />
         <option value="$PROJECT_DIR$/src/cn/xhzren/test/physics/TestBoneRagdoll.java" />
         <option value="$PROJECT_DIR$/src/cn/xhzren/test/physics/PhysicsTest.java" />
         <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/ManualVehicleControl.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/data/EmitterData.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ClientEffectsManager.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/PhysicsSyncManager.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ServerGameManager.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/Util.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerEnableEntityMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/StartGameMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/SyncCharacterMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerEnterEntityMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerDisableEntityMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerAddPlayerMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerAddEntityMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ManualControlMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/HandshakeMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ClientJoinMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/AutoControlMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ActionMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ServerMain.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerRemovePlayerMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ServerNetListener.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerJoinMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/test/WorldManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ChatMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ClientNetListener.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerRemoveEntityMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/UserCommandControl.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerEffectMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerEntityDataMessage.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/WorldManager.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ClientMain.java" />
+        <option value="$PROJECT_DIR$/assets/Interface/ClientUI.xml" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/test/TestNifty.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLeumur.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLemurLauncher.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLemur.java" />
+        <option value="$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLemurLayout.java" />
       </list>
     </option>
   </component>
@@ -321,13 +251,19 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="198" />
-    <option name="y" value="38" />
-    <option name="width" value="1380" />
+    <option name="x" value="-37" />
+    <option name="y" value="78" />
+    <option name="width" value="1386" />
     <option name="height" value="742" />
   </component>
   <component name="ProjectId" id="1TL9U5gfGjdgSoAfgCVepcUAu3w" />
@@ -339,8 +275,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -351,6 +287,28 @@
             <path>
               <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
               <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="Textures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -365,23 +323,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="xhzren" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="xhzren" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="monkeyzone" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="xhzren" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="monkeyzone" type="462c0819:PsiDirectoryNode" />
-              <item name="control" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
@@ -396,13 +337,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="xhzren" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="physics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mygame" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -414,12 +349,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579249921467" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579428803852" />
     <property name="editorconfig.notification" value="true;" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../slf4j-log4j12-1.7.13.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
@@ -445,13 +380,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ManualVehicleControl">
-    <configuration name="ManualVehicleControl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.xhzren.game.monkeyzone.control.ManualVehicleControl" />
+  <component name="RunManager" selected="Application.TestLemurLayout">
+    <configuration name="ClientMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.xhzren.game.monkeyzone.ClientMain" />
       <module name="JmeAndroidStudent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.xhzren.game.monkeyzone.control.*" />
+          <option name="PATTERN" value="cn.xhzren.game.monkeyzone.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -459,12 +394,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PhysicsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.xhzren.test.physics.PhysicsTest" />
+    <configuration name="ServerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.xhzren.game.monkeyzone.ServerMain" />
       <module name="JmeAndroidStudent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.xhzren.test.physics.*" />
+          <option name="PATTERN" value="cn.xhzren.game.monkeyzone.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -472,12 +407,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBoneRagdoll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.xhzren.test.physics.TestBoneRagdoll" />
+    <configuration name="TestLemur" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.xhzren.test.gui.TestLemur" />
       <module name="JmeAndroidStudent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.xhzren.test.physics.*" />
+          <option name="PATTERN" value="cn.xhzren.test.gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -485,12 +420,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestChatClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.xhzren.test.netting.TestChatClient" />
+    <configuration name="TestLemurLayout" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.xhzren.test.gui.TestLemurLayout" />
       <module name="JmeAndroidStudent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.xhzren.test.netting.*" />
+          <option name="PATTERN" value="cn.xhzren.test.gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -498,12 +433,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestLatency" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.xhzren.test.netting.TestLatency" />
+    <configuration name="WorldManagerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.xhzren.test.WorldManagerTest" />
       <module name="JmeAndroidStudent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.xhzren.test.netting.*" />
+          <option name="PATTERN" value="cn.xhzren.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -512,19 +447,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestLatency" />
-      <item itemvalue="Application.TestChatClient" />
-      <item itemvalue="Application.PhysicsTest" />
-      <item itemvalue="Application.TestBoneRagdoll" />
-      <item itemvalue="Application.ManualVehicleControl" />
+      <item itemvalue="Application.ServerMain" />
+      <item itemvalue="Application.WorldManagerTest" />
+      <item itemvalue="Application.ClientMain" />
+      <item itemvalue="Application.TestLemur" />
+      <item itemvalue="Application.TestLemurLayout" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ManualVehicleControl" />
-        <item itemvalue="Application.PhysicsTest" />
-        <item itemvalue="Application.TestBoneRagdoll" />
-        <item itemvalue="Application.TestChatClient" />
-        <item itemvalue="Application.TestLatency" />
+        <item itemvalue="Application.TestLemurLayout" />
+        <item itemvalue="Application.TestLemur" />
+        <item itemvalue="Application.ClientMain" />
+        <item itemvalue="Application.WorldManagerTest" />
+        <item itemvalue="Application.ServerMain" />
       </list>
     </recent_temporary>
   </component>
@@ -560,7 +495,8 @@
       <workItem from="1579138105842" duration="2596000" />
       <workItem from="1579144942891" duration="2456000" />
       <workItem from="1579157486678" duration="5654000" />
-      <workItem from="1579224173996" duration="22192000" />
+      <workItem from="1579224173996" duration="27083000" />
+      <workItem from="1579397020737" duration="23064000" />
     </task>
     <task id="LOCAL-00001" summary="复写 MonkeyZone">
       <created>1573808518052</created>
@@ -604,43 +540,57 @@
       <option name="project" value="LOCAL" />
       <updated>1579249858029</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="d">
+      <created>1579249940542</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1579249940542</updated>
+    </task>
+    <task id="LOCAL-00008" summary="客户端和服务器主Main">
+      <created>1579421122237</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1579421122238</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95151000" />
+    <option name="totallyTimeSpent" value="123106000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49885058" visible="true" weight="0.25340393" />
-      <window_info id="Structure" order="1" sideWeight="0.5011494" side_tool="true" weight="0.28441754" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49768874" visible="true" weight="0.23373677" />
+      <window_info id="Structure" order="1" sideWeight="0.5023112" side_tool="true" weight="0.23373677" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.5023112" side_tool="true" weight="0.23373677" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.2542373" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="6" visible="true" weight="0.50385207" />
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.5015129" weight="0.24807397" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.1155624" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32973805" />
-      <window_info anchor="bottom" id="Run" order="11" weight="0.0" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.49848714" side_tool="true" weight="0.26810476" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32819724" />
+      <window_info anchor="bottom" id="Run" order="11" weight="0.32973805" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32980332" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -681,7 +631,9 @@
     <MESSAGE value="测试分支" />
     <MESSAGE value="命令控制器,AI命令" />
     <MESSAGE value="更新Message和Control, 测试Physics" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新Message和Control, 测试Physics" />
+    <MESSAGE value="d" />
+    <MESSAGE value="客户端和服务器主Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="客户端和服务器主Main" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -691,470 +643,439 @@
       </configuration>
     </watches-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/mygame/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="948">
-          <caret line="35" column="26" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/master-application.jnlp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-339" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ai/commands/FollowCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ai/AbstractCommand.java">
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-networking.jar!/com/jme3/network/kernel/udp/UdpKernel.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="25" />
+          <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ai/Command.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerRemovePlayerMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/NetworkActorEnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ai/commands/AttackCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-          <folding>
-            <element signature="e#1159#1160#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#2228#2229#0" expanded="true" />
-            <element signature="e#2259#2260#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-networking.jar!/com/jme3/network/AbstractMessage.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/NetworkedAutonomousControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1111#1112#0" expanded="true" />
-            <element signature="e#1138#1139#0" expanded="true" />
-            <element signature="e#2571#2572#0" expanded="true" />
-            <element signature="e#2609#2610#0" expanded="true" />
-            <element signature="e#2643#2644#0" expanded="true" />
-            <element signature="e#2673#2674#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/ManualControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-957">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-core.jar!/com/jme3/scene/control/Control.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/NetworkActionEnabled.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/NetworkedManualControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1419">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
-            <element signature="e#2652#2653#0" expanded="true" />
-            <element signature="e#2690#2691#0" expanded="true" />
-            <element signature="e#2724#2725#0" expanded="true" />
-            <element signature="e#2754#2755#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-            <element signature="e#1059#1060#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/CharacterAnimControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="e#2385#2386#0" expanded="true" />
-            <element signature="e#2458#2459#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ActionMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/AutoControlMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        <state relative-caret-position="462">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ChatMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ServerMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="166">
+          <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ClientJoinMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/HandshakeMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ManualControlMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#ManualControlMessage#1;class#ManualControlMessage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerAddEntityMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="198">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerJoinMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/SyncCharacterMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ChatMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        <state relative-caret-position="396">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/SyncRigidBodyMessage.java">
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/nifty.jar!/de/lessvoid/nifty/elements/Element.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        <state relative-caret-position="292">
+          <caret line="2026" lean-forward="true" selection-start-line="2026" selection-end-line="2026" />
+          <folding>
+            <element signature="e#73281#73282#0" expanded="true" />
+            <element signature="e#73333#73334#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/network/physicssync/PhysicsSyncMessage.java">
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-core.jar!/com/jme3/app/LegacyApplication.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="4846">
+          <caret line="429" column="56" lean-forward="true" selection-start-line="429" selection-start-column="56" selection-end-line="429" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerAddPlayerMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/PhysicsSyncManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        <state relative-caret-position="-1848">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding>
+            <element signature="e#9806#9807#0" expanded="true" />
+            <element signature="e#9846#9847#0" expanded="true" />
+            <element signature="e#9879#9880#0" expanded="true" />
+            <element signature="e#9908#9909#0" expanded="true" />
+            <element signature="e#9941#9942#0" expanded="true" />
+            <element signature="e#9970#9971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ServerGameManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerDisableEntityMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerEnableEntityMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerEnterEntityMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-bullet.jar!/com/jme3/bullet/control/CharacterControl.class">
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-networking.jar!/com/jme3/network/NetworkClient.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-bullet.jar!/com/jme3/bullet/objects/PhysicsCharacter.class">
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-networking.jar!/com/jme3/network/Network.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="265" column="33" selection-start-line="265" selection-start-column="18" selection-end-line="265" selection-end-column="33" />
+        <state relative-caret-position="190">
+          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
           <folding>
-            <element signature="e#7431#7432#0" expanded="true" />
-            <element signature="e#7473#7474#0" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1442#1443#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/ManualCharacterControl.java">
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-bullet.jar!/com/jme3/bullet/BulletAppState.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="259">
+          <caret line="304" column="16" selection-start-line="304" selection-start-column="8" selection-end-line="304" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/UserCommandControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
           <folding>
-            <element signature="e#1338#1339#0" expanded="true" />
-            <element signature="e#1378#1379#0" expanded="true" />
-            <element signature="e#1485#1486#0" expanded="true" />
-            <element signature="e#1541#1542#0" expanded="true" />
-            <element signature="e#1525#1526#0" expanded="true" />
-            <element signature="e#1559#1560#0" expanded="true" />
-            <element signature="e#1615#1616#0" expanded="true" />
-            <element signature="e#1634#1635#0" expanded="true" />
-            <element signature="method#doMoveY#0;class#ManualCharacterControl#0" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1804#1805#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#2231#2232#0" expanded="true" />
-            <element signature="e#2269#2270#0" expanded="true" />
-            <element signature="e#2920#2921#0" expanded="true" />
-            <element signature="e#2961#2962#0" expanded="true" />
-            <element signature="e#3009#3010#0" expanded="true" />
-            <element signature="e#3049#3050#0" expanded="true" />
+            <element signature="e#2247#2248#0" expanded="true" />
+            <element signature="e#2306#2307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerEffectMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerEntityDataMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/WorldManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="274" column="60" selection-start-line="274" selection-start-column="60" selection-end-line="274" selection-end-column="60" />
+        <state relative-caret-position="392">
+          <caret line="300" column="51" selection-start-line="300" selection-start-column="51" selection-end-line="300" selection-end-column="51" />
           <folding>
-            <element signature="e#2293#2294#0" expanded="true" />
-            <element signature="e#2326#2327#0" expanded="true" />
-            <element signature="e#2376#2377#0" expanded="true" />
-            <element signature="e#2420#2421#0" expanded="true" />
-            <element signature="e#2454#2455#0" expanded="true" />
-            <element signature="e#2486#2487#0" expanded="true" />
-            <element signature="e#2534#2535#0" expanded="true" />
-            <element signature="e#2576#2577#0" expanded="true" />
-            <element signature="e#2004#2005#0" expanded="true" />
-            <element signature="e#2043#2044#0" expanded="true" />
-            <element signature="method#getEntity#0;class#WorldManager#0" />
+            <element signature="e#2706#2707#0" expanded="true" />
+            <element signature="e#2740#2741#0" expanded="true" />
+            <element signature="method#getEntity#1;class#WorldManager#0" />
             <element signature="method#disableEntity#0;class#WorldManager#0" />
             <element signature="method#enableEntity#0;class#WorldManager#0" />
             <element signature="method#addEntity#0;class#WorldManager#0" />
             <element signature="method#addPlayer#0;class#WorldManager#0" />
+            <element signature="method#removePlayer#0;class#WorldManager#0" />
+            <element signature="e#10348#10349#0" expanded="true" />
+            <element signature="e#10381#10382#0" expanded="true" />
             <element signature="method#setEntityTranslation#0;class#WorldManager#0" />
+            <element signature="method#enterEntity#0;class#WorldManager#0" />
+            <element signature="method#makeManualControl#0;class#WorldManager#0" />
             <element signature="method#removeTransientControls#0;class#WorldManager#0" />
-            <element signature="method#removeUserControls#0;class#WorldManager#0" />
             <element signature="method#removeAIControls#0;class#WorldManager#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/Interface/Logo/Logo.j3m">
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/nifty.jar!/version">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-bullet.jar!/com/jme3/bullet/control/RigidBodyControl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="43" column="38" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-bullet.jar!/com/jme3/bullet/collision/shapes/BoxCollisionShape.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="49" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/physics/PhysicsTestHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-core.jar!/com/jme3/math/Plane.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/Models/Sinbad/README-LICENSE.txt">
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerRemoveEntityMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/Models/Sinbad/Sinbad.mesh.xml">
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ClientNetListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="82" column="42" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3629#3630#0" expanded="true" />
+            <element signature="e#3668#3669#0" expanded="true" />
+            <element signature="e#3699#3700#0" expanded="true" />
+            <element signature="e#3726#3727#0" expanded="true" />
+            <element signature="e#3835#3836#0" expanded="true" />
+            <element signature="e#3867#3868#0" expanded="true" />
+            <element signature="e#3898#3899#0" expanded="true" />
+            <element signature="e#3925#3926#0" expanded="true" />
+            <element signature="e#4038#4039#0" expanded="true" />
+            <element signature="e#4070#4071#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/renderer/ViewPort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="119" column="10" lean-forward="true" selection-start-line="119" selection-start-column="10" selection-end-line="119" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/Interface/ClientUI.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="115" column="16" lean-forward="true" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/localrpg/build/SavableClassBuild.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2013">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ClientMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="196" column="5" lean-forward="true" selection-start-line="196" selection-start-column="5" selection-end-line="196" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#ClientMain#0" />
+            <element signature="method#destroy#0;class#ClientMain#0" />
+            <element signature="method#addChat#0;class#ClientMain#0" />
+            <element signature="e#6701#6702#0" expanded="true" />
+            <element signature="e#6722#6723#0" expanded="true" />
+            <element signature="method#updatePlayerData#0;class#ClientMain#0" />
+            <element signature="method#loadLevel#0;class#ClientMain#0" />
+            <element signature="e#4715#4841#0" />
+            <element signature="e#4762#4810#0" />
+            <element signature="e#4999#5051#0" />
+            <element signature="e#5190#5242#0" />
+            <element signature="e#5389#5448#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/localrpg/build/SpatialBuild.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-797">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ServerNetListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/localrpg/template/SavableTemplate.dt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/Models/Sinbad/sinbad_body.jpg">
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/localrpg/template/SavableTemplate.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/mutil/SampleClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/mutil/ServerAppLication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-363">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/WorldManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/TestCameraNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2816">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/TestChaseCamera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-726">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/TestNifty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/lemur-1.13.0-sources.jar!/com/simsilica/lemur/core/VersionedReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/Textures/player.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-core.jar!/com/jme3/scene/shape/Sphere.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="297" column="18" lean-forward="true" selection-start-line="297" selection-start-column="18" selection-end-line="297" selection-end-column="18" />
+    <entry file="file://$PROJECT_DIR$/assets/Textures/ColorRamp/cloudy.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/Textures/ColorRamp/toon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/Textures/terrain-alpha/MonkeyZone-terrain-MonkeyZone-alphablend2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/Textures/terrain-alpha/MonkeyZone-terrain-MonkeyZone-alphablend1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/Textures/terrain-alpha/MonkeyZone-terrain-MonkeyZone-alphablend0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/Md/networkJme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="66">
+            <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/physics/TestBoneRagdoll.java">
+    <entry file="jar://$PROJECT_DIR$/libs/lemur-1.13.0-sources.jar!/com/simsilica/lemur/HAlignment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1716">
-          <caret line="52" column="56" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="56" />
+        <state relative-caret-position="264">
+          <caret line="40" column="2" lean-forward="true" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/lemur-1.13.0-sources.jar!/com/simsilica/lemur/Slider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="59" column="2" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLemurLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/nifty.jar!/de/lessvoid/nifty/builder/ElementBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="300" column="16" selection-start-line="300" selection-start-column="16" selection-end-line="300" selection-end-column="16" />
+          <folding>
+            <element signature="e#8657#8658#0" expanded="true" />
+            <element signature="e#8706#8707#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/scene/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="61" column="33" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/lemur-1.13.0-sources.jar!/com/simsilica/lemur/Panel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="84" column="3" lean-forward="true" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/lemur-1.13.0-sources.jar!/com/simsilica/lemur/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+          <folding>
+            <element signature="e#2296#2297#0" expanded="true" />
+            <element signature="e#2361#2362#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLemur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="19" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/physics/PhysicsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLemurLayout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        <state relative-caret-position="330">
+          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-core.jar!/com/jme3/math/Vector3f.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1201">
-          <caret line="197" column="9" lean-forward="true" selection-start-line="197" selection-start-column="9" selection-end-line="197" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-bullet.jar!/com/jme3/bullet/objects/PhysicsVehicle.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="281" lean-forward="true" selection-start-line="281" selection-end-line="281" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hs_err_pid3192.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/ManualVehicleControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="154" column="9" selection-start-line="154" selection-start-column="9" selection-end-line="154" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-            <element signature="e#1340#1341#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
-            <element signature="method#doPerformAction#0;class#ManualVehicleControl#0" />
-            <element signature="e#1369#1370#0" expanded="true" />
-            <element signature="e#1396#1397#0" expanded="true" />
-            <element signature="e#1447#1448#0" expanded="true" />
-            <element signature="e#1474#1475#0" expanded="true" />
-            <element signature="e#2651#2652#0" expanded="true" />
-            <element signature="e#2689#2690#0" expanded="true" />
-            <element signature="e#2737#2738#0" expanded="true" />
-            <element signature="e#2777#2778#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1223,7 +1144,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>libs</last-edited>
+          <last-edited>core</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

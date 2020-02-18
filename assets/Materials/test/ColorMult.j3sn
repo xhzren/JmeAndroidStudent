@@ -1,0 +1,23 @@
+ShaderNodeDefinitions {
+    ShaderNodeDefinition ColorMult {
+        //<shader类型>
+        Type: Fragment
+        //<shader版本><shader文件路径>
+        Shader GLSL100: Materials/test/ColorMult.frag
+        //注释
+        Documentation {
+        }
+
+        //输入
+        Input {
+            vec4 color1
+            vec4 color2
+            sampler2D colorMap
+        }
+        //输出
+        Output{
+            vec4 outColor
+        }
+
+    }
+}

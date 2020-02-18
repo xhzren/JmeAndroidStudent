@@ -8,10 +8,10 @@
         </effect>
     </style>
     
-    <screen id="null" controller="com.jme3.monkeyzone.ClientMain">
+    <screen id="null" controller="cn.xhzren.game.monkeyzone.ClientMain">
     </screen>
 
-    <screen id="load_game" controller="com.jme3.monkeyzone.ClientMain">
+    <screen id="load_game" controller="cn.xhzren.game.monkeyzone.ClientMain">
         <layer id="layer" childLayout="center">
             <panel id="panel" height="300px" width="350px" align="center" valign="center" style="nifty-panel" childLayout="vertical">
                 <effect>
@@ -51,7 +51,7 @@
         </layer>
     </screen>
 
-    <screen id="lobby" controller="com.jme3.monkeyzone.ClientMain">
+    <screen id="lobby" controller="cn.xhzren.game.monkeyzone.ClientMain">
         <layer id="layer" childLayout="vertical">
             <panel id="panel" childLayout="horizontal">
                 <panel id="players_panel" height="100%" width="320px" valign="center" style="nifty-panel" childLayout="vertical">
@@ -130,7 +130,7 @@
         </layer>
     </screen>
 
-    <screen id="default_hud" controller="com.jme3.monkeyzone.ClientMain">
+    <screen id="default_hud" controller="cn.xhzren.game.monkeyzone.ClientMain">
         <layer id="layer" childLayout="vertical">
             <panel id="panel_top" childLayout="horizontal">
                 <panel id="top_panel_left" height="60px" width="90%" align="left" valign="top" style="nifty-panel" childLayout="horizontal">

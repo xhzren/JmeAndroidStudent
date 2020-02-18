@@ -1,0 +1,41 @@
+MaterialDef Simple {
+    MaterialParameters {
+        Texture2D ColorMap
+        Texture2D LightMap
+        Color Color (Color)
+        Boolean VertexColor (UseVertexColor)
+        Boolean SeparateTexCoord
+    }
+
+    Technique {
+            WorldParameters {
+                WorldViewProjectionMatrix
+            }
+            FragmentShaderNodes {
+                ShaderNode UnshadedVert {
+                    Definition : CommonVert : Common/MatDefs/ShaderNodes/Common/CommonVert.j3sn
+                    InputMapping {
+                        worldViewProjectionMatrix = WorldParam.WorldViewProjectionMatrix
+                        modelPosition = Global.position.xyz
+                        texCoord1 = Attr.inTexCoord : ColorMap || (LightMap && !SeparateTexCoord)
+                        texCoord2 = Attr.inTexCoord2 : SeparateTexCoord
+                        vertColor = Attr.inColor : VertexColor
+                    }
+                    OutputMapping {
+                        Global.position = projPosition
+                    }
+                }
+                ShaderNode ColorMapTF {
+                    Definition : TextureFetch : Common/MatDefs/ShaderNodes/Basic/TextureFetch.j3sn
+                InputMappings {
+                    texCoord = UnshadedVert.texCoord1
+                    textureMap = MatParam.ColorMap
+                }
+                OutputMappings {
+                    //Global.color = outColor
+                }
+                }
+            }
+        }
+
+}
