@@ -1,4 +1,48 @@
-/nbproject/private/
-/build/
-/dist/
-/.idea/
+/kitweb.iml
+# Mac OS
+.*.swp
+*.DS_Store
+*/*.log
+*/*.log.gz
+*.swp
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.war
+*.ear
+
+# Maven #
+target/
+*/target/
+
+# IDEA #
+.idea/
+*.iml
+
+# Eclipse #
+.settings/
+.metadata/
+.classpath
+.project
+Servers/
+*.class
+classes/
+/WEB-INF/classes/*
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Other
+*.ipr
+*.iws
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*~.nib
+/src/resource/config/spring/*.properties
+/src/main/com/gzkit/yh/module/test/controller/WzfTestController.java
+!/WebRoot/WEB-INF/lib/
+/src/resource/config/scr/upload.properties
