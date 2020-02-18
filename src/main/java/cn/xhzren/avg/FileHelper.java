@@ -13,11 +13,10 @@ import java.util.List;
 public class FileHelper {
 
     public static void writeRecords(ArchiveRecords archiveRecords) {
-        String recordPath = "D:\\work\\niffey\\JmeAndroidStudent\\src\\main\\resources\\dialog\\archiveRecords.json";
-        List<ArchiveRecords> recordData = JSONArray.parseArray(readJsonData(recordPath), ArchiveRecords.class);
+        List<ArchiveRecords> recordData = JSONArray.parseArray(readJsonData(Constant.recordPath), ArchiveRecords.class);
         archiveRecords.setRecordIndex(recordData.size()+1);
         recordData.add(archiveRecords);
-        writeJsonData(JSON.toJSONString(recordData), recordPath);
+        writeJsonData(JSON.toJSONString(recordData), Constant.recordPath);
     }
 
     public static String readJsonData(String chapterName) {

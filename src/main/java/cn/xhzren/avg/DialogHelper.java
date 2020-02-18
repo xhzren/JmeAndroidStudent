@@ -30,7 +30,6 @@ public class DialogHelper {
     public static DialogEnter currentDialog = new DialogEnter();
     public static EndingEnter defaultEnding = new EndingEnter();
 
-    private static String chapterPath = "D:\\work\\niffey\\JmeAndroidStudent\\src\\main\\resources\\dialog\\one.json";
 
     /**
      * 初始化数据
@@ -106,7 +105,7 @@ public class DialogHelper {
 
     public static void resetDialogData() {
         if(chapterContent == null) {
-            chapterContent = JSON.parseObject(FileHelper.readJsonData(chapterPath));
+            chapterContent = JSON.parseObject(FileHelper.readJsonData(Constant.chapterPath));
         }
         dialogList = null;
         endingList = null;

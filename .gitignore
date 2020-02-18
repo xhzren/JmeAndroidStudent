@@ -46,3 +46,9 @@ tmp/**/*
 /src/main/com/gzkit/yh/module/test/controller/WzfTestController.java
 !/WebRoot/WEB-INF/lib/
 /src/resource/config/scr/upload.properties
+/.idea/
+/.idea/
+/.idea/JmeAndroidStudent.iml
+/.idea/JmeAndroidStudent.iml
+/.jmonkeybuilder/
+/nbproject/private/

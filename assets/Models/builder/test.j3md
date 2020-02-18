@@ -1,0 +1,21 @@
+MaterialDef Test {
+    MaterialParameters {
+    }
+
+    Technique {
+        LightMode SinglePass
+
+        VertexShader   GLSL150 : assets\Models\builder\test.vert
+        FragmentShader GLSL150 : assets\Models\builder\test.frag
+
+        WorldParameters {
+            WorldViewProjectionMatrix
+        }
+
+        Defines {
+        }
+
+        ForcedRenderState {
+        }
+    }
+}
