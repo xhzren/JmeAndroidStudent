@@ -2,12 +2,10 @@ package cn.xhzren.avg;
 
 import cn.xhzren.avg.entity.DialogEnter;
 import cn.xhzren.avg.entity.EndingEnter;
-import cn.xhzren.test.gui.EventCommon;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
-import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,11 +32,16 @@ public class DialogHelper {
     /**
      * 初始化数据
      */
-    public static void init() {
+    public static void init(DialogEnter dialogEnter) {
         dialogList = chapterContent.getJSONArray("dialogList");
-        currentId = dialogList.getJSONObject(0).getString("id");
-        currentDialog = JSON.parseObject(dialogList.getJSONObject(currentIndex).toJSONString(),
-                DialogEnter.class);
+        if(dialogEnter != null) {
+            currentId = dialogEnter.getId();
+            currentDialog = dialogEnter;
+        }else {
+            currentId = dialogList.getJSONObject(0).getString("id");
+            currentDialog = JSON.parseObject(dialogList.getJSONObject(currentIndex).toJSONString(),
+                    DialogEnter.class);
+        }
 
         endingList = JSON.parseArray(chapterContent.getJSONArray("ending").toJSONString(), EndingEnter.class);
         endingList.stream().forEach((e) -> {
@@ -114,7 +117,7 @@ public class DialogHelper {
         currentDialog = null;
         defaultEnding = null;
 
-        init();
+        init(null);
     }
 
 }

@@ -1,4 +1,4 @@
-package cn.xhzren.test.gui;
+package cn.xhzren.avg.common;
 
 /**
  * 事件调度器
@@ -14,4 +14,5 @@ public class EventCommon {
     public void Anger() {
         System.out.println("愤怒值增加了");
     }
+
 }

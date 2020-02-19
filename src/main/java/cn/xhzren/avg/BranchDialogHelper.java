@@ -1,6 +1,7 @@
 package cn.xhzren.avg;
 
 import cn.xhzren.avg.entity.DialogEnter;
+import cn.xhzren.avg.entity.EndingEnter;
 import cn.xhzren.test.gui.DialogDemoState;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
@@ -23,10 +24,10 @@ public class BranchDialogHelper {
      * 初始化分支对话数据
      */
     public static void init() {
-//        currentBranchIndex = DialogHelper.currentIndex+1;
         currentBranchId = branchDialogList.getJSONObject(0).getString("id");
         currentBranchDialog = JSON.parseObject(branchDialogList.getJSONObject(currentBranchIndex).toJSONString(),
                 DialogEnter.class);
+        currentBranchIndex = currentBranchDialog.getIndex();
     }
 
     /**
@@ -44,6 +45,16 @@ public class BranchDialogHelper {
             currentBranchDialog.setCurrentIndex(currentBranchDialog.getCurrentIndex()+1);
             return  JSON.parseObject(JSONObject.toJSONString(currentBranchDialog));
         }
+
+        //如果是结局
+        if("ending".equals(currentBranchDialog.getType())) {
+            String endingId = currentBranchDialog.getJump();
+            EndingEnter res = DialogHelper.endingList.stream().filter((e)->{
+                return endingId.equals(e.getId());
+            }).findFirst().orElse(null);
+            return JSON.parseObject(JSONObject.toJSONString(res));
+        }
+
         //如果所有对话已经读取完了, 就跳转到相应的对话
         if(currentBranchIndex == branchDialogList.size() - 1) {
             DialogHelper.currentIndex = jumpIndex;
@@ -55,8 +66,9 @@ public class BranchDialogHelper {
             }
             DialogDemoState.storyType = 1;
             return DialogHelper.dialogList.getJSONObject(DialogHelper.currentIndex);
-//            return DialogHelper.nextDialog();
         }
+
+
         //索引下移, 以获取下一个对话
         currentBranchIndex++;
         currentBranchId = branchDialogList.getJSONObject(currentBranchIndex).getString("id");

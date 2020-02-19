@@ -43,8 +43,10 @@ public class TestLemur extends SimpleApplication {
                 new BasicProfilerState(),
                 new BackgroundDemoState(),
                 new OptionPanelState(),
-                new TitleDemoState(),
-//                new DialogDemoState(),
+//                new TitleDemoState(),
+                new PropDemoState(),
+                new ArchiveRecordDemoState(),
+                new DialogDemoState(),
                 new AnimationState(),
                 new ScreenshotAppState(Constant.screenShot,System.currentTimeMillis()));
     }

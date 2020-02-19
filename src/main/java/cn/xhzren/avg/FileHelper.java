@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.sun.javafx.collections.ListListenerHelper;
+import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
 
 import java.io.*;
 import java.util.Arrays;
@@ -12,9 +13,19 @@ import java.util.List;
 
 public class FileHelper {
 
-    public static void writeRecords(ArchiveRecords archiveRecords) {
+    public static void writeRecords(ArchiveRecords archiveRecords,int type) {
         List<ArchiveRecords> recordData = JSONArray.parseArray(readJsonData(Constant.recordPath), ArchiveRecords.class);
-        archiveRecords.setRecordIndex(recordData.size()+1);
+        if(recordData.size() == Constant.recordCount) {
+            return;
+        }
+
+        if(type == 1) {
+            if(recordData.size() == 0) {
+                archiveRecords.setRecordIndex(0);
+            }else {
+                archiveRecords.setRecordIndex(recordData.size()+1);
+            }
+        }
         recordData.add(archiveRecords);
         writeJsonData(JSON.toJSONString(recordData), Constant.recordPath);
     }
@@ -64,11 +75,11 @@ public class FileHelper {
         Arrays.sort(fs, (File f1, File f2) -> {
             long diff = f1.lastModified() - f2.lastModified();
             if (diff > 0) {
-                return 1;
+                return -1;
             } else if (diff == 0) {
                 return 0;
             } else {
-                return -1;
+                return 1;
             }
         });
         return "Textures/Avg/save/"+fs[0].getName();

@@ -1,9 +1,7 @@
 package cn.xhzren.test.gui;
 
-import cn.xhzren.avg.BranchDialogHelper;
-import cn.xhzren.avg.DateUtils;
-import cn.xhzren.avg.DialogHelper;
-import cn.xhzren.avg.FileHelper;
+import cn.xhzren.avg.*;
+import cn.xhzren.avg.common.EventCommon;
 import cn.xhzren.avg.entity.*;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
@@ -19,9 +17,6 @@ import com.jme3.math.Vector3f;
 import com.jme3.scene.Node;
 import com.jme3.scene.Spatial;
 import com.simsilica.lemur.*;
-import com.simsilica.lemur.anim.SpatialTweens;
-import com.simsilica.lemur.anim.TweenAnimation;
-import com.simsilica.lemur.anim.Tweens;
 import com.simsilica.lemur.component.IconComponent;
 import com.simsilica.lemur.component.QuadBackgroundComponent;
 import com.simsilica.lemur.component.SpringGridLayout;
@@ -42,7 +37,6 @@ public class DialogDemoState extends BaseAppState {
     private Container toolbar;
     private Label name;
     private Label content;
-    private ActionButton closeButton;
     //剧情类型: 1主线2支线
     public static int storyType = 1;
     private EventCommon eventCommon = new EventCommon();
@@ -50,8 +44,9 @@ public class DialogDemoState extends BaseAppState {
     @Override
     protected void initialize(Application app) {
         assetManager = app.getAssetManager();
+
         mainWindow = new Container();
-        mainWindow.setLocalTranslation(0, app.getCamera().getHeight() * 0.27f, 0);
+        mainWindow.setLocalTranslation(0, Constant.HEIGHT * 0.27f, 0);
 
         Button close = mainWindow.addChild(new Button(""));
         IconComponent closeIcon= new IconComponent("Textures/Avg/close.png");
@@ -63,11 +58,11 @@ public class DialogDemoState extends BaseAppState {
         content = mainWindow.addChild(
                 new Label(DialogHelper.currentDialog.getContent().get(DialogHelper.currentDialog.getCurrentIndex())));
         content.setTextHAlignment(HAlignment.Left);
-        content.setMaxWidth(app.getCamera().getWidth() * 0.8f);
-        content.setPreferredSize(new Vector3f(getApplication().getCamera().getWidth() * 0.8f,app.getCamera().getHeight() * 0.27f, 0));
+        content.setMaxWidth(Constant.WIDTH * 0.8f);
+        content.setPreferredSize(new Vector3f(Constant.WIDTH * 0.8f,Constant.HEIGHT * 0.27f, 0));
 
         toolbar = new Container();
-        toolbar.setLocalTranslation(app.getCamera().getWidth() * 0.9f, app.getCamera().getHeight() * 0.27f, 0);
+        toolbar.setLocalTranslation(Constant.WIDTH * 0.9f, Constant.HEIGHT * 0.27f, 0);
         Container buttons = toolbar.addChild(new Container(new SpringGridLayout(Axis.X, Axis.Y)));
         buttons.setLocalScale(1.3f);
         buttons.setBackground(new QuadBackgroundComponent(ColorRGBA.randomColor()));
@@ -79,26 +74,12 @@ public class DialogDemoState extends BaseAppState {
         });
         buttons.addChild(new Button("save"),1).addClickCommands((e)-> {
             log.info("保存");
-            ArchiveRecords save = new ArchiveRecords();
-            save.setRecordName(DialogHelper.chapterContent.getString("name"));
-            if(storyType == 1) {
-                save.setCurrentDialog(DialogHelper.currentDialog);
-            }else {
-                save.setCurrentDialog(BranchDialogHelper.currentBranchDialog);
-            }
-            save.setTime(DateUtils.nowDateToString(DateUtils.TranRule.YMDHMS));
-            getState(ScreenshotAppState.class).takeScreenshot();
-            try {
-                Thread.sleep(500);
-            }catch (Exception ex) {
-                log.info(ex.getMessage());
-                log.info("等待截图生成失败!");
-            }
-            save.setImage(FileHelper.getArchiveCover());
-            FileHelper.writeRecords(save);
+            save(null,1);
         });
         buttons.addChild(new Button("read"),2).addClickCommands((e)-> {
             log.info("读取");
+            setEnabled(false);
+            getState(ArchiveRecordDemoState.class).setEnabled(true);
         });
         buttons.addChild(new Button("exit"),3).addClickCommands((e) -> {
             log.info("退出");
@@ -111,6 +92,23 @@ public class DialogDemoState extends BaseAppState {
                 setupDialog();
             }
         });
+
+        setEnabled(false);
+    }
+
+    public void save(ArchiveRecords records,int saveType) {
+        ArchiveRecords save = new ArchiveRecords();
+        if(records != null) {
+            save = records;
+        }
+        save.setRecordName(DialogHelper.chapterContent.getString("name"));
+            save.setCurrentDialog(DialogHelper.currentDialog);
+            save.setCurrentDialog(BranchDialogHelper.currentBranchDialog);
+        save.setTime(DateUtils.nowDateToString(DateUtils.TranRule.YMDHMS));
+        getState(ScreenshotAppState.class).takeScreenshot();
+        getState(ScreenshotAppState.class).postFrame(null);
+        save.setImage(FileHelper.getArchiveCover());
+        FileHelper.writeRecords(save, saveType);
     }
 
     private void setupDialog() {
@@ -126,6 +124,18 @@ public class DialogDemoState extends BaseAppState {
             name.setText("");
             return;
         }
+
+        if(jsonObject.getJSONObject("event") != null) {
+            EventEnter event = JSONObject.parseObject(jsonObject.getJSONObject("event").toJSONString(), EventEnter.class);
+            try {
+            if("changeBG".equals(event.getName())) {
+                getState(BackgroundDemoState.class).changeBG((String)event.getParams().get(0));
+            }
+            }catch (Exception e) {
+
+            }
+        }
+
         //区分选项和文本的对话类型
         if("text".equals(jsonObject.getString("type"))) {
             DialogEnter dialogEnter = JSONObject.parseObject(jsonObject.toJSONString(), DialogEnter.class);
@@ -161,7 +171,7 @@ public class DialogDemoState extends BaseAppState {
             //绑定各个选项对应的事件
             tmp.addClickCommands((e)-> {
                 try {
-                    eventCommon.getClass().getMethod(item.getEvent(), new Class[]{}).invoke(
+                    eventCommon.getClass().getMethod(item.getEvent().getName(), new Class[]{}).invoke(
                             eventCommon, new Object[]{});
                 }catch (Exception ex){
                     log.error(ex.getMessage());
@@ -209,6 +219,7 @@ public class DialogDemoState extends BaseAppState {
                 getStateManager().attach(new TitleDemoState());
                 setEnabled(false);
                 endingPlane.removeFromParent();
+                show();
             }
         });
         return endingPlane;
@@ -233,9 +244,9 @@ public class DialogDemoState extends BaseAppState {
     @Override
     protected void onEnable() {
         Node gui = ((TestLemur)getApplication()).getGuiNode();
-        gui.attachChild(toolbar);
         gui.attachChild(mainWindow);
-        GuiGlobals.getInstance().requestFocus(toolbar);
+        gui.attachChild(toolbar);
+        GuiGlobals.getInstance().requestFocus(mainWindow);
     }
 
     @Override

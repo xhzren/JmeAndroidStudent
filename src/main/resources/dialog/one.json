@@ -25,7 +25,12 @@
          "optionItems":[
            {
              "content":"Happy",
-             "event":"Happy",
+             "event":{
+               "name":"Happy",
+               "params":[
+
+               ]
+             },
              "jump":"one dialog_01_text_02",
              "jumpIndex":2,
              "dialogList":[
@@ -52,7 +57,12 @@
            },
            {
              "content":"Sad",
-             "event":"Sad",
+             "event":{
+               "name":"Sad",
+               "params":[
+
+               ]
+             },
              "jump":"one dialog_01_text_03",
              "jumpIndex":3,
              "dialogList":[
@@ -88,6 +98,12 @@
          "index":2,
          "name":"Sin",
          "type":"text",
+         "event":{
+           "name":"changeBG",
+           "params":[
+             "Textures/Simple_height.png"
+           ]
+         },
          "content":[
            "S X THis FDS!",
            "NO NO No."

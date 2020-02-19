@@ -11,6 +11,6 @@ import java.util.List;
 public class OptionItem {
     private int jumpIndex;
     private String content;
-    private String event;
+    private EventEnter event;
     private List<DialogEnter> dialogList;
 }

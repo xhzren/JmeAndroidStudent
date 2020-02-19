@@ -1,5 +1,6 @@
 package cn.xhzren.test.gui;
 
+import cn.xhzren.avg.Constant;
 import com.jme3.app.Application;
 import com.jme3.app.state.BaseAppState;
 import com.jme3.app.state.ScreenshotAppState;
@@ -15,6 +16,8 @@ import com.simsilica.lemur.component.QuadBackgroundComponent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Random;
+
 public class BackgroundDemoState extends BaseAppState {
 
     static Logger log = LoggerFactory.getLogger(BackgroundDemoState.class);
@@ -22,20 +25,29 @@ public class BackgroundDemoState extends BaseAppState {
     private AssetManager assetManager;
 
     private Container mainWindow;
-    private String bgPath = "Textures/Avg/bg_1.jpg";
+    private QuadBackgroundComponent bgComponent;
+    private String bgPath = Constant.BG_IMAGES[new Random().nextInt(Constant.BG_IMAGES.length - 1)+1];
 
     @Override
     protected void initialize(Application app) {
         assetManager = app.getAssetManager();
         mainWindow = new Container();
         Texture bg = app.getAssetManager().loadTexture(bgPath);
-        mainWindow.setBackground(new QuadBackgroundComponent(bg));
+        bgComponent = new QuadBackgroundComponent(bg);
+        mainWindow.setBackground(bgComponent);
 
         mainWindow.setPreferredSize(new Vector3f(app.getCamera().getWidth(), app.getCamera().getHeight(), 0f));
         mainWindow.setLocalTranslation(0, app.getCamera().getHeight(), -1);
+    }
 
-        ScreenshotAppState state = getState(ScreenshotAppState.class);
-        state.takeScreenshot();
+    public void changeBG(String texturePath) {
+        bgComponent.setTexture(assetManager.loadTexture(texturePath));
+    }
+
+    @Override
+    public void update(float tpf) {
+        super.update(tpf);
+//        ((QuadBackgroundComponent)mainWindow.getBackground()).setTexture();
     }
 
     @Override
