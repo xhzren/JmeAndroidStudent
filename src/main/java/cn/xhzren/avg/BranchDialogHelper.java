@@ -2,7 +2,7 @@ package cn.xhzren.avg;
 
 import cn.xhzren.avg.entity.DialogEnter;
 import cn.xhzren.avg.entity.EndingEnter;
-import cn.xhzren.test.gui.DialogDemoState;
+import cn.xhzren.avg.gui.DialogDemoState;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;

@@ -1,24 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5e89edd-64b0-4a41-86d9-b12cd2ba6a3d" name="Default Changelist" comment="">
+    <list default="true" id="a5e89edd-64b0-4a41-86d9-b12cd2ba6a3d" name="Default Changelist" comment="Save Read Records">
       <change beforePath="$PROJECT_DIR$/.idea/JmeAndroidStudent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JmeAndroidStudent.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/slf4j-api-1.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/xhzren/test/TestCameraNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/xhzren/test/TestChaseCamera.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/xhzren/test/WorldManagerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/UnshadedArray.frag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/UnshadedArray.j3md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/UnshadedArray.vert" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/newtpl_anim.blend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/tex3D.frag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/tex3D.j3md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/tex3D.vert" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/tex3DThumb.frag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/tex3DThumb.j3md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jme3test/texture/tex3DThumb.vert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LemurProto/src/main/java/com/simsilica/lemur/OptionPanelState.java" beforeDir="false" afterPath="$PROJECT_DIR$/LemurProto/src/main/java/com/simsilica/lemur/OptionPanelState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Interface/ClientUI.xml" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Interface/ClientUI.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/folder/newtpl_anim.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/BranchDialogHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/BranchDialogHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/FileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/FileHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/localrpg/LocalRpgMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/localrpg/appstate/PlayerAppState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/localrpg/build/SavableClassBuild.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/localrpg/build/SpatialBuild.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/localrpg/entity/ActiveUserVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/localrpg/entity/ActiveUserVoSavable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/localrpg/entity/Life.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/localrpg/entity/SelfState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/localrpg/entity/netting/MovingAverage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/localrpg/template/LifeTemplate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/localrpg/template/SavableTemplate.dt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/localrpg/template/SavableTemplate.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/ClientEffectsManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/ClientMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/ClientNetListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/Globals.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/PhysicsSyncManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/ServerGameManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/ServerMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/ServerNetListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/WorldManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/ai/AbstractCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/ai/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/ai/SphereTrigger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/ai/TriggerControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/ai/commands/AttackCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/ai/commands/EnterCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/ai/commands/FollowCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/ai/commands/MoveCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/control/AutonomousControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/control/CharacterAnimControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/control/CommandControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/control/DefaultHUDControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/control/HUDControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/control/ManualCharacterControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/control/ManualControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/control/ManualVehicleControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/control/MovementControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/control/NetworkActionEnabled.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/control/NetworkedAutonomousControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/control/NetworkedManualControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/control/UserCommandControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/control/UserInputControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/data/EmitterData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/data/PlayerData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/data/ServerClientData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/ActionMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/AutoControlMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/ChatMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/ClientJoinMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/HandshakeMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/ManualControlMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/ServerAddEntityMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/ServerAddPlayerMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/ServerDisableEntityMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/ServerEffectMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/ServerEnableEntityMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/ServerEnterEntityMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/ServerEntityDataMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/ServerJoinMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/ServerRemoveEntityMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/ServerRemovePlayerMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/StartGameMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/SyncCharacterMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/message/SyncRigidBodyMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/network/physicssync/PhysicsSyncMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/network/physicssync/SyncMessageValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/util/Cell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/util/Line2D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/monkeyzone/util/NavMesh.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/mutil/SampleClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/mutil/ServerAppLication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/mutil/message/ConnectionMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/mutil/message/HelloMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/mutil/messagelistener/ClientListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/game/mutil/util/RegisterUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/test/gui/ArchiveRecordDemoState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/gui/ArchiveRecordDemoState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/test/gui/BackgroundDemoState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/gui/BackgroundDemoState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/test/gui/DialogDemoState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/gui/DialogDemoState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/test/gui/MainMenuState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xhzren/test/gui/MainMenuState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/test/gui/PropDemoState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/gui/PropDemoState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/test/gui/TestLemur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/gui/TestLemur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/test/gui/TitleDemoState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/gui/TitleDemoState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/test/netting/TestChatClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/test/netting/TestChatServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/test/netting/TestLatency.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xhzren/test/netting/TestThroughput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simsilica/lemur/OptionPanelState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simsilica/lemur/OptionPanelState.java" afterDir="false" />
     </list>
+    <ignored path="build/" />
+    <ignored path="dist/" />
+    <ignored path="nbproject/private/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,79 +123,136 @@
     <expand />
     <select />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/LemurProps">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/LemurProto">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="472554773">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="59" />
-          <entry key="gitignore" value="12" />
+          <entry key="dummy" value="72" />
+          <entry key="frag" value="149" />
+          <entry key="geom" value="1" />
+          <entry key="gitignore" value="14" />
+          <entry key="glsl" value="18" />
+          <entry key="groovy" value="14" />
+          <entry key="j3md" value="628" />
           <entry key="j3odata" value="2" />
-          <entry key="java" value="51741" />
+          <entry key="j3sn" value="476" />
+          <entry key="java" value="84491" />
+          <entry key="json" value="1647" />
           <entry key="md" value="165" />
-          <entry key="txt" value="111" />
+          <entry key="txt" value="170" />
+          <entry key="vert" value="699" />
           <entry key="xml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="51741" />
+          <entry key="GLSL shader file" value="167" />
+          <entry key="Groovy" value="14" />
+          <entry key="JAVA" value="84491" />
+          <entry key="JSON" value="1647" />
           <entry key="Markdown" value="165" />
-          <entry key="PLAIN_TEXT" value="184" />
+          <entry key="PLAIN_TEXT" value="2062" />
           <entry key="XML" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="MF" value="1" />
-          <entry key="class" value="70" />
+          <entry key="class" value="75" />
+          <entry key="clh" value="1" />
+          <entry key="conf" value="1" />
           <entry key="dt" value="1" />
+          <entry key="ext" value="2" />
+          <entry key="frag" value="20" />
+          <entry key="geom" value="5" />
           <entry key="gif" value="1" />
-          <entry key="gitignore" value="3" />
-          <entry key="j3m" value="2" />
+          <entry key="gitignore" value="5" />
+          <entry key="glsl" value="1" />
+          <entry key="glsllib" value="1" />
+          <entry key="gltf" value="3" />
+          <entry key="groovy" value="7" />
+          <entry key="j3m" value="7" />
+          <entry key="j3md" value="13" />
           <entry key="j3odata" value="3" />
-          <entry key="java" value="244" />
+          <entry key="j3sn" value="8" />
+          <entry key="java" value="667" />
           <entry key="jnlp" value="1" />
-          <entry key="jpg" value="4" />
-          <entry key="json" value="1" />
+          <entry key="jpg" value="6" />
+          <entry key="json" value="15" />
           <entry key="log" value="1" />
+          <entry key="material" value="1" />
           <entry key="md" value="3" />
-          <entry key="png" value="6" />
-          <entry key="txt" value="1" />
+          <entry key="png" value="23" />
+          <entry key="tsctrl" value="1" />
+          <entry key="txt" value="2" />
           <entry key="version" value="1" />
-          <entry key="xml" value="3" />
+          <entry key="vert" value="19" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="70" />
-          <entry key="Image" value="11" />
-          <entry key="JAVA" value="244" />
-          <entry key="JSON" value="1" />
+          <entry key="CLASS" value="75" />
+          <entry key="GLSL shader file" value="19" />
+          <entry key="Groovy" value="7" />
+          <entry key="HOCON" value="1" />
+          <entry key="Image" value="30" />
+          <entry key="JAVA" value="667" />
+          <entry key="JSON" value="15" />
           <entry key="Manifest" value="1" />
           <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="12" />
-          <entry key="XML" value="4" />
+          <entry key="PLAIN_TEXT" value="76" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.2" value="4" />
-          <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.66" value="1" />
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.closed" value="35" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.2" value="6" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.3" value="4" />
+          <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.59" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.63" value="1" />
+          <entry key="project.open.time.66" value="2" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.71" value="1" />
+          <entry key="project.open.time.74" value="1" />
+          <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.77" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.open.time.94" value="1" />
+          <entry key="project.opened" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
         <counts>
           <entry key="git.branch.create.new" value="1" />
           <entry key="git.branch.delete.local" value="2" />
+          <entry key="git.branch.delete.remote" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -122,10 +263,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLemur.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/MappingItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="269">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/CodeItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/SimpleMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,13 +299,77 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLemurLayout.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/MyKeyInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+            <state relative-caret-position="297">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#442#443#0" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
+                <element signature="e#679#680#0" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
+                <element signature="e#844#845#0" expanded="true" />
+                <element signature="e#868#869#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Class.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="1678" column="33" lean-forward="true" selection-start-line="1678" selection-start-column="19" selection-end-line="1678" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/Interface/Conf/Test/KeyMapping.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/input/controls/KeyTrigger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="47" column="72" lean-forward="true" selection-start-line="47" selection-start-column="72" selection-end-line="47" selection-end-column="72" />
+              <folding>
+                <element signature="e#2031#2032#0" expanded="true" />
+                <element signature="e#2069#2070#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/input/KeyInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="270" column="37" selection-start-line="270" selection-start-column="28" selection-end-line="270" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/input/Input.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-330">
+              <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/KeyMappingType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -151,26 +380,52 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="GLSL Shader" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ErrorListener</find>
-      <find>getPhysicsLocation</find>
-      <find>SimpleGrassTest</find>
-      <find>getName</find>
-      <find>liveEmiters</find>
-      <find>@ToString</find>
-      <find>@Data</find>
-      <find>nifty-default-styles.xml</find>
-      <find>aurulent-sans-16</find>
-      <find>VersionedReference</find>
+      <find>enable</find>
+      <find>ColorMap</find>
+      <find>Ambient</find>
+      <find>inTexCoord</find>
+      <find>SEPARATE_TEXCOORD</find>
+      <find>Color</find>
+      <find>VERTEXCOLOR</find>
+      <find>HAS_COLORMAP</find>
+      <find>LIGHTMAP</find>
+      <find>AlphaDiscardThreshold</find>
+      <find>texCoord1</find>
+      <find>NEED_TEXCOORD1</find>
+      <find>Texture2D</find>
+      <find>toJmeColor</find>
+      <find>UnshadedVert</find>
+      <find>texture</find>
+      <find>TextureFetch</find>
+      <find>window</find>
+      <find>currentIndex</find>
+      <find>branchCurrentIndex</find>
+      <find>currentDialog</find>
+      <find>BranchDialogHelper.init()</find>
+      <find>setpr</find>
+      <find>readDialogData</find>
+      <find>capture</find>
+      <find>IconComponent</find>
+      <find>setSi</find>
+      <find>setSize</find>
+      <find>stealth</find>
+      <find>space</find>
     </findStrings>
     <replaceStrings>
       <replace>liveEmitters</replace>
       <replace>@ToString</replace>
+      <replace>mainWindow</replace>
+      <replace>branchCurrentIndex</replace>
+      <replace>currentBranchIndex</replace>
+      <replace>currentBranchDialog</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -181,60 +436,68 @@
       </map>
     </option>
   </component>
+  <component name="GradleLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/LemurProps/build.gradle" value="1520008645" />
+        <entry key="$PROJECT_DIR$/LemurProto/build.gradle" value="2050763924" />
+      </map>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ai/commands/AttackCommand.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/NetworkActorEnable.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/NetworkActionEnabled.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/NetworkedAutonomousControl.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/ManualControl.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/NetworkedManualControl.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/CharacterAnimControl.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/SyncRigidBodyMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/ManualCharacterControl.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/test/physics/PhysicsTestHelper.java" />
-        <option value="$PROJECT_DIR$/assets/Models/Sinbad/README-LICENSE.txt" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/test/physics/TestBoneRagdoll.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/test/physics/PhysicsTest.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/ManualVehicleControl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/entity/EndingEnter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/entity/DialogOption.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/entity/FileHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/entity/GameData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/DateUtils.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/data/EmitterData.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ClientEffectsManager.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/PhysicsSyncManager.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ServerGameManager.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/Util.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerEnableEntityMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/StartGameMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/SyncCharacterMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerEnterEntityMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerDisableEntityMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerAddPlayerMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerAddEntityMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ManualControlMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/HandshakeMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ClientJoinMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/AutoControlMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ActionMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ServerMain.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerRemovePlayerMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ServerNetListener.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerJoinMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/test/WorldManagerTest.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ChatMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ClientNetListener.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerRemoveEntityMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/UserCommandControl.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerEffectMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerEntityDataMessage.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/WorldManager.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ClientMain.java" />
-        <option value="$PROJECT_DIR$/assets/Interface/ClientUI.xml" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/test/TestNifty.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLeumur.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLemurLauncher.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLemur.java" />
-        <option value="$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLemurLayout.java" />
+        <option value="$PROJECT_DIR$/LemurProto/src/main/java/com/simsilica/lemur/demo/ProtoDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/entity/ArchiveRecords.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dialog/archiveRecords.json" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/test/gui/TitleDemoState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/test/gui/TestLemur.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/test/gui/PropDemoState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/DialogHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/test/gui/ArchiveRecordDemoState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/BranchDialogHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/Constant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/entity/OptionItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/entity/EventEnter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/common/EventCommon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/test/gui/BackgroundDemoState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/entity/DialogBase.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dialog/one.json" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/test/gui/DialogDemoState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/gui/BackgroundDemoState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/FileHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/test/ani/NewAni.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/gui/TestLemur.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/avg/gui/AnimationDemoSate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/SimpleApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/appstates/TestAppState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/manager/MapAppState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/manager/CharacterAppState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/controls/BaseControl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/controls/CharacterControl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/client/FileReceiveClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/servers/ConnectionServerMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/servers/ConnectionServerInitialHandle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/util/FileHelper.java" />
+        <option value="$PROJECT_DIR$/assets/Interface/Conf/root.json" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/JsonItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/util/Constancts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/MouseMappingItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/KeyMappingItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/util/JsonUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/KeyMapping.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/KeyMappingType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/MappingItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/CodeItem.java" />
+        <option value="$PROJECT_DIR$/assets/Interface/Conf/Test/KeyMapping.json" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/SimpleMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/MyKeyInput.java" />
       </list>
     </option>
   </component>
@@ -261,13 +524,13 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-37" />
-    <option name="y" value="78" />
-    <option name="width" value="1386" />
-    <option name="height" value="742" />
+    <option name="x" value="79" />
+    <option name="y" value="163" />
+    <option name="width" value="1382" />
+    <option name="height" value="679" />
   </component>
   <component name="ProjectId" id="1TL9U5gfGjdgSoAfgCVepcUAu3w" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
@@ -276,7 +539,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -299,12 +561,16 @@
               <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
               <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="Textures" type="462c0819:PsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+              <item name="Conf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
               <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+              <item name="Conf" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
@@ -315,57 +581,104 @@
               <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
               <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="xhzren" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
               <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="xhzren" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
               <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="xhzren" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
               <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="xhzren" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JmeAndroidStudent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JmeAndroidStudent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579428803852" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583317453899" />
     <property name="editorconfig.notification" value="true;" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../slf4j-log4j12-1.7.13.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\niffey\JmeAndroidStudent\libs" />
+      <recent name="D:\work\niffey\JmeAndroidStudent\assets\Textures\Avg\save" />
+      <recent name="D:\work\niffey\JmeAndroidStudent\src\main\java\cn\xhzren\avg" />
+      <recent name="D:\work\niffey\JmeAndroidStudent\assets\Textures\Avg" />
+      <recent name="D:\work\niffey\JmeAndroidStudent\src\main\java" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.xhzren.netty.entity" />
       <recent name="cn.xhzren.test.physics" />
       <recent name="cn.xhzren.game.localrpg.entity" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\work\niffey\JmeAndroidStudent\assets" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\niffey\JmeAndroidStudent\libs" />
+      <recent name="D:\work\niffey\JmeAndroidStudent\assets\Textures\Avg" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -380,13 +693,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestLemurLayout">
-    <configuration name="ClientMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.xhzren.game.monkeyzone.ClientMain" />
+  <component name="RunManager" selected="Application.MyKeyInput">
+    <configuration name="FileHelper (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.xhzren.netty.util.FileHelper" />
       <module name="JmeAndroidStudent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.xhzren.game.monkeyzone.*" />
+          <option name="PATTERN" value="cn.xhzren.netty.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -394,12 +707,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.xhzren.game.monkeyzone.ServerMain" />
+    <configuration name="MyKeyInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.xhzren.netty.entity.MyKeyInput" />
       <module name="JmeAndroidStudent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.xhzren.game.monkeyzone.*" />
+          <option name="PATTERN" value="cn.xhzren.netty.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProtoDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.simsilica.lemur.demo.ProtoDemo" />
+      <module name="JmeAndroidStudent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.simsilica.lemur.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.xhzren.netty.SimpleMain" />
+      <module name="JmeAndroidStudent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.xhzren.netty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -408,37 +747,11 @@
       </method>
     </configuration>
     <configuration name="TestLemur" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.xhzren.test.gui.TestLemur" />
+      <option name="MAIN_CLASS_NAME" value="cn.xhzren.avg.gui.TestLemur" />
       <module name="JmeAndroidStudent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.xhzren.test.gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestLemurLayout" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.xhzren.test.gui.TestLemurLayout" />
-      <module name="JmeAndroidStudent" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.xhzren.test.gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WorldManagerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.xhzren.test.WorldManagerTest" />
-      <module name="JmeAndroidStudent" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.xhzren.test.*" />
+          <option name="PATTERN" value="cn.xhzren.avg.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -447,19 +760,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ServerMain" />
-      <item itemvalue="Application.WorldManagerTest" />
-      <item itemvalue="Application.ClientMain" />
       <item itemvalue="Application.TestLemur" />
-      <item itemvalue="Application.TestLemurLayout" />
+      <item itemvalue="Application.ProtoDemo" />
+      <item itemvalue="Application.FileHelper (1)" />
+      <item itemvalue="Application.SimpleMain" />
+      <item itemvalue="Application.MyKeyInput" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestLemurLayout" />
+        <item itemvalue="Application.MyKeyInput" />
+        <item itemvalue="Application.SimpleMain" />
+        <item itemvalue="Application.FileHelper (1)" />
         <item itemvalue="Application.TestLemur" />
-        <item itemvalue="Application.ClientMain" />
-        <item itemvalue="Application.WorldManagerTest" />
-        <item itemvalue="Application.ServerMain" />
+        <item itemvalue="Application.ProtoDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -471,7 +784,7 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\admin\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -496,7 +809,30 @@
       <workItem from="1579144942891" duration="2456000" />
       <workItem from="1579157486678" duration="5654000" />
       <workItem from="1579224173996" duration="27083000" />
-      <workItem from="1579397020737" duration="23064000" />
+      <workItem from="1579397020737" duration="23145000" />
+      <workItem from="1579483361726" duration="21479000" />
+      <workItem from="1579569928505" duration="2403000" />
+      <workItem from="1579572480109" duration="862000" />
+      <workItem from="1579573512567" duration="4090000" />
+      <workItem from="1579578441328" duration="296000" />
+      <workItem from="1579582573126" duration="14532000" />
+      <workItem from="1581906524199" duration="348000" />
+      <workItem from="1581907034499" duration="22533000" />
+      <workItem from="1581994118958" duration="24153000" />
+      <workItem from="1582078556491" duration="496000" />
+      <workItem from="1582080464583" duration="21152000" />
+      <workItem from="1582108696910" duration="157000" />
+      <workItem from="1582165175700" duration="702000" />
+      <workItem from="1582177788988" duration="1218000" />
+      <workItem from="1582181264521" duration="1719000" />
+      <workItem from="1582268728566" duration="296000" />
+      <workItem from="1582518613842" duration="17000" />
+      <workItem from="1582596681398" duration="1000" />
+      <workItem from="1583132452273" duration="1128000" />
+      <workItem from="1583135376657" duration="1372000" />
+      <workItem from="1583292939986" duration="461000" />
+      <workItem from="1583293951138" duration="89000" />
+      <workItem from="1583307323374" duration="9984000" />
     </task>
     <task id="LOCAL-00001" summary="复写 MonkeyZone">
       <created>1573808518052</created>
@@ -554,43 +890,82 @@
       <option name="project" value="LOCAL" />
       <updated>1579421122238</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Lemur GUI">
+      <created>1579428859334</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1579428859334</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Dialog Helper">
+      <created>1581937298513</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1581937298513</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Avg 搭建">
+      <created>1582021631267</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1582021631267</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Dialog Helper">
+      <created>1582023636163</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1582023636163</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Save Read Records">
+      <created>1582104543836</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1582104543836</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123106000" />
+    <option name="totallyTimeSpent" value="252675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49768874" visible="true" weight="0.23373677" />
-      <window_info id="Structure" order="1" sideWeight="0.5023112" side_tool="true" weight="0.23373677" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5023112" side_tool="true" weight="0.23373677" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.2542373" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49768874" visible="true" weight="0.35098335" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.5023112" side_tool="true" weight="0.23373677" />
+      <window_info id="Structure" order="6" sideWeight="0.5023112" weight="0.23373677" />
+      <window_info anchor="bottom" id="Build" order="0" weight="0.49423394" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32973805" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.5015129" weight="0.24807397" />
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.5015129" weight="0.32923076" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.1155624" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.49848714" side_tool="true" weight="0.26810476" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32819724" />
-      <window_info anchor="bottom" id="Run" order="11" weight="0.32973805" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.44375962" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.26810476" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="12" visible="true" weight="0.0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Ant Build" order="4" weight="0.24962178" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32980332" />
+      <window_info anchor="right" id="Gradle" order="9" />
+      <window_info anchor="right" x="0" y="0" width="295" height="584" id="Documentation" order="10" side_tool="true" weight="0.32980332" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -633,7 +1008,11 @@
     <MESSAGE value="更新Message和Control, 测试Physics" />
     <MESSAGE value="d" />
     <MESSAGE value="客户端和服务器主Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="客户端和服务器主Main" />
+    <MESSAGE value="Lemur GUI" />
+    <MESSAGE value="Avg 搭建" />
+    <MESSAGE value="Dialog Helper" />
+    <MESSAGE value="Save Read Records" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save Read Records" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -647,434 +1026,424 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="setValue">
+      <expression>
+        <expression-string>true</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-networking.jar!/com/jme3/network/kernel/udp/UdpKernel.class">
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/app/state/BaseAppState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+        <state relative-caret-position="-1113">
+          <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerRemovePlayerMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/appstates/TestAppState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        <state relative-caret-position="297">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ServerMain.java">
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-plugins-sources.jar!/com/jme3/scene/plugins/fbx/SceneKey.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        <state relative-caret-position="297">
+          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/manager/MapAppState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ClientJoinMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerJoinMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ChatMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/nifty.jar!/de/lessvoid/nifty/elements/Element.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="2026" lean-forward="true" selection-start-line="2026" selection-end-line="2026" />
-          <folding>
-            <element signature="e#73281#73282#0" expanded="true" />
-            <element signature="e#73333#73334#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-core.jar!/com/jme3/app/LegacyApplication.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4846">
-          <caret line="429" column="56" lean-forward="true" selection-start-line="429" selection-start-column="56" selection-end-line="429" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/PhysicsSyncManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1848">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-          <folding>
-            <element signature="e#9806#9807#0" expanded="true" />
-            <element signature="e#9846#9847#0" expanded="true" />
-            <element signature="e#9879#9880#0" expanded="true" />
-            <element signature="e#9908#9909#0" expanded="true" />
-            <element signature="e#9941#9942#0" expanded="true" />
-            <element signature="e#9970#9971#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ServerGameManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-networking.jar!/com/jme3/network/NetworkClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-networking.jar!/com/jme3/network/Network.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-          <folding>
-            <element signature="e#1382#1383#0" expanded="true" />
-            <element signature="e#1442#1443#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jme3-bullet.jar!/com/jme3/bullet/BulletAppState.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="304" column="16" selection-start-line="304" selection-start-column="8" selection-end-line="304" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/control/UserCommandControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="e#2247#2248#0" expanded="true" />
-            <element signature="e#2306#2307#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerEffectMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/monkeyzone/control/MovementControl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerEntityDataMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/monkeyzone/control/ManualControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1230">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/WorldManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/monkeyzone/control/HUDControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="300" column="51" selection-start-line="300" selection-start-column="51" selection-end-line="300" selection-end-column="51" />
-          <folding>
-            <element signature="e#2706#2707#0" expanded="true" />
-            <element signature="e#2740#2741#0" expanded="true" />
-            <element signature="method#getEntity#1;class#WorldManager#0" />
-            <element signature="method#disableEntity#0;class#WorldManager#0" />
-            <element signature="method#enableEntity#0;class#WorldManager#0" />
-            <element signature="method#addEntity#0;class#WorldManager#0" />
-            <element signature="method#addPlayer#0;class#WorldManager#0" />
-            <element signature="method#removePlayer#0;class#WorldManager#0" />
-            <element signature="e#10348#10349#0" expanded="true" />
-            <element signature="e#10381#10382#0" expanded="true" />
-            <element signature="method#setEntityTranslation#0;class#WorldManager#0" />
-            <element signature="method#enterEntity#0;class#WorldManager#0" />
-            <element signature="method#makeManualControl#0;class#WorldManager#0" />
-            <element signature="method#removeTransientControls#0;class#WorldManager#0" />
-            <element signature="method#removeAIControls#0;class#WorldManager#0" />
-          </folding>
+        <state relative-caret-position="132">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/nifty.jar!/version">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/message/ServerRemoveEntityMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/monkeyzone/control/AutonomousControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-405">
+          <caret line="40" column="7" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ClientNetListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/monkeyzone/control/NetworkActionEnabled.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="82" column="42" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3629#3630#0" expanded="true" />
-            <element signature="e#3668#3669#0" expanded="true" />
-            <element signature="e#3699#3700#0" expanded="true" />
-            <element signature="e#3726#3727#0" expanded="true" />
-            <element signature="e#3835#3836#0" expanded="true" />
-            <element signature="e#3867#3868#0" expanded="true" />
-            <element signature="e#3898#3899#0" expanded="true" />
-            <element signature="e#3925#3926#0" expanded="true" />
-            <element signature="e#4038#4039#0" expanded="true" />
-            <element signature="e#4070#4071#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="335">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/renderer/ViewPort.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/controls/BaseControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="119" column="10" lean-forward="true" selection-start-line="119" selection-start-column="10" selection-end-line="119" selection-end-column="10" />
+        <state relative-caret-position="132">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/Interface/ClientUI.xml">
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-bullet-sources.jar!/com/jme3/bullet/control/GhostControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="115" column="16" lean-forward="true" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+        <state relative-caret-position="297">
+          <caret line="54" column="13" selection-start-line="51" selection-start-column="3" selection-end-line="56" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/localrpg/build/SavableClassBuild.java">
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/scene/control/Control.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2013">
+        <state relative-caret-position="232">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/scene/control/AbstractControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2045">
+          <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/input/controls/InputListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/manager/CharacterAppState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ClientMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="196" column="5" lean-forward="true" selection-start-line="196" selection-start-column="5" selection-end-line="196" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#ClientMain#0" />
-            <element signature="method#destroy#0;class#ClientMain#0" />
-            <element signature="method#addChat#0;class#ClientMain#0" />
-            <element signature="e#6701#6702#0" expanded="true" />
-            <element signature="e#6722#6723#0" expanded="true" />
-            <element signature="method#updatePlayerData#0;class#ClientMain#0" />
-            <element signature="method#loadLevel#0;class#ClientMain#0" />
-            <element signature="e#4715#4841#0" />
-            <element signature="e#4762#4810#0" />
-            <element signature="e#4999#5051#0" />
-            <element signature="e#5190#5242#0" />
-            <element signature="e#5389#5448#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/localrpg/build/SpatialBuild.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-797">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/monkeyzone/ServerNetListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/localrpg/template/SavableTemplate.dt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/localrpg/template/SavableTemplate.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/mutil/SampleClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/game/mutil/ServerAppLication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-363">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/WorldManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/TestCameraNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/test/netting/TestLatency.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2816">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="136">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/TestChaseCamera.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/monkeyzone/ClientMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-726">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="136">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/TestNifty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#725#726#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/lemur-1.13.0-sources.jar!/com/simsilica/lemur/core/VersionedReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/Textures/player.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/Textures/ColorRamp/cloudy.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/Textures/ColorRamp/toon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/Textures/terrain-alpha/MonkeyZone-terrain-MonkeyZone-alphablend2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/Textures/terrain-alpha/MonkeyZone-terrain-MonkeyZone-alphablend1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/Textures/terrain-alpha/MonkeyZone-terrain-MonkeyZone-alphablend0.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/Md/networkJme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="66">
-            <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/lemur-1.13.0-sources.jar!/com/simsilica/lemur/HAlignment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="40" column="2" lean-forward="true" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/lemur-1.13.0-sources.jar!/com/simsilica/lemur/Slider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="59" column="2" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLemurLauncher.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/servers/ConnectionServerMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/nifty.jar!/de/lessvoid/nifty/builder/ElementBuilder.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/servers/handlers/BaseServerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="300" column="16" selection-start-line="300" selection-start-column="16" selection-end-line="300" selection-end-column="16" />
-          <folding>
-            <element signature="e#8657#8658#0" expanded="true" />
-            <element signature="e#8706#8707#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/scene/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="61" column="33" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/lemur-1.13.0-sources.jar!/com/simsilica/lemur/Panel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="84" column="3" lean-forward="true" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/lemur-1.13.0-sources.jar!/com/simsilica/lemur/Container.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
-          <folding>
-            <element signature="e#2296#2297#0" expanded="true" />
-            <element signature="e#2361#2362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLemur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="19" selection-end-column="30" />
+        <state relative-caret-position="66">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/xhzren/test/gui/TestLemurLayout.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/servers/ConnectionServerInitialHandle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+        <state relative-caret-position="-273">
+          <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/avg/FileHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+          <folding>
+            <element signature="method#readJsonData#0;class#FileHelper#0" />
+            <element signature="method#writeJsonData#0;class#FileHelper#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/util/FileHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="method#makeTmpFile#0;class#FileHelper#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/JsonItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/util/Constancts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="61" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/client/FileReceiveClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="39" lean-forward="true" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/input/controls/JoyAxisTrigger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141">
+          <caret line="40" column="7" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/input/controls/MouseAxisTrigger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="44" column="25" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/input/controls/JoyButtonTrigger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-165">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/input/MouseInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-jogl-sources.jar!/com/jme3/input/jogl/NewtKeyInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6732">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/input/JoyInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="36" column="39" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/lib/jogl-all.jar!/com/jogamp/newt/event/InputEvent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5111">
+          <caret line="212" column="30" selection-start-line="212" selection-start-column="21" selection-end-line="212" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/MouseMappingItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/KeyMappingItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/input/controls/AnalogListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/controls/CharacterControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="63" lean-forward="true" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+            <element signature="e#1092#1093#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/util/JsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1089">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#writeJsonData#0;class#JsonUtils#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/Interface/Conf/root.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/input/controls/Trigger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/input/InputManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="576" column="29" lean-forward="true" selection-start-line="576" selection-start-column="29" selection-end-line="576" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/KeyMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/KeyMappingType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/MappingItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/input/controls/KeyTrigger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="47" column="72" lean-forward="true" selection-start-line="47" selection-start-column="72" selection-end-line="47" selection-end-column="72" />
+          <folding>
+            <element signature="e#2031#2032#0" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/Interface/Conf/Test/KeyMapping.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/CodeItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/SimpleMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/input/Input.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="1678" column="33" lean-forward="true" selection-start-line="1678" selection-start-column="19" selection-end-line="1678" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/jME3.2-stable/sources/jme3-core-sources.jar!/com/jme3/input/KeyInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="270" column="37" selection-start-line="270" selection-start-column="28" selection-end-line="270" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xhzren/netty/entity/MyKeyInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1137,6 +1506,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1144,7 +1514,19 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>core</last-edited>
+          <last-edited>zay-es-net-1.4.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>Unnamed</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

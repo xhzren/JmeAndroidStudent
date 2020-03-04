@@ -1,0 +1,110 @@
+syntax = "proto2";
+
+package cn.xhzren.nettytest.proto;
+option java_outer_classname = "LoginProto";
+
+message ConnectionMessage {
+  enum DataType {
+    LoginType = 1;
+    DetectVersion = 2;
+    UpdateAsset = 3;
+    Position = 4;
+    FileReceive = 5;
+    ReceiveInfo = 6;
+    RequestInfo = 7;
+    PlayerList = 8;
+    PlayerInfo = 9;
+  }
+
+  required DataType data_type = 1;
+
+  oneof dataBody {
+    Login login = 2;
+    DetectVersion detect_version = 3;
+    UpdateAsset update_asset = 4;
+    Position position = 5;
+    FileReceive file_receive = 6;
+    ReceiveInfo receive_info = 7;
+    PlayerList player_list = 8;
+    PlayerInfo player_info = 9;
+    RequestInfo request_info = 10;
+  }
+}
+
+message DetectVersion {
+    optional float client_version = 1;
+}
+
+message UpdateAsset {
+    optional string id = 1;
+    optional float version = 2;
+    optional int64 size = 3;
+    optional string content = 4;
+}
+
+message FileReceive {
+    optional int64 size = 1;
+    optional int64 start = 2;
+    optional int64 end = 3;
+    optional bytes data = 4;
+}
+
+message ReceiveInfo {
+   enum ReceiveStatus {
+        SUCCESS = 0;
+        CONTINUE = 1;
+        PAUSE = 2;
+        WAIT = 3;
+        ERROR = 4;
+        TIME_OUT = 5;
+    };
+   enum ReceiveType {
+        FILE_RECEIVE = 0;
+        LOGIN_RECEIVE = 1;
+    };
+    optional ReceiveType receive_type = 1;
+    optional ReceiveStatus receive_status = 2;
+    optional string content = 3;
+}
+
+message RequestInfo {
+    enum RequestType {
+        UPDATE_ASSESTS = 0;
+        LOGIN = 1;
+    };
+    optional RequestType request_type = 1;
+    optional string token = 2;
+}
+
+message Login {
+    enum LoginType {
+        SELF = 0;
+        QQ = 1;
+        WX = 2;
+    }
+    optional string name = 1;
+    optional int32 id = 2;
+    optional string pass_word = 3;
+    optional string open_id = 4;
+    optional LoginType login_type = 5;
+}
+
+message PlayerList{
+    repeated PlayerInfo player_info = 1;
+}
+
+message PlayerInfo {
+    optional string id = 1;
+    optional string area = 2;
+    optional string name = 3;
+    optional int32 level = 4;
+}
+message Position {
+    optional int32 x = 1;
+    optional int32 y = 2;
+    optional int32 z = 3;
+}
+
+message box {
+    repeated string id = 1;
+}

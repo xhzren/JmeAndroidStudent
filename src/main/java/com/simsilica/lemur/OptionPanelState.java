@@ -215,7 +215,7 @@ public class OptionPanelState extends BaseAppState {
     
     /**
      *  Sets the GUI node that will be used to display the option
-     *  panel.  By default, this is SimpleApplication.getGuiNode().
+     *  panel.  By default, this is SimpleMain.getGuiNode().
      */
     public void setGuiNode( Node guiNode ) {
         if( guiNode != null ) {

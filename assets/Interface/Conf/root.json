@@ -1,0 +1,11 @@
+[
+  {
+    "group":"test",
+    "children":[
+      {
+        "name":"keyMapping",
+        "path":"Interface\\Conf\\KeyMapping.json"
+      }
+    ]
+  }
+]

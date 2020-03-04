@@ -1,17 +1,16 @@
 package cn.xhzren.test.gui;
 
+import cn.xhzren.avg.gui.DialogDemoState;
+import cn.xhzren.avg.gui.TestLemur;
 import com.jme3.app.Application;
 import com.jme3.app.state.AppState;
 import com.jme3.app.state.BaseAppState;
-import com.jme3.input.event.MouseButtonEvent;
 import com.jme3.input.event.MouseMotionEvent;
 import com.jme3.math.Vector3f;
 import com.jme3.scene.Node;
 import com.jme3.scene.Spatial;
 import com.simsilica.lemur.*;
-import com.simsilica.lemur.event.DefaultMouseListener;
 import com.simsilica.lemur.event.MouseEventControl;
-import groovy.ui.Console;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
