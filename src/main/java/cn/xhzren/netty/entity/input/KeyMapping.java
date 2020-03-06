@@ -1,4 +1,4 @@
-package cn.xhzren.netty.entity;
+package cn.xhzren.netty.entity.input;
 
 import lombok.Data;
 
@@ -8,7 +8,7 @@ import java.util.List;
 public class KeyMapping {
     private String id;
     private String name;
-    private boolean isUse;
+    private boolean use;
     private List<MappingItem> actionMapping;
     private List<MappingItem> analogMapping;
 }

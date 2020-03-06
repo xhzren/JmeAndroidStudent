@@ -2,17 +2,15 @@ package cn.xhzren.netty.controls;
 
 import com.jme3.input.controls.ActionListener;
 import com.jme3.input.controls.AnalogListener;
-import com.jme3.input.controls.InputListener;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.scene.control.AbstractControl;
-import com.jme3.scene.control.Control;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class CharacterControl extends AbstractControl {
+public class CharacterTestControl extends AbstractControl {
 
-    static Logger logger = LoggerFactory.getLogger(CharacterControl.class);
+    static Logger logger = LoggerFactory.getLogger(CharacterTestControl.class);
 
     @Override
     protected void controlUpdate(float tpf) {
@@ -33,8 +31,7 @@ public class CharacterControl extends AbstractControl {
     private AnalogListener playerAnalogListener = new AnalogListener() {
         @Override
         public void onAnalog(String name, float value, float tpf) {
-            logger.info("analog : name-> {}, time-> {}", name, value);
-        }
+             }
     };
 
     public ActionListener getActionListener() {

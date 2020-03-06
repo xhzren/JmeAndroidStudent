@@ -1,4 +1,4 @@
-package cn.xhzren.netty.entity;
+package cn.xhzren.netty.entity.input;
 
 import com.jme3.input.KeyInput;
 import com.jme3.input.controls.KeyTrigger;

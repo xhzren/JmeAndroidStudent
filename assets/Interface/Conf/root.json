@@ -1,11 +1,10 @@
 [
   {
-    "group":"test",
-    "children":[
-      {
         "name":"keyMapping",
-        "path":"Interface\\Conf\\KeyMapping.json"
-      }
-    ]
+        "path":"Interface\\Conf\\Test\\KeyMapping.json"
+  },
+  {
+        "name":"taskHis",
+        "path":"Interface\\Conf\\Test\\TaskHis.json"
   }
 ]

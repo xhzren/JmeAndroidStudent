@@ -1,8 +1,7 @@
-package cn.xhzren.netty.entity;
+package cn.xhzren.netty.entity.input;
 
+import cn.xhzren.netty.entity.input.KeyMappingType;
 import lombok.Data;
-
-import java.util.List;
 
 @Data
 public class CodeItem {

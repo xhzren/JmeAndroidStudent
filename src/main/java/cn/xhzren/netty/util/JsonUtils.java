@@ -1,7 +1,7 @@
 package cn.xhzren.netty.util;
 
 import cn.xhzren.netty.entity.JsonItem;
-import cn.xhzren.netty.entity.KeyMapping;
+import cn.xhzren.netty.entity.input.KeyMapping;
 import com.alibaba.fastjson.JSONArray;
 
 import java.io.*;
@@ -25,7 +25,7 @@ public class JsonUtils {
 
     public static void initDefaultLoad() {
         confItems = JSONArray.parseArray(readJsonData(root + rootJson), JsonItem.class);
-        keyMappings = JSONArray.parseArray(readJsonData(confItems.stream().filter((e)->{
+        keyMappings = JSONArray.parseArray(readJsonData(root + confItems.stream().filter((e)->{
             return Constancts.KEY_MAPPING_JSON.equals(e.getName());
         }).findFirst().orElse(new JsonItem()).getPath()),KeyMapping.class);
     }
