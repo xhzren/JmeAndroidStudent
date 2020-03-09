@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-package cn.xhzren.nettytest.proto;
+package cn.xhzren.netty.entity;
 option java_outer_classname = "LoginProto";
 
 message ConnectionMessage {
@@ -14,6 +14,8 @@ message ConnectionMessage {
     RequestInfo = 7;
     PlayerList = 8;
     PlayerInfo = 9;
+    TaskInfo = 10;
+    Login = 11;
   }
 
   required DataType data_type = 1;
@@ -28,6 +30,7 @@ message ConnectionMessage {
     PlayerList player_list = 8;
     PlayerInfo player_info = 9;
     RequestInfo request_info = 10;
+    TaskInfo task_info = 11;
   }
 }
 
@@ -47,6 +50,7 @@ message FileReceive {
     optional int64 start = 2;
     optional int64 end = 3;
     optional bytes data = 4;
+    optional ReceiveInfo receive_info = 5;
 }
 
 message ReceiveInfo {
@@ -57,10 +61,14 @@ message ReceiveInfo {
         WAIT = 3;
         ERROR = 4;
         TIME_OUT = 5;
+        BUFF = 6;
+        FAIL = 7;
     };
    enum ReceiveType {
-        FILE_RECEIVE = 0;
-        LOGIN_RECEIVE = 1;
+        UNIVERSAL = 0;
+        FILE_RECEIVE = 1;
+        LOGIN_RECEIVE = 2;
+        TOKEN_RECEIVE = 3;
     };
     optional ReceiveType receive_type = 1;
     optional ReceiveStatus receive_status = 2;
@@ -71,6 +79,10 @@ message RequestInfo {
     enum RequestType {
         UPDATE_ASSESTS = 0;
         LOGIN = 1;
+        PLAYER_LIST = 2;
+        ADD_TASK = 3;
+        UPDATE_TASK = 4;
+        VERIFY_TOKEN = 5;
     };
     optional RequestType request_type = 1;
     optional string token = 2;
@@ -93,11 +105,24 @@ message PlayerList{
     repeated PlayerInfo player_info = 1;
 }
 
+message TaskInfo {
+    enum TaskStatus {
+        TASK_PROGRESS = 0;
+        TASK_ERROR = 1;
+        TASK_SUCCESS = 2;
+    }
+    optional string id = 1;
+    optional string name = 2;
+    optional float progress = 3;
+    optional TaskStatus task_status = 4;
+}
+
 message PlayerInfo {
     optional string id = 1;
     optional string area = 2;
     optional string name = 3;
     optional int32 level = 4;
+    optional string status = 5;
 }
 message Position {
     optional int32 x = 1;

@@ -1,4 +1,4 @@
-package cn.xhzren.netty.util;
+package cn.xhzren.nettytest.connection.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

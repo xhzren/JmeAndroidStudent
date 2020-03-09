@@ -1,8 +1,11 @@
 package cn.xhzren.netty.client;
 
-import cn.xhzren.nettytest.proto.LoginProto.*;
-import cn.xhzren.nettytest.proto.LoginProto.ReceiveInfo.*;
-import cn.xhzren.nettytest.proto.LoginProto.ConnectionMessage.*;
+import cn.xhzren.netty.entity.LoginProto.*;
+import cn.xhzren.netty.entity.LoginProto.ReceiveInfo.*;
+import cn.xhzren.netty.entity.LoginProto.ConnectionMessage.*;
+import cn.xhzren.netty.servers.RedisHelper;
+import cn.xhzren.netty.util.JsonUtils;
+import cn.xhzren.netty.util.MessageBuild;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import org.slf4j.Logger;
@@ -14,20 +17,21 @@ public class LoginClientHandler extends SimpleChannelInboundHandler<ConnectionMe
 
     private PlayerList playerList;
 
+    public static String token;
+
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, ConnectionMessage msg) {
-//        if(msg.getDataType() == DataType.PlayerList) {
-//            PlayerList playerList = msg.getPlayerList();
-//            playerList.getPlayerInfoList().forEach((e)-> {
-//                logger.info("player : {}", e);
-//            });
-//        }
-        if(msg.getDataType() == DataType.ReceiveInfo) {
+        System.out.println(msg.getReceiveInfo().getReceiveType());
+        if(msg.getReceiveInfo().getReceiveType() == ReceiveType.LOGIN_RECEIVE) {
             if(msg.getReceiveInfo().getReceiveStatus() == ReceiveStatus.SUCCESS) {
                 logger.info("login success: {}", msg.getReceiveInfo().getContent());
-            }else if(msg.getReceiveInfo().getReceiveStatus() == ReceiveStatus.ERROR) {
-                logger.info("login error: {}", msg.getReceiveInfo().getContent());
+                token = msg.getReceiveInfo().getContent();
+                JsonUtils.localData.put("token", token);
+                JsonUtils.writeLocalData();
+
+                ConnectionMessage message = MessageBuild.requestInfoBuild(token, RequestInfo.RequestType.PLAYER_LIST).build();
+                ctx.writeAndFlush(message);
             }
         }else if(msg.getDataType() == DataType.PlayerList) {
             PlayerList playerList = msg.getPlayerList();
@@ -35,6 +39,7 @@ public class LoginClientHandler extends SimpleChannelInboundHandler<ConnectionMe
                 logger.info("player : {}", e);
             });
             this.playerList = playerList;
+            ctx.pipeline().addLast(new TaskClientHandler());
         }
         else {
             ctx.fireChannelRead(msg);
@@ -44,17 +49,6 @@ public class LoginClientHandler extends SimpleChannelInboundHandler<ConnectionMe
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
         super.channelReadComplete(ctx);
-    }
-
-    @Override
-    public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
-        logger.info("login add");
-        ConnectionMessage login = ConnectionMessage.newBuilder()
-                .setDataType(ConnectionMessage.DataType.LoginType)
-                .setLogin(Login.newBuilder().setId(1).setName("test")
-                        .setLoginType(Login.LoginType.SELF)
-                        .setPassWord("123455").build()).build();
-        ctx.writeAndFlush(login);
     }
 
     public PlayerList getPlayerList() {

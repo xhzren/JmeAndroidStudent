@@ -1,8 +1,11 @@
 package cn.xhzren.netty.util;
 
 import cn.xhzren.netty.entity.JsonItem;
+import cn.xhzren.netty.entity.LoginProto;
 import cn.xhzren.netty.entity.input.KeyMapping;
+import cn.xhzren.netty.servers.RedisHelper;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -12,6 +15,8 @@ public class JsonUtils {
 
     private static String root = "";
     private static String rootJson = "Interface\\Conf\\root.json";
+    private static String localDataJson = "Interface\\Conf\\Test\\LocalData.json";
+    public static JSONObject localData;
     private static List<JsonItem> confItems = new ArrayList<>();
     public static List<KeyMapping> keyMappings = new ArrayList<>();
 
@@ -28,6 +33,21 @@ public class JsonUtils {
         keyMappings = JSONArray.parseArray(readJsonData(root + confItems.stream().filter((e)->{
             return Constancts.KEY_MAPPING_JSON.equals(e.getName());
         }).findFirst().orElse(new JsonItem()).getPath()),KeyMapping.class);
+        localData = JSONArray.parseObject(readJsonData(root + localDataJson));
+    }
+
+    public static void main(String[] args) {
+
+        LoginProto.ConnectionMessage message = LoginProto.ConnectionMessage.newBuilder()
+                .setDataType(LoginProto.ConnectionMessage.DataType.ReceiveInfo)
+                .setReceiveInfo(LoginProto.ReceiveInfo.newBuilder()
+                        .setReceiveType(LoginProto.ReceiveInfo.ReceiveType.LOGIN_RECEIVE)
+                        .setReceiveStatus(LoginProto.ReceiveInfo.ReceiveStatus.SUCCESS).build()).build();
+        System.out.println(message.getReceiveInfo());
+    }
+
+    public synchronized static void writeLocalData() {
+        writeJsonData(JSONObject.toJSONString(localData), root+localDataJson);
     }
 
     public static String readJsonData(String file) {

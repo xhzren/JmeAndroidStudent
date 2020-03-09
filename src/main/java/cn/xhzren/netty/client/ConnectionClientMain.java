@@ -1,5 +1,6 @@
 package cn.xhzren.netty.client;
 
+import cn.xhzren.netty.util.JsonUtils;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.EventLoopGroup;
@@ -21,6 +22,7 @@ public class ConnectionClientMain {
 
     public ConnectionClientMain(int port) throws Exception {
         this.port = port;
+        JsonUtils.initDefaultLoad();
        }
 
     public void run() {

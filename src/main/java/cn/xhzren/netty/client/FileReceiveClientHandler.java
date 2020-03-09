@@ -1,9 +1,9 @@
 package cn.xhzren.netty.client;
 
-import cn.xhzren.netty.util.FileHelper;
-import cn.xhzren.nettytest.proto.LoginProto.*;
-import cn.xhzren.nettytest.proto.LoginProto.ReceiveInfo.*;
-import cn.xhzren.nettytest.proto.LoginProto.ConnectionMessage.*;
+import cn.xhzren.nettytest.connection.util.FileHelper;
+import cn.xhzren.netty.entity.LoginProto.*;
+import cn.xhzren.netty.entity.LoginProto.ReceiveInfo.*;
+import cn.xhzren.netty.entity.LoginProto.ConnectionMessage.*;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
@@ -36,7 +36,7 @@ public class FileReceiveClientHandler extends SimpleChannelInboundHandler<Connec
                 ctx.pipeline().remove(this);
                 ctx.pipeline().addLast(new LoginClientHandler());
             }
-            ctx.writeAndFlush(buildMessage(ReceiveStatus.SUCCESS, ReceiveType.FILE_RECEIVE));
+//            ctx.writeAndFlush(buildMessage(ReceiveStatus.CONTINUE, ReceiveType.FILE_RECEIVE));
         }
     }
 
@@ -45,7 +45,7 @@ public class FileReceiveClientHandler extends SimpleChannelInboundHandler<Connec
         logger.info("文件接收 客户端启动");
         channel = new RandomAccessFile(FileHelper.makeTmpFile("zip"), "rw").getChannel();
         spawnTime = System.currentTimeMillis();
-//        ctx.writeAndFlush(buildMessage(ReceiveStatus.SUCCESS, ReceiveType.FILE_RECEIVE));
+        ctx.writeAndFlush(buildMessage(ReceiveStatus.CONTINUE, ReceiveType.FILE_RECEIVE));
     }
 
     private ConnectionMessage buildMessage(ReceiveStatus status, ReceiveType type) {

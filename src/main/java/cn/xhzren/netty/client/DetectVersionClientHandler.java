@@ -1,7 +1,10 @@
 package cn.xhzren.netty.client;
 
-import cn.xhzren.nettytest.proto.LoginProto.*;
-import cn.xhzren.nettytest.proto.LoginProto.ConnectionMessage.*;
+import cn.xhzren.netty.servers.handlers.FileReceiveServerHandler;
+import cn.xhzren.netty.entity.LoginProto.*;
+import cn.xhzren.netty.entity.LoginProto.ConnectionMessage.*;
+import cn.xhzren.netty.util.JsonUtils;
+import cn.xhzren.netty.util.MessageBuild;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import org.slf4j.Logger;
@@ -13,7 +16,11 @@ public class DetectVersionClientHandler extends SimpleChannelInboundHandler<Conn
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, ConnectionMessage msg) {
-        if(msg.getDataType() == DataType.UpdateAsset) {
+
+        if(msg.getDataType() != DataType.UpdateAsset) {
+            ctx.fireChannelRead(msg);
+            return;
+        }
             if(!(msg.getUpdateAsset().getVersion() == 2.0f)){
                 logger.info("需要update assets: {}", msg.getUpdateAsset());
                 ConnectionMessage message = ConnectionMessage.
@@ -22,11 +29,16 @@ public class DetectVersionClientHandler extends SimpleChannelInboundHandler<Conn
                                 .setRequestType(RequestInfo.RequestType.UPDATE_ASSESTS)
                                 .build()).build();
                 ctx.writeAndFlush(message);
-                ctx.pipeline().addLast(new FileReceiveClientHandler());
+                ctx.pipeline().addAfter(this.getClass().getName(), FileReceiveServerHandler.class.getName(),
+                        new FileReceiveClientHandler());
+            }else {
+                //not update
+                String token = JsonUtils.localData.getString("token");
+                if(!token.isEmpty()) {
+                    ConnectionMessage message = MessageBuild.requestInfoBuild(token, RequestInfo.RequestType.VERIFY_TOKEN).build();
+                    ctx.writeAndFlush(message);
+                }
             }
-        }else {
-            ctx.fireChannelRead(msg);
-        }
     }
 
     @Override

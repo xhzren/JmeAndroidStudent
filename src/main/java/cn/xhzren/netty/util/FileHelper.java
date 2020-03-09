@@ -1,4 +1,4 @@
-package cn.xhzren.netty.util;
+package cn.xhzren.nettytest.connection.util;
 
 import com.sun.javafx.tk.FileChooserType;
 
@@ -17,12 +17,5 @@ public class FileHelper {
             e.printStackTrace();
         }
         return file;
-    }
-
-    public static void getKeyMapping() {
-         }
-
-    public static void main(String[] args) throws Exception {
-
     }
 }
