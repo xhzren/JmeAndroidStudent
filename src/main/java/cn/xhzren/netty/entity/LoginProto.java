@@ -30,19 +30,19 @@ public final class LoginProto {
     cn.xhzren.netty.entity.LoginProto.ConnectionMessage.DataType getDataType();
 
     /**
-     * <code>optional .cn.xhzren.netty.entity.Login login = 2;</code>
-     * @return Whether the login field is set.
+     * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 2;</code>
+     * @return Whether the requestInfo field is set.
      */
-    boolean hasLogin();
+    boolean hasRequestInfo();
     /**
-     * <code>optional .cn.xhzren.netty.entity.Login login = 2;</code>
-     * @return The login.
+     * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 2;</code>
+     * @return The requestInfo.
      */
-    cn.xhzren.netty.entity.LoginProto.Login getLogin();
+    cn.xhzren.netty.entity.LoginProto.RequestInfo getRequestInfo();
     /**
-     * <code>optional .cn.xhzren.netty.entity.Login login = 2;</code>
+     * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 2;</code>
      */
-    cn.xhzren.netty.entity.LoginProto.LoginOrBuilder getLoginOrBuilder();
+    cn.xhzren.netty.entity.LoginProto.RequestInfoOrBuilder getRequestInfoOrBuilder();
 
     /**
      * <code>optional .cn.xhzren.netty.entity.DetectVersion detect_version = 3;</code>
@@ -150,21 +150,6 @@ public final class LoginProto {
     cn.xhzren.netty.entity.LoginProto.PlayerInfoOrBuilder getPlayerInfoOrBuilder();
 
     /**
-     * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 10;</code>
-     * @return Whether the requestInfo field is set.
-     */
-    boolean hasRequestInfo();
-    /**
-     * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 10;</code>
-     * @return The requestInfo.
-     */
-    cn.xhzren.netty.entity.LoginProto.RequestInfo getRequestInfo();
-    /**
-     * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 10;</code>
-     */
-    cn.xhzren.netty.entity.LoginProto.RequestInfoOrBuilder getRequestInfoOrBuilder();
-
-    /**
      * <code>optional .cn.xhzren.netty.entity.TaskInfo task_info = 11;</code>
      * @return Whether the taskInfo field is set.
      */
@@ -178,6 +163,21 @@ public final class LoginProto {
      * <code>optional .cn.xhzren.netty.entity.TaskInfo task_info = 11;</code>
      */
     cn.xhzren.netty.entity.LoginProto.TaskInfoOrBuilder getTaskInfoOrBuilder();
+
+    /**
+     * <code>optional .cn.xhzren.netty.entity.Login login = 12;</code>
+     * @return Whether the login field is set.
+     */
+    boolean hasLogin();
+    /**
+     * <code>optional .cn.xhzren.netty.entity.Login login = 12;</code>
+     * @return The login.
+     */
+    cn.xhzren.netty.entity.LoginProto.Login getLogin();
+    /**
+     * <code>optional .cn.xhzren.netty.entity.Login login = 12;</code>
+     */
+    cn.xhzren.netty.entity.LoginProto.LoginOrBuilder getLoginOrBuilder();
 
     public cn.xhzren.netty.entity.LoginProto.ConnectionMessage.DataBodyCase getDataBodyCase();
   }
@@ -194,7 +194,7 @@ public final class LoginProto {
       super(builder);
     }
     private ConnectionMessage() {
-      dataType_ = 1;
+      dataType_ = 0;
     }
 
     @java.lang.Override
@@ -241,17 +241,16 @@ public final class LoginProto {
               break;
             }
             case 18: {
-              cn.xhzren.netty.entity.LoginProto.Login.Builder subBuilder = null;
-              if (dataBodyCase_ == 2) {
-                subBuilder = ((cn.xhzren.netty.entity.LoginProto.Login) dataBody_).toBuilder();
+              cn.xhzren.netty.entity.LoginProto.RequestInfo.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000002) != 0)) {
+                subBuilder = requestInfo_.toBuilder();
               }
-              dataBody_ =
-                  input.readMessage(cn.xhzren.netty.entity.LoginProto.Login.PARSER, extensionRegistry);
+              requestInfo_ = input.readMessage(cn.xhzren.netty.entity.LoginProto.RequestInfo.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((cn.xhzren.netty.entity.LoginProto.Login) dataBody_);
-                dataBody_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(requestInfo_);
+                requestInfo_ = subBuilder.buildPartial();
               }
-              dataBodyCase_ = 2;
+              bitField0_ |= 0x00000002;
               break;
             }
             case 26: {
@@ -352,20 +351,6 @@ public final class LoginProto {
               dataBodyCase_ = 9;
               break;
             }
-            case 82: {
-              cn.xhzren.netty.entity.LoginProto.RequestInfo.Builder subBuilder = null;
-              if (dataBodyCase_ == 10) {
-                subBuilder = ((cn.xhzren.netty.entity.LoginProto.RequestInfo) dataBody_).toBuilder();
-              }
-              dataBody_ =
-                  input.readMessage(cn.xhzren.netty.entity.LoginProto.RequestInfo.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((cn.xhzren.netty.entity.LoginProto.RequestInfo) dataBody_);
-                dataBody_ = subBuilder.buildPartial();
-              }
-              dataBodyCase_ = 10;
-              break;
-            }
             case 90: {
               cn.xhzren.netty.entity.LoginProto.TaskInfo.Builder subBuilder = null;
               if (dataBodyCase_ == 11) {
@@ -378,6 +363,20 @@ public final class LoginProto {
                 dataBody_ = subBuilder.buildPartial();
               }
               dataBodyCase_ = 11;
+              break;
+            }
+            case 98: {
+              cn.xhzren.netty.entity.LoginProto.Login.Builder subBuilder = null;
+              if (dataBodyCase_ == 12) {
+                subBuilder = ((cn.xhzren.netty.entity.LoginProto.Login) dataBody_).toBuilder();
+              }
+              dataBody_ =
+                  input.readMessage(cn.xhzren.netty.entity.LoginProto.Login.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((cn.xhzren.netty.entity.LoginProto.Login) dataBody_);
+                dataBody_ = subBuilder.buildPartial();
+              }
+              dataBodyCase_ = 12;
               break;
             }
             default: {
@@ -418,95 +417,95 @@ public final class LoginProto {
     public enum DataType
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>LoginType = 1;</code>
+       * <code>LoginType = 0;</code>
        */
-      LoginType(1),
+      LoginType(0),
       /**
-       * <code>DetectVersion = 2;</code>
+       * <code>DetectVersion = 1;</code>
        */
-      DetectVersion(2),
+      DetectVersion(1),
       /**
-       * <code>UpdateAsset = 3;</code>
+       * <code>UpdateAsset = 2;</code>
        */
-      UpdateAsset(3),
+      UpdateAsset(2),
       /**
-       * <code>Position = 4;</code>
+       * <code>Position = 3;</code>
        */
-      Position(4),
+      Position(3),
       /**
-       * <code>FileReceive = 5;</code>
+       * <code>FileReceive = 4;</code>
        */
-      FileReceive(5),
+      FileReceive(4),
       /**
-       * <code>ReceiveInfo = 6;</code>
+       * <code>ReceiveInfo = 5;</code>
        */
-      ReceiveInfo(6),
+      ReceiveInfo(5),
       /**
-       * <code>RequestInfo = 7;</code>
+       * <code>RequestInfo = 6;</code>
        */
-      RequestInfo(7),
+      RequestInfo(6),
       /**
-       * <code>PlayerList = 8;</code>
+       * <code>PlayerList = 7;</code>
        */
-      PlayerList(8),
+      PlayerList(7),
       /**
-       * <code>PlayerInfo = 9;</code>
+       * <code>PlayerInfo = 8;</code>
        */
-      PlayerInfo(9),
+      PlayerInfo(8),
       /**
-       * <code>TaskInfo = 10;</code>
+       * <code>TaskInfo = 9;</code>
        */
-      TaskInfo(10),
+      TaskInfo(9),
       /**
-       * <code>Login = 11;</code>
+       * <code>Login = 10;</code>
        */
-      Login(11),
+      Login(10),
       ;
 
       /**
-       * <code>LoginType = 1;</code>
+       * <code>LoginType = 0;</code>
        */
-      public static final int LoginType_VALUE = 1;
+      public static final int LoginType_VALUE = 0;
       /**
-       * <code>DetectVersion = 2;</code>
+       * <code>DetectVersion = 1;</code>
        */
-      public static final int DetectVersion_VALUE = 2;
+      public static final int DetectVersion_VALUE = 1;
       /**
-       * <code>UpdateAsset = 3;</code>
+       * <code>UpdateAsset = 2;</code>
        */
-      public static final int UpdateAsset_VALUE = 3;
+      public static final int UpdateAsset_VALUE = 2;
       /**
-       * <code>Position = 4;</code>
+       * <code>Position = 3;</code>
        */
-      public static final int Position_VALUE = 4;
+      public static final int Position_VALUE = 3;
       /**
-       * <code>FileReceive = 5;</code>
+       * <code>FileReceive = 4;</code>
        */
-      public static final int FileReceive_VALUE = 5;
+      public static final int FileReceive_VALUE = 4;
       /**
-       * <code>ReceiveInfo = 6;</code>
+       * <code>ReceiveInfo = 5;</code>
        */
-      public static final int ReceiveInfo_VALUE = 6;
+      public static final int ReceiveInfo_VALUE = 5;
       /**
-       * <code>RequestInfo = 7;</code>
+       * <code>RequestInfo = 6;</code>
        */
-      public static final int RequestInfo_VALUE = 7;
+      public static final int RequestInfo_VALUE = 6;
       /**
-       * <code>PlayerList = 8;</code>
+       * <code>PlayerList = 7;</code>
        */
-      public static final int PlayerList_VALUE = 8;
+      public static final int PlayerList_VALUE = 7;
       /**
-       * <code>PlayerInfo = 9;</code>
+       * <code>PlayerInfo = 8;</code>
        */
-      public static final int PlayerInfo_VALUE = 9;
+      public static final int PlayerInfo_VALUE = 8;
       /**
-       * <code>TaskInfo = 10;</code>
+       * <code>TaskInfo = 9;</code>
        */
-      public static final int TaskInfo_VALUE = 10;
+      public static final int TaskInfo_VALUE = 9;
       /**
-       * <code>Login = 11;</code>
+       * <code>Login = 10;</code>
        */
-      public static final int Login_VALUE = 11;
+      public static final int Login_VALUE = 10;
 
 
       public final int getNumber() {
@@ -529,17 +528,17 @@ public final class LoginProto {
        */
       public static DataType forNumber(int value) {
         switch (value) {
-          case 1: return LoginType;
-          case 2: return DetectVersion;
-          case 3: return UpdateAsset;
-          case 4: return Position;
-          case 5: return FileReceive;
-          case 6: return ReceiveInfo;
-          case 7: return RequestInfo;
-          case 8: return PlayerList;
-          case 9: return PlayerInfo;
-          case 10: return TaskInfo;
-          case 11: return Login;
+          case 0: return LoginType;
+          case 1: return DetectVersion;
+          case 2: return UpdateAsset;
+          case 3: return Position;
+          case 4: return FileReceive;
+          case 5: return ReceiveInfo;
+          case 6: return RequestInfo;
+          case 7: return PlayerList;
+          case 8: return PlayerInfo;
+          case 9: return TaskInfo;
+          case 10: return Login;
           default: return null;
         }
       }
@@ -595,7 +594,6 @@ public final class LoginProto {
     public enum DataBodyCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      LOGIN(2),
       DETECT_VERSION(3),
       UPDATE_ASSET(4),
       POSITION(5),
@@ -603,8 +601,8 @@ public final class LoginProto {
       RECEIVE_INFO(7),
       PLAYER_LIST(8),
       PLAYER_INFO(9),
-      REQUEST_INFO(10),
       TASK_INFO(11),
+      LOGIN(12),
       DATABODY_NOT_SET(0);
       private final int value;
       private DataBodyCase(int value) {
@@ -622,7 +620,6 @@ public final class LoginProto {
 
       public static DataBodyCase forNumber(int value) {
         switch (value) {
-          case 2: return LOGIN;
           case 3: return DETECT_VERSION;
           case 4: return UPDATE_ASSET;
           case 5: return POSITION;
@@ -630,8 +627,8 @@ public final class LoginProto {
           case 7: return RECEIVE_INFO;
           case 8: return PLAYER_LIST;
           case 9: return PLAYER_INFO;
-          case 10: return REQUEST_INFO;
           case 11: return TASK_INFO;
+          case 12: return LOGIN;
           case 0: return DATABODY_NOT_SET;
           default: return null;
         }
@@ -666,32 +663,27 @@ public final class LoginProto {
       return result == null ? cn.xhzren.netty.entity.LoginProto.ConnectionMessage.DataType.LoginType : result;
     }
 
-    public static final int LOGIN_FIELD_NUMBER = 2;
+    public static final int REQUEST_INFO_FIELD_NUMBER = 2;
+    private cn.xhzren.netty.entity.LoginProto.RequestInfo requestInfo_;
     /**
-     * <code>optional .cn.xhzren.netty.entity.Login login = 2;</code>
-     * @return Whether the login field is set.
+     * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 2;</code>
+     * @return Whether the requestInfo field is set.
      */
-    public boolean hasLogin() {
-      return dataBodyCase_ == 2;
+    public boolean hasRequestInfo() {
+      return ((bitField0_ & 0x00000002) != 0);
     }
     /**
-     * <code>optional .cn.xhzren.netty.entity.Login login = 2;</code>
-     * @return The login.
+     * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 2;</code>
+     * @return The requestInfo.
      */
-    public cn.xhzren.netty.entity.LoginProto.Login getLogin() {
-      if (dataBodyCase_ == 2) {
-         return (cn.xhzren.netty.entity.LoginProto.Login) dataBody_;
-      }
-      return cn.xhzren.netty.entity.LoginProto.Login.getDefaultInstance();
+    public cn.xhzren.netty.entity.LoginProto.RequestInfo getRequestInfo() {
+      return requestInfo_ == null ? cn.xhzren.netty.entity.LoginProto.RequestInfo.getDefaultInstance() : requestInfo_;
     }
     /**
-     * <code>optional .cn.xhzren.netty.entity.Login login = 2;</code>
+     * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 2;</code>
      */
-    public cn.xhzren.netty.entity.LoginProto.LoginOrBuilder getLoginOrBuilder() {
-      if (dataBodyCase_ == 2) {
-         return (cn.xhzren.netty.entity.LoginProto.Login) dataBody_;
-      }
-      return cn.xhzren.netty.entity.LoginProto.Login.getDefaultInstance();
+    public cn.xhzren.netty.entity.LoginProto.RequestInfoOrBuilder getRequestInfoOrBuilder() {
+      return requestInfo_ == null ? cn.xhzren.netty.entity.LoginProto.RequestInfo.getDefaultInstance() : requestInfo_;
     }
 
     public static final int DETECT_VERSION_FIELD_NUMBER = 3;
@@ -890,34 +882,6 @@ public final class LoginProto {
       return cn.xhzren.netty.entity.LoginProto.PlayerInfo.getDefaultInstance();
     }
 
-    public static final int REQUEST_INFO_FIELD_NUMBER = 10;
-    /**
-     * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 10;</code>
-     * @return Whether the requestInfo field is set.
-     */
-    public boolean hasRequestInfo() {
-      return dataBodyCase_ == 10;
-    }
-    /**
-     * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 10;</code>
-     * @return The requestInfo.
-     */
-    public cn.xhzren.netty.entity.LoginProto.RequestInfo getRequestInfo() {
-      if (dataBodyCase_ == 10) {
-         return (cn.xhzren.netty.entity.LoginProto.RequestInfo) dataBody_;
-      }
-      return cn.xhzren.netty.entity.LoginProto.RequestInfo.getDefaultInstance();
-    }
-    /**
-     * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 10;</code>
-     */
-    public cn.xhzren.netty.entity.LoginProto.RequestInfoOrBuilder getRequestInfoOrBuilder() {
-      if (dataBodyCase_ == 10) {
-         return (cn.xhzren.netty.entity.LoginProto.RequestInfo) dataBody_;
-      }
-      return cn.xhzren.netty.entity.LoginProto.RequestInfo.getDefaultInstance();
-    }
-
     public static final int TASK_INFO_FIELD_NUMBER = 11;
     /**
      * <code>optional .cn.xhzren.netty.entity.TaskInfo task_info = 11;</code>
@@ -946,6 +910,34 @@ public final class LoginProto {
       return cn.xhzren.netty.entity.LoginProto.TaskInfo.getDefaultInstance();
     }
 
+    public static final int LOGIN_FIELD_NUMBER = 12;
+    /**
+     * <code>optional .cn.xhzren.netty.entity.Login login = 12;</code>
+     * @return Whether the login field is set.
+     */
+    public boolean hasLogin() {
+      return dataBodyCase_ == 12;
+    }
+    /**
+     * <code>optional .cn.xhzren.netty.entity.Login login = 12;</code>
+     * @return The login.
+     */
+    public cn.xhzren.netty.entity.LoginProto.Login getLogin() {
+      if (dataBodyCase_ == 12) {
+         return (cn.xhzren.netty.entity.LoginProto.Login) dataBody_;
+      }
+      return cn.xhzren.netty.entity.LoginProto.Login.getDefaultInstance();
+    }
+    /**
+     * <code>optional .cn.xhzren.netty.entity.Login login = 12;</code>
+     */
+    public cn.xhzren.netty.entity.LoginProto.LoginOrBuilder getLoginOrBuilder() {
+      if (dataBodyCase_ == 12) {
+         return (cn.xhzren.netty.entity.LoginProto.Login) dataBody_;
+      }
+      return cn.xhzren.netty.entity.LoginProto.Login.getDefaultInstance();
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -967,8 +959,8 @@ public final class LoginProto {
       if (((bitField0_ & 0x00000001) != 0)) {
         output.writeEnum(1, dataType_);
       }
-      if (dataBodyCase_ == 2) {
-        output.writeMessage(2, (cn.xhzren.netty.entity.LoginProto.Login) dataBody_);
+      if (((bitField0_ & 0x00000002) != 0)) {
+        output.writeMessage(2, getRequestInfo());
       }
       if (dataBodyCase_ == 3) {
         output.writeMessage(3, (cn.xhzren.netty.entity.LoginProto.DetectVersion) dataBody_);
@@ -991,11 +983,11 @@ public final class LoginProto {
       if (dataBodyCase_ == 9) {
         output.writeMessage(9, (cn.xhzren.netty.entity.LoginProto.PlayerInfo) dataBody_);
       }
-      if (dataBodyCase_ == 10) {
-        output.writeMessage(10, (cn.xhzren.netty.entity.LoginProto.RequestInfo) dataBody_);
-      }
       if (dataBodyCase_ == 11) {
         output.writeMessage(11, (cn.xhzren.netty.entity.LoginProto.TaskInfo) dataBody_);
+      }
+      if (dataBodyCase_ == 12) {
+        output.writeMessage(12, (cn.xhzren.netty.entity.LoginProto.Login) dataBody_);
       }
       unknownFields.writeTo(output);
     }
@@ -1010,9 +1002,9 @@ public final class LoginProto {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, dataType_);
       }
-      if (dataBodyCase_ == 2) {
+      if (((bitField0_ & 0x00000002) != 0)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, (cn.xhzren.netty.entity.LoginProto.Login) dataBody_);
+          .computeMessageSize(2, getRequestInfo());
       }
       if (dataBodyCase_ == 3) {
         size += com.google.protobuf.CodedOutputStream
@@ -1042,13 +1034,13 @@ public final class LoginProto {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(9, (cn.xhzren.netty.entity.LoginProto.PlayerInfo) dataBody_);
       }
-      if (dataBodyCase_ == 10) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, (cn.xhzren.netty.entity.LoginProto.RequestInfo) dataBody_);
-      }
       if (dataBodyCase_ == 11) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(11, (cn.xhzren.netty.entity.LoginProto.TaskInfo) dataBody_);
+      }
+      if (dataBodyCase_ == 12) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, (cn.xhzren.netty.entity.LoginProto.Login) dataBody_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1069,12 +1061,13 @@ public final class LoginProto {
       if (hasDataType()) {
         if (dataType_ != other.dataType_) return false;
       }
+      if (hasRequestInfo() != other.hasRequestInfo()) return false;
+      if (hasRequestInfo()) {
+        if (!getRequestInfo()
+            .equals(other.getRequestInfo())) return false;
+      }
       if (!getDataBodyCase().equals(other.getDataBodyCase())) return false;
       switch (dataBodyCase_) {
-        case 2:
-          if (!getLogin()
-              .equals(other.getLogin())) return false;
-          break;
         case 3:
           if (!getDetectVersion()
               .equals(other.getDetectVersion())) return false;
@@ -1103,13 +1096,13 @@ public final class LoginProto {
           if (!getPlayerInfo()
               .equals(other.getPlayerInfo())) return false;
           break;
-        case 10:
-          if (!getRequestInfo()
-              .equals(other.getRequestInfo())) return false;
-          break;
         case 11:
           if (!getTaskInfo()
               .equals(other.getTaskInfo())) return false;
+          break;
+        case 12:
+          if (!getLogin()
+              .equals(other.getLogin())) return false;
           break;
         case 0:
         default:
@@ -1129,11 +1122,11 @@ public final class LoginProto {
         hash = (37 * hash) + DATA_TYPE_FIELD_NUMBER;
         hash = (53 * hash) + dataType_;
       }
+      if (hasRequestInfo()) {
+        hash = (37 * hash) + REQUEST_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getRequestInfo().hashCode();
+      }
       switch (dataBodyCase_) {
-        case 2:
-          hash = (37 * hash) + LOGIN_FIELD_NUMBER;
-          hash = (53 * hash) + getLogin().hashCode();
-          break;
         case 3:
           hash = (37 * hash) + DETECT_VERSION_FIELD_NUMBER;
           hash = (53 * hash) + getDetectVersion().hashCode();
@@ -1162,13 +1155,13 @@ public final class LoginProto {
           hash = (37 * hash) + PLAYER_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getPlayerInfo().hashCode();
           break;
-        case 10:
-          hash = (37 * hash) + REQUEST_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getRequestInfo().hashCode();
-          break;
         case 11:
           hash = (37 * hash) + TASK_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getTaskInfo().hashCode();
+          break;
+        case 12:
+          hash = (37 * hash) + LOGIN_FIELD_NUMBER;
+          hash = (53 * hash) + getLogin().hashCode();
           break;
         case 0:
         default:
@@ -1301,13 +1294,20 @@ public final class LoginProto {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getRequestInfoFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dataType_ = 1;
+        dataType_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
+        if (requestInfoBuilder_ == null) {
+          requestInfo_ = null;
+        } else {
+          requestInfoBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
         dataBodyCase_ = 0;
         dataBody_ = null;
         return this;
@@ -1342,12 +1342,13 @@ public final class LoginProto {
           to_bitField0_ |= 0x00000001;
         }
         result.dataType_ = dataType_;
-        if (dataBodyCase_ == 2) {
-          if (loginBuilder_ == null) {
-            result.dataBody_ = dataBody_;
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          if (requestInfoBuilder_ == null) {
+            result.requestInfo_ = requestInfo_;
           } else {
-            result.dataBody_ = loginBuilder_.build();
+            result.requestInfo_ = requestInfoBuilder_.build();
           }
+          to_bitField0_ |= 0x00000002;
         }
         if (dataBodyCase_ == 3) {
           if (detectVersionBuilder_ == null) {
@@ -1398,18 +1399,18 @@ public final class LoginProto {
             result.dataBody_ = playerInfoBuilder_.build();
           }
         }
-        if (dataBodyCase_ == 10) {
-          if (requestInfoBuilder_ == null) {
-            result.dataBody_ = dataBody_;
-          } else {
-            result.dataBody_ = requestInfoBuilder_.build();
-          }
-        }
         if (dataBodyCase_ == 11) {
           if (taskInfoBuilder_ == null) {
             result.dataBody_ = dataBody_;
           } else {
             result.dataBody_ = taskInfoBuilder_.build();
+          }
+        }
+        if (dataBodyCase_ == 12) {
+          if (loginBuilder_ == null) {
+            result.dataBody_ = dataBody_;
+          } else {
+            result.dataBody_ = loginBuilder_.build();
           }
         }
         result.bitField0_ = to_bitField0_;
@@ -1465,11 +1466,10 @@ public final class LoginProto {
         if (other.hasDataType()) {
           setDataType(other.getDataType());
         }
+        if (other.hasRequestInfo()) {
+          mergeRequestInfo(other.getRequestInfo());
+        }
         switch (other.getDataBodyCase()) {
-          case LOGIN: {
-            mergeLogin(other.getLogin());
-            break;
-          }
           case DETECT_VERSION: {
             mergeDetectVersion(other.getDetectVersion());
             break;
@@ -1498,12 +1498,12 @@ public final class LoginProto {
             mergePlayerInfo(other.getPlayerInfo());
             break;
           }
-          case REQUEST_INFO: {
-            mergeRequestInfo(other.getRequestInfo());
-            break;
-          }
           case TASK_INFO: {
             mergeTaskInfo(other.getTaskInfo());
+            break;
+          }
+          case LOGIN: {
+            mergeLogin(other.getLogin());
             break;
           }
           case DATABODY_NOT_SET: {
@@ -1558,7 +1558,7 @@ public final class LoginProto {
 
       private int bitField0_;
 
-      private int dataType_ = 1;
+      private int dataType_ = 0;
       /**
        * <code>required .cn.xhzren.netty.entity.ConnectionMessage.DataType data_type = 1;</code>
        * @return Whether the dataType field is set.
@@ -1595,147 +1595,129 @@ public final class LoginProto {
        */
       public Builder clearDataType() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        dataType_ = 1;
+        dataType_ = 0;
         onChanged();
         return this;
       }
 
+      private cn.xhzren.netty.entity.LoginProto.RequestInfo requestInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          cn.xhzren.netty.entity.LoginProto.Login, cn.xhzren.netty.entity.LoginProto.Login.Builder, cn.xhzren.netty.entity.LoginProto.LoginOrBuilder> loginBuilder_;
+          cn.xhzren.netty.entity.LoginProto.RequestInfo, cn.xhzren.netty.entity.LoginProto.RequestInfo.Builder, cn.xhzren.netty.entity.LoginProto.RequestInfoOrBuilder> requestInfoBuilder_;
       /**
-       * <code>optional .cn.xhzren.netty.entity.Login login = 2;</code>
-       * @return Whether the login field is set.
+       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 2;</code>
+       * @return Whether the requestInfo field is set.
        */
-      public boolean hasLogin() {
-        return dataBodyCase_ == 2;
+      public boolean hasRequestInfo() {
+        return ((bitField0_ & 0x00000002) != 0);
       }
       /**
-       * <code>optional .cn.xhzren.netty.entity.Login login = 2;</code>
-       * @return The login.
+       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 2;</code>
+       * @return The requestInfo.
        */
-      public cn.xhzren.netty.entity.LoginProto.Login getLogin() {
-        if (loginBuilder_ == null) {
-          if (dataBodyCase_ == 2) {
-            return (cn.xhzren.netty.entity.LoginProto.Login) dataBody_;
-          }
-          return cn.xhzren.netty.entity.LoginProto.Login.getDefaultInstance();
+      public cn.xhzren.netty.entity.LoginProto.RequestInfo getRequestInfo() {
+        if (requestInfoBuilder_ == null) {
+          return requestInfo_ == null ? cn.xhzren.netty.entity.LoginProto.RequestInfo.getDefaultInstance() : requestInfo_;
         } else {
-          if (dataBodyCase_ == 2) {
-            return loginBuilder_.getMessage();
-          }
-          return cn.xhzren.netty.entity.LoginProto.Login.getDefaultInstance();
+          return requestInfoBuilder_.getMessage();
         }
       }
       /**
-       * <code>optional .cn.xhzren.netty.entity.Login login = 2;</code>
+       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 2;</code>
        */
-      public Builder setLogin(cn.xhzren.netty.entity.LoginProto.Login value) {
-        if (loginBuilder_ == null) {
+      public Builder setRequestInfo(cn.xhzren.netty.entity.LoginProto.RequestInfo value) {
+        if (requestInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          dataBody_ = value;
+          requestInfo_ = value;
           onChanged();
         } else {
-          loginBuilder_.setMessage(value);
+          requestInfoBuilder_.setMessage(value);
         }
-        dataBodyCase_ = 2;
+        bitField0_ |= 0x00000002;
         return this;
       }
       /**
-       * <code>optional .cn.xhzren.netty.entity.Login login = 2;</code>
+       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 2;</code>
        */
-      public Builder setLogin(
-          cn.xhzren.netty.entity.LoginProto.Login.Builder builderForValue) {
-        if (loginBuilder_ == null) {
-          dataBody_ = builderForValue.build();
+      public Builder setRequestInfo(
+          cn.xhzren.netty.entity.LoginProto.RequestInfo.Builder builderForValue) {
+        if (requestInfoBuilder_ == null) {
+          requestInfo_ = builderForValue.build();
           onChanged();
         } else {
-          loginBuilder_.setMessage(builderForValue.build());
+          requestInfoBuilder_.setMessage(builderForValue.build());
         }
-        dataBodyCase_ = 2;
+        bitField0_ |= 0x00000002;
         return this;
       }
       /**
-       * <code>optional .cn.xhzren.netty.entity.Login login = 2;</code>
+       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 2;</code>
        */
-      public Builder mergeLogin(cn.xhzren.netty.entity.LoginProto.Login value) {
-        if (loginBuilder_ == null) {
-          if (dataBodyCase_ == 2 &&
-              dataBody_ != cn.xhzren.netty.entity.LoginProto.Login.getDefaultInstance()) {
-            dataBody_ = cn.xhzren.netty.entity.LoginProto.Login.newBuilder((cn.xhzren.netty.entity.LoginProto.Login) dataBody_)
-                .mergeFrom(value).buildPartial();
+      public Builder mergeRequestInfo(cn.xhzren.netty.entity.LoginProto.RequestInfo value) {
+        if (requestInfoBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0) &&
+              requestInfo_ != null &&
+              requestInfo_ != cn.xhzren.netty.entity.LoginProto.RequestInfo.getDefaultInstance()) {
+            requestInfo_ =
+              cn.xhzren.netty.entity.LoginProto.RequestInfo.newBuilder(requestInfo_).mergeFrom(value).buildPartial();
           } else {
-            dataBody_ = value;
+            requestInfo_ = value;
           }
           onChanged();
         } else {
-          if (dataBodyCase_ == 2) {
-            loginBuilder_.mergeFrom(value);
-          }
-          loginBuilder_.setMessage(value);
+          requestInfoBuilder_.mergeFrom(value);
         }
-        dataBodyCase_ = 2;
+        bitField0_ |= 0x00000002;
         return this;
       }
       /**
-       * <code>optional .cn.xhzren.netty.entity.Login login = 2;</code>
+       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 2;</code>
        */
-      public Builder clearLogin() {
-        if (loginBuilder_ == null) {
-          if (dataBodyCase_ == 2) {
-            dataBodyCase_ = 0;
-            dataBody_ = null;
-            onChanged();
-          }
+      public Builder clearRequestInfo() {
+        if (requestInfoBuilder_ == null) {
+          requestInfo_ = null;
+          onChanged();
         } else {
-          if (dataBodyCase_ == 2) {
-            dataBodyCase_ = 0;
-            dataBody_ = null;
-          }
-          loginBuilder_.clear();
+          requestInfoBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
       /**
-       * <code>optional .cn.xhzren.netty.entity.Login login = 2;</code>
+       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 2;</code>
        */
-      public cn.xhzren.netty.entity.LoginProto.Login.Builder getLoginBuilder() {
-        return getLoginFieldBuilder().getBuilder();
+      public cn.xhzren.netty.entity.LoginProto.RequestInfo.Builder getRequestInfoBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getRequestInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .cn.xhzren.netty.entity.Login login = 2;</code>
+       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 2;</code>
        */
-      public cn.xhzren.netty.entity.LoginProto.LoginOrBuilder getLoginOrBuilder() {
-        if ((dataBodyCase_ == 2) && (loginBuilder_ != null)) {
-          return loginBuilder_.getMessageOrBuilder();
+      public cn.xhzren.netty.entity.LoginProto.RequestInfoOrBuilder getRequestInfoOrBuilder() {
+        if (requestInfoBuilder_ != null) {
+          return requestInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (dataBodyCase_ == 2) {
-            return (cn.xhzren.netty.entity.LoginProto.Login) dataBody_;
-          }
-          return cn.xhzren.netty.entity.LoginProto.Login.getDefaultInstance();
+          return requestInfo_ == null ?
+              cn.xhzren.netty.entity.LoginProto.RequestInfo.getDefaultInstance() : requestInfo_;
         }
       }
       /**
-       * <code>optional .cn.xhzren.netty.entity.Login login = 2;</code>
+       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          cn.xhzren.netty.entity.LoginProto.Login, cn.xhzren.netty.entity.LoginProto.Login.Builder, cn.xhzren.netty.entity.LoginProto.LoginOrBuilder> 
-          getLoginFieldBuilder() {
-        if (loginBuilder_ == null) {
-          if (!(dataBodyCase_ == 2)) {
-            dataBody_ = cn.xhzren.netty.entity.LoginProto.Login.getDefaultInstance();
-          }
-          loginBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              cn.xhzren.netty.entity.LoginProto.Login, cn.xhzren.netty.entity.LoginProto.Login.Builder, cn.xhzren.netty.entity.LoginProto.LoginOrBuilder>(
-                  (cn.xhzren.netty.entity.LoginProto.Login) dataBody_,
+          cn.xhzren.netty.entity.LoginProto.RequestInfo, cn.xhzren.netty.entity.LoginProto.RequestInfo.Builder, cn.xhzren.netty.entity.LoginProto.RequestInfoOrBuilder> 
+          getRequestInfoFieldBuilder() {
+        if (requestInfoBuilder_ == null) {
+          requestInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cn.xhzren.netty.entity.LoginProto.RequestInfo, cn.xhzren.netty.entity.LoginProto.RequestInfo.Builder, cn.xhzren.netty.entity.LoginProto.RequestInfoOrBuilder>(
+                  getRequestInfo(),
                   getParentForChildren(),
                   isClean());
-          dataBody_ = null;
+          requestInfo_ = null;
         }
-        dataBodyCase_ = 2;
-        onChanged();;
-        return loginBuilder_;
+        return requestInfoBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -2705,144 +2687,6 @@ public final class LoginProto {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          cn.xhzren.netty.entity.LoginProto.RequestInfo, cn.xhzren.netty.entity.LoginProto.RequestInfo.Builder, cn.xhzren.netty.entity.LoginProto.RequestInfoOrBuilder> requestInfoBuilder_;
-      /**
-       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 10;</code>
-       * @return Whether the requestInfo field is set.
-       */
-      public boolean hasRequestInfo() {
-        return dataBodyCase_ == 10;
-      }
-      /**
-       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 10;</code>
-       * @return The requestInfo.
-       */
-      public cn.xhzren.netty.entity.LoginProto.RequestInfo getRequestInfo() {
-        if (requestInfoBuilder_ == null) {
-          if (dataBodyCase_ == 10) {
-            return (cn.xhzren.netty.entity.LoginProto.RequestInfo) dataBody_;
-          }
-          return cn.xhzren.netty.entity.LoginProto.RequestInfo.getDefaultInstance();
-        } else {
-          if (dataBodyCase_ == 10) {
-            return requestInfoBuilder_.getMessage();
-          }
-          return cn.xhzren.netty.entity.LoginProto.RequestInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 10;</code>
-       */
-      public Builder setRequestInfo(cn.xhzren.netty.entity.LoginProto.RequestInfo value) {
-        if (requestInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          dataBody_ = value;
-          onChanged();
-        } else {
-          requestInfoBuilder_.setMessage(value);
-        }
-        dataBodyCase_ = 10;
-        return this;
-      }
-      /**
-       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 10;</code>
-       */
-      public Builder setRequestInfo(
-          cn.xhzren.netty.entity.LoginProto.RequestInfo.Builder builderForValue) {
-        if (requestInfoBuilder_ == null) {
-          dataBody_ = builderForValue.build();
-          onChanged();
-        } else {
-          requestInfoBuilder_.setMessage(builderForValue.build());
-        }
-        dataBodyCase_ = 10;
-        return this;
-      }
-      /**
-       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 10;</code>
-       */
-      public Builder mergeRequestInfo(cn.xhzren.netty.entity.LoginProto.RequestInfo value) {
-        if (requestInfoBuilder_ == null) {
-          if (dataBodyCase_ == 10 &&
-              dataBody_ != cn.xhzren.netty.entity.LoginProto.RequestInfo.getDefaultInstance()) {
-            dataBody_ = cn.xhzren.netty.entity.LoginProto.RequestInfo.newBuilder((cn.xhzren.netty.entity.LoginProto.RequestInfo) dataBody_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            dataBody_ = value;
-          }
-          onChanged();
-        } else {
-          if (dataBodyCase_ == 10) {
-            requestInfoBuilder_.mergeFrom(value);
-          }
-          requestInfoBuilder_.setMessage(value);
-        }
-        dataBodyCase_ = 10;
-        return this;
-      }
-      /**
-       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 10;</code>
-       */
-      public Builder clearRequestInfo() {
-        if (requestInfoBuilder_ == null) {
-          if (dataBodyCase_ == 10) {
-            dataBodyCase_ = 0;
-            dataBody_ = null;
-            onChanged();
-          }
-        } else {
-          if (dataBodyCase_ == 10) {
-            dataBodyCase_ = 0;
-            dataBody_ = null;
-          }
-          requestInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 10;</code>
-       */
-      public cn.xhzren.netty.entity.LoginProto.RequestInfo.Builder getRequestInfoBuilder() {
-        return getRequestInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 10;</code>
-       */
-      public cn.xhzren.netty.entity.LoginProto.RequestInfoOrBuilder getRequestInfoOrBuilder() {
-        if ((dataBodyCase_ == 10) && (requestInfoBuilder_ != null)) {
-          return requestInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (dataBodyCase_ == 10) {
-            return (cn.xhzren.netty.entity.LoginProto.RequestInfo) dataBody_;
-          }
-          return cn.xhzren.netty.entity.LoginProto.RequestInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>optional .cn.xhzren.netty.entity.RequestInfo request_info = 10;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          cn.xhzren.netty.entity.LoginProto.RequestInfo, cn.xhzren.netty.entity.LoginProto.RequestInfo.Builder, cn.xhzren.netty.entity.LoginProto.RequestInfoOrBuilder> 
-          getRequestInfoFieldBuilder() {
-        if (requestInfoBuilder_ == null) {
-          if (!(dataBodyCase_ == 10)) {
-            dataBody_ = cn.xhzren.netty.entity.LoginProto.RequestInfo.getDefaultInstance();
-          }
-          requestInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              cn.xhzren.netty.entity.LoginProto.RequestInfo, cn.xhzren.netty.entity.LoginProto.RequestInfo.Builder, cn.xhzren.netty.entity.LoginProto.RequestInfoOrBuilder>(
-                  (cn.xhzren.netty.entity.LoginProto.RequestInfo) dataBody_,
-                  getParentForChildren(),
-                  isClean());
-          dataBody_ = null;
-        }
-        dataBodyCase_ = 10;
-        onChanged();;
-        return requestInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
           cn.xhzren.netty.entity.LoginProto.TaskInfo, cn.xhzren.netty.entity.LoginProto.TaskInfo.Builder, cn.xhzren.netty.entity.LoginProto.TaskInfoOrBuilder> taskInfoBuilder_;
       /**
        * <code>optional .cn.xhzren.netty.entity.TaskInfo task_info = 11;</code>
@@ -2978,6 +2822,144 @@ public final class LoginProto {
         dataBodyCase_ = 11;
         onChanged();;
         return taskInfoBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.xhzren.netty.entity.LoginProto.Login, cn.xhzren.netty.entity.LoginProto.Login.Builder, cn.xhzren.netty.entity.LoginProto.LoginOrBuilder> loginBuilder_;
+      /**
+       * <code>optional .cn.xhzren.netty.entity.Login login = 12;</code>
+       * @return Whether the login field is set.
+       */
+      public boolean hasLogin() {
+        return dataBodyCase_ == 12;
+      }
+      /**
+       * <code>optional .cn.xhzren.netty.entity.Login login = 12;</code>
+       * @return The login.
+       */
+      public cn.xhzren.netty.entity.LoginProto.Login getLogin() {
+        if (loginBuilder_ == null) {
+          if (dataBodyCase_ == 12) {
+            return (cn.xhzren.netty.entity.LoginProto.Login) dataBody_;
+          }
+          return cn.xhzren.netty.entity.LoginProto.Login.getDefaultInstance();
+        } else {
+          if (dataBodyCase_ == 12) {
+            return loginBuilder_.getMessage();
+          }
+          return cn.xhzren.netty.entity.LoginProto.Login.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>optional .cn.xhzren.netty.entity.Login login = 12;</code>
+       */
+      public Builder setLogin(cn.xhzren.netty.entity.LoginProto.Login value) {
+        if (loginBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          dataBody_ = value;
+          onChanged();
+        } else {
+          loginBuilder_.setMessage(value);
+        }
+        dataBodyCase_ = 12;
+        return this;
+      }
+      /**
+       * <code>optional .cn.xhzren.netty.entity.Login login = 12;</code>
+       */
+      public Builder setLogin(
+          cn.xhzren.netty.entity.LoginProto.Login.Builder builderForValue) {
+        if (loginBuilder_ == null) {
+          dataBody_ = builderForValue.build();
+          onChanged();
+        } else {
+          loginBuilder_.setMessage(builderForValue.build());
+        }
+        dataBodyCase_ = 12;
+        return this;
+      }
+      /**
+       * <code>optional .cn.xhzren.netty.entity.Login login = 12;</code>
+       */
+      public Builder mergeLogin(cn.xhzren.netty.entity.LoginProto.Login value) {
+        if (loginBuilder_ == null) {
+          if (dataBodyCase_ == 12 &&
+              dataBody_ != cn.xhzren.netty.entity.LoginProto.Login.getDefaultInstance()) {
+            dataBody_ = cn.xhzren.netty.entity.LoginProto.Login.newBuilder((cn.xhzren.netty.entity.LoginProto.Login) dataBody_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            dataBody_ = value;
+          }
+          onChanged();
+        } else {
+          if (dataBodyCase_ == 12) {
+            loginBuilder_.mergeFrom(value);
+          }
+          loginBuilder_.setMessage(value);
+        }
+        dataBodyCase_ = 12;
+        return this;
+      }
+      /**
+       * <code>optional .cn.xhzren.netty.entity.Login login = 12;</code>
+       */
+      public Builder clearLogin() {
+        if (loginBuilder_ == null) {
+          if (dataBodyCase_ == 12) {
+            dataBodyCase_ = 0;
+            dataBody_ = null;
+            onChanged();
+          }
+        } else {
+          if (dataBodyCase_ == 12) {
+            dataBodyCase_ = 0;
+            dataBody_ = null;
+          }
+          loginBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>optional .cn.xhzren.netty.entity.Login login = 12;</code>
+       */
+      public cn.xhzren.netty.entity.LoginProto.Login.Builder getLoginBuilder() {
+        return getLoginFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .cn.xhzren.netty.entity.Login login = 12;</code>
+       */
+      public cn.xhzren.netty.entity.LoginProto.LoginOrBuilder getLoginOrBuilder() {
+        if ((dataBodyCase_ == 12) && (loginBuilder_ != null)) {
+          return loginBuilder_.getMessageOrBuilder();
+        } else {
+          if (dataBodyCase_ == 12) {
+            return (cn.xhzren.netty.entity.LoginProto.Login) dataBody_;
+          }
+          return cn.xhzren.netty.entity.LoginProto.Login.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>optional .cn.xhzren.netty.entity.Login login = 12;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.xhzren.netty.entity.LoginProto.Login, cn.xhzren.netty.entity.LoginProto.Login.Builder, cn.xhzren.netty.entity.LoginProto.LoginOrBuilder> 
+          getLoginFieldBuilder() {
+        if (loginBuilder_ == null) {
+          if (!(dataBodyCase_ == 12)) {
+            dataBody_ = cn.xhzren.netty.entity.LoginProto.Login.getDefaultInstance();
+          }
+          loginBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cn.xhzren.netty.entity.LoginProto.Login, cn.xhzren.netty.entity.LoginProto.Login.Builder, cn.xhzren.netty.entity.LoginProto.LoginOrBuilder>(
+                  (cn.xhzren.netty.entity.LoginProto.Login) dataBody_,
+                  getParentForChildren(),
+                  isClean());
+          dataBody_ = null;
+        }
+        dataBodyCase_ = 12;
+        onChanged();;
+        return loginBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -5735,6 +5717,10 @@ public final class LoginProto {
        * <code>FAIL = 7;</code>
        */
       FAIL(7),
+      /**
+       * <code>NONE = 8;</code>
+       */
+      NONE(8),
       ;
 
       /**
@@ -5769,6 +5755,10 @@ public final class LoginProto {
        * <code>FAIL = 7;</code>
        */
       public static final int FAIL_VALUE = 7;
+      /**
+       * <code>NONE = 8;</code>
+       */
+      public static final int NONE_VALUE = 8;
 
 
       public final int getNumber() {
@@ -5799,6 +5789,7 @@ public final class LoginProto {
           case 5: return TIME_OUT;
           case 6: return BUFF;
           case 7: return FAIL;
+          case 8: return NONE;
           default: return null;
         }
       }
@@ -5869,6 +5860,10 @@ public final class LoginProto {
        * <code>TOKEN_RECEIVE = 3;</code>
        */
       TOKEN_RECEIVE(3),
+      /**
+       * <code>VERSION_RECEIVE = 4;</code>
+       */
+      VERSION_RECEIVE(4),
       ;
 
       /**
@@ -5887,6 +5882,10 @@ public final class LoginProto {
        * <code>TOKEN_RECEIVE = 3;</code>
        */
       public static final int TOKEN_RECEIVE_VALUE = 3;
+      /**
+       * <code>VERSION_RECEIVE = 4;</code>
+       */
+      public static final int VERSION_RECEIVE_VALUE = 4;
 
 
       public final int getNumber() {
@@ -5913,6 +5912,7 @@ public final class LoginProto {
           case 1: return FILE_RECEIVE;
           case 2: return LOGIN_RECEIVE;
           case 3: return TOKEN_RECEIVE;
+          case 4: return VERSION_RECEIVE;
           default: return null;
         }
       }
@@ -13275,64 +13275,65 @@ public final class LoginProto {
   static {
     java.lang.String[] descriptorData = {
       "\n\021LoginBefore.proto\022\026cn.xhzren.netty.ent" +
-      "ity\"\350\006\n\021ConnectionMessage\022E\n\tdata_type\030\001" +
+      "ity\"\346\006\n\021ConnectionMessage\022E\n\tdata_type\030\001" +
       " \002(\01622.cn.xhzren.netty.entity.Connection" +
-      "Message.DataType\022.\n\005login\030\002 \001(\0132\035.cn.xhz" +
-      "ren.netty.entity.LoginH\000\022?\n\016detect_versi" +
-      "on\030\003 \001(\0132%.cn.xhzren.netty.entity.Detect" +
-      "VersionH\000\022;\n\014update_asset\030\004 \001(\0132#.cn.xhz" +
-      "ren.netty.entity.UpdateAssetH\000\0224\n\010positi" +
-      "on\030\005 \001(\0132 .cn.xhzren.netty.entity.Positi" +
-      "onH\000\022;\n\014file_receive\030\006 \001(\0132#.cn.xhzren.n" +
-      "etty.entity.FileReceiveH\000\022;\n\014receive_inf" +
-      "o\030\007 \001(\0132#.cn.xhzren.netty.entity.Receive" +
-      "InfoH\000\0229\n\013player_list\030\010 \001(\0132\".cn.xhzren." +
-      "netty.entity.PlayerListH\000\0229\n\013player_info" +
-      "\030\t \001(\0132\".cn.xhzren.netty.entity.PlayerIn" +
-      "foH\000\022;\n\014request_info\030\n \001(\0132#.cn.xhzren.n" +
-      "etty.entity.RequestInfoH\000\0225\n\ttask_info\030\013" +
-      " \001(\0132 .cn.xhzren.netty.entity.TaskInfoH\000" +
-      "\"\267\001\n\010DataType\022\r\n\tLoginType\020\001\022\021\n\rDetectVe" +
-      "rsion\020\002\022\017\n\013UpdateAsset\020\003\022\014\n\010Position\020\004\022\017" +
-      "\n\013FileReceive\020\005\022\017\n\013ReceiveInfo\020\006\022\017\n\013Requ" +
-      "estInfo\020\007\022\016\n\nPlayerList\020\010\022\016\n\nPlayerInfo\020" +
-      "\t\022\014\n\010TaskInfo\020\n\022\t\n\005Login\020\013B\n\n\010dataBody\"\'" +
-      "\n\rDetectVersion\022\026\n\016client_version\030\001 \001(\002\"" +
-      "I\n\013UpdateAsset\022\n\n\002id\030\001 \001(\t\022\017\n\007version\030\002 " +
-      "\001(\002\022\014\n\004size\030\003 \001(\003\022\017\n\007content\030\004 \001(\t\"\200\001\n\013F" +
-      "ileReceive\022\014\n\004size\030\001 \001(\003\022\r\n\005start\030\002 \001(\003\022" +
-      "\013\n\003end\030\003 \001(\003\022\014\n\004data\030\004 \001(\014\0229\n\014receive_in" +
-      "fo\030\005 \001(\0132#.cn.xhzren.netty.entity.Receiv" +
-      "eInfo\"\364\002\n\013ReceiveInfo\022E\n\014receive_type\030\001 " +
-      "\001(\0162/.cn.xhzren.netty.entity.ReceiveInfo" +
-      ".ReceiveType\022I\n\016receive_status\030\002 \001(\01621.c" +
-      "n.xhzren.netty.entity.ReceiveInfo.Receiv" +
-      "eStatus\022\017\n\007content\030\003 \001(\t\"l\n\rReceiveStatu" +
-      "s\022\013\n\007SUCCESS\020\000\022\014\n\010CONTINUE\020\001\022\t\n\005PAUSE\020\002\022" +
-      "\010\n\004WAIT\020\003\022\t\n\005ERROR\020\004\022\014\n\010TIME_OUT\020\005\022\010\n\004BU" +
-      "FF\020\006\022\010\n\004FAIL\020\007\"T\n\013ReceiveType\022\r\n\tUNIVERS" +
-      "AL\020\000\022\020\n\014FILE_RECEIVE\020\001\022\021\n\rLOGIN_RECEIVE\020" +
-      "\002\022\021\n\rTOKEN_RECEIVE\020\003\"\323\001\n\013RequestInfo\022E\n\014" +
-      "request_type\030\001 \001(\0162/.cn.xhzren.netty.ent" +
-      "ity.RequestInfo.RequestType\022\r\n\005token\030\002 \001" +
-      "(\t\"n\n\013RequestType\022\022\n\016UPDATE_ASSESTS\020\000\022\t\n" +
-      "\005LOGIN\020\001\022\017\n\013PLAYER_LIST\020\002\022\014\n\010ADD_TASK\020\003\022" +
-      "\017\n\013UPDATE_TASK\020\004\022\020\n\014VERIFY_TOKEN\020\005\"\251\001\n\005L" +
-      "ogin\022\014\n\004name\030\001 \001(\t\022\n\n\002id\030\002 \001(\005\022\021\n\tpass_w" +
-      "ord\030\003 \001(\t\022\017\n\007open_id\030\004 \001(\t\022;\n\nlogin_type" +
-      "\030\005 \001(\0162\'.cn.xhzren.netty.entity.Login.Lo" +
-      "ginType\"%\n\tLoginType\022\010\n\004SELF\020\000\022\006\n\002QQ\020\001\022\006" +
-      "\n\002WX\020\002\"E\n\nPlayerList\0227\n\013player_info\030\001 \003(" +
-      "\0132\".cn.xhzren.netty.entity.PlayerInfo\"\273\001" +
-      "\n\010TaskInfo\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\020\n\010" +
-      "progress\030\003 \001(\002\022@\n\013task_status\030\004 \001(\0162+.cn" +
-      ".xhzren.netty.entity.TaskInfo.TaskStatus" +
-      "\"A\n\nTaskStatus\022\021\n\rTASK_PROGRESS\020\000\022\016\n\nTAS" +
-      "K_ERROR\020\001\022\020\n\014TASK_SUCCESS\020\002\"S\n\nPlayerInf" +
-      "o\022\n\n\002id\030\001 \001(\t\022\014\n\004area\030\002 \001(\t\022\014\n\004name\030\003 \001(" +
-      "\t\022\r\n\005level\030\004 \001(\005\022\016\n\006status\030\005 \001(\t\"+\n\010Posi" +
-      "tion\022\t\n\001x\030\001 \001(\005\022\t\n\001y\030\002 \001(\005\022\t\n\001z\030\003 \001(\005\"\021\n" +
-      "\003box\022\n\n\002id\030\001 \003(\tB\014B\nLoginProto"
+      "Message.DataType\0229\n\014request_info\030\002 \001(\0132#" +
+      ".cn.xhzren.netty.entity.RequestInfo\022?\n\016d" +
+      "etect_version\030\003 \001(\0132%.cn.xhzren.netty.en" +
+      "tity.DetectVersionH\000\022;\n\014update_asset\030\004 \001" +
+      "(\0132#.cn.xhzren.netty.entity.UpdateAssetH" +
+      "\000\0224\n\010position\030\005 \001(\0132 .cn.xhzren.netty.en" +
+      "tity.PositionH\000\022;\n\014file_receive\030\006 \001(\0132#." +
+      "cn.xhzren.netty.entity.FileReceiveH\000\022;\n\014" +
+      "receive_info\030\007 \001(\0132#.cn.xhzren.netty.ent" +
+      "ity.ReceiveInfoH\000\0229\n\013player_list\030\010 \001(\0132\"" +
+      ".cn.xhzren.netty.entity.PlayerListH\000\0229\n\013" +
+      "player_info\030\t \001(\0132\".cn.xhzren.netty.enti" +
+      "ty.PlayerInfoH\000\0225\n\ttask_info\030\013 \001(\0132 .cn." +
+      "xhzren.netty.entity.TaskInfoH\000\022.\n\005login\030" +
+      "\014 \001(\0132\035.cn.xhzren.netty.entity.LoginH\000\"\267" +
+      "\001\n\010DataType\022\r\n\tLoginType\020\000\022\021\n\rDetectVers" +
+      "ion\020\001\022\017\n\013UpdateAsset\020\002\022\014\n\010Position\020\003\022\017\n\013" +
+      "FileReceive\020\004\022\017\n\013ReceiveInfo\020\005\022\017\n\013Reques" +
+      "tInfo\020\006\022\016\n\nPlayerList\020\007\022\016\n\nPlayerInfo\020\010\022" +
+      "\014\n\010TaskInfo\020\t\022\t\n\005Login\020\nB\n\n\010dataBody\"\'\n\r" +
+      "DetectVersion\022\026\n\016client_version\030\001 \001(\002\"I\n" +
+      "\013UpdateAsset\022\n\n\002id\030\001 \001(\t\022\017\n\007version\030\002 \001(" +
+      "\002\022\014\n\004size\030\003 \001(\003\022\017\n\007content\030\004 \001(\t\"\200\001\n\013Fil" +
+      "eReceive\022\014\n\004size\030\001 \001(\003\022\r\n\005start\030\002 \001(\003\022\013\n" +
+      "\003end\030\003 \001(\003\022\014\n\004data\030\004 \001(\014\0229\n\014receive_info" +
+      "\030\005 \001(\0132#.cn.xhzren.netty.entity.ReceiveI" +
+      "nfo\"\223\003\n\013ReceiveInfo\022E\n\014receive_type\030\001 \001(" +
+      "\0162/.cn.xhzren.netty.entity.ReceiveInfo.R" +
+      "eceiveType\022I\n\016receive_status\030\002 \001(\01621.cn." +
+      "xhzren.netty.entity.ReceiveInfo.ReceiveS" +
+      "tatus\022\017\n\007content\030\003 \001(\t\"v\n\rReceiveStatus\022" +
+      "\013\n\007SUCCESS\020\000\022\014\n\010CONTINUE\020\001\022\t\n\005PAUSE\020\002\022\010\n" +
+      "\004WAIT\020\003\022\t\n\005ERROR\020\004\022\014\n\010TIME_OUT\020\005\022\010\n\004BUFF" +
+      "\020\006\022\010\n\004FAIL\020\007\022\010\n\004NONE\020\010\"i\n\013ReceiveType\022\r\n" +
+      "\tUNIVERSAL\020\000\022\020\n\014FILE_RECEIVE\020\001\022\021\n\rLOGIN_" +
+      "RECEIVE\020\002\022\021\n\rTOKEN_RECEIVE\020\003\022\023\n\017VERSION_" +
+      "RECEIVE\020\004\"\323\001\n\013RequestInfo\022E\n\014request_typ" +
+      "e\030\001 \001(\0162/.cn.xhzren.netty.entity.Request" +
+      "Info.RequestType\022\r\n\005token\030\002 \001(\t\"n\n\013Reque" +
+      "stType\022\022\n\016UPDATE_ASSESTS\020\000\022\t\n\005LOGIN\020\001\022\017\n" +
+      "\013PLAYER_LIST\020\002\022\014\n\010ADD_TASK\020\003\022\017\n\013UPDATE_T" +
+      "ASK\020\004\022\020\n\014VERIFY_TOKEN\020\005\"\251\001\n\005Login\022\014\n\004nam" +
+      "e\030\001 \001(\t\022\n\n\002id\030\002 \001(\005\022\021\n\tpass_word\030\003 \001(\t\022\017" +
+      "\n\007open_id\030\004 \001(\t\022;\n\nlogin_type\030\005 \001(\0162\'.cn" +
+      ".xhzren.netty.entity.Login.LoginType\"%\n\t" +
+      "LoginType\022\010\n\004SELF\020\000\022\006\n\002QQ\020\001\022\006\n\002WX\020\002\"E\n\nP" +
+      "layerList\0227\n\013player_info\030\001 \003(\0132\".cn.xhzr" +
+      "en.netty.entity.PlayerInfo\"\273\001\n\010TaskInfo\022" +
+      "\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\020\n\010progress\030\003 " +
+      "\001(\002\022@\n\013task_status\030\004 \001(\0162+.cn.xhzren.net" +
+      "ty.entity.TaskInfo.TaskStatus\"A\n\nTaskSta" +
+      "tus\022\021\n\rTASK_PROGRESS\020\000\022\016\n\nTASK_ERROR\020\001\022\020" +
+      "\n\014TASK_SUCCESS\020\002\"S\n\nPlayerInfo\022\n\n\002id\030\001 \001" +
+      "(\t\022\014\n\004area\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\022\r\n\005level\030" +
+      "\004 \001(\005\022\016\n\006status\030\005 \001(\t\"+\n\010Position\022\t\n\001x\030\001" +
+      " \001(\005\022\t\n\001y\030\002 \001(\005\022\t\n\001z\030\003 \001(\005\"\021\n\003box\022\n\n\002id\030" +
+      "\001 \003(\tB\014B\nLoginProto"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -13343,7 +13344,7 @@ public final class LoginProto {
     internal_static_cn_xhzren_netty_entity_ConnectionMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cn_xhzren_netty_entity_ConnectionMessage_descriptor,
-        new java.lang.String[] { "DataType", "Login", "DetectVersion", "UpdateAsset", "Position", "FileReceive", "ReceiveInfo", "PlayerList", "PlayerInfo", "RequestInfo", "TaskInfo", "DataBody", });
+        new java.lang.String[] { "DataType", "RequestInfo", "DetectVersion", "UpdateAsset", "Position", "FileReceive", "ReceiveInfo", "PlayerList", "PlayerInfo", "TaskInfo", "Login", "DataBody", });
     internal_static_cn_xhzren_netty_entity_DetectVersion_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cn_xhzren_netty_entity_DetectVersion_fieldAccessorTable = new

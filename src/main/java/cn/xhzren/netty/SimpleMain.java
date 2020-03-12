@@ -1,7 +1,8 @@
 package cn.xhzren.netty;
 
-import cn.xhzren.netty.appstates.ItemQueueAppState;
-import cn.xhzren.netty.appstates.MapAppState;
+import cn.xhzren.netty.appstates.*;
+import cn.xhzren.netty.client.ConnectionClientMain;
+import cn.xhzren.netty.client.DetectVersionClientHandler;
 import cn.xhzren.netty.controls.CharacterTestControl;
 import cn.xhzren.netty.entity.TaskEntity;
 import cn.xhzren.netty.entity.TaskRangeEntity;
@@ -10,6 +11,7 @@ import cn.xhzren.netty.entity.input.KeyMappingType;
 import cn.xhzren.netty.entity.input.MappingItem;
 import cn.xhzren.netty.entity.input.MyKeyInput;
 import cn.xhzren.netty.manager.CharacterAppState;
+import cn.xhzren.netty.util.Constancts;
 import cn.xhzren.netty.util.JsonUtils;
 import cn.xhzren.test.physics.PhysicsTestHelper;
 import com.jme3.animation.AnimChannel;
@@ -35,6 +37,9 @@ import com.jme3.scene.Node;
 import com.jme3.scene.Spatial;
 import com.jme3.scene.shape.Quad;
 import com.jme3.system.JmeContext;
+import com.simsilica.lemur.GuiGlobals;
+import com.simsilica.lemur.style.BaseStyles;
+import io.netty.channel.Channel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -60,12 +65,23 @@ public class SimpleMain extends SimpleApplication implements ActionListener, Ana
 
     private Quad panel;
 
-    public static void main(String[] args) {
+    private Channel channel;
+
+    public static void main(String[] args) throws Exception {
+
         SimpleMain app = new SimpleMain();
         app.setShowSettings(false);
-        app.start(JmeContext.Type.Headless);
-//        app.start();
+//        app.start(JmeContext.Type.Headless);
+        app.start();
     }
+
+    public SimpleMain(Channel channel) {
+        this.channel = channel;
+    }
+    public SimpleMain() {
+
+    }
+
     AnimChannel walk;
     @Override
     public void simpleInitApp()  {
@@ -75,28 +91,14 @@ public class SimpleMain extends SimpleApplication implements ActionListener, Ana
         bulletAppState = new BulletAppState();
         stateManager.attach(bulletAppState);
         physicsSpace = bulletAppState.getPhysicsSpace();
-        physicsSpace.addCollisionListener(new PhysicsCollisionListener() {
-            @Override
-            public void collision(PhysicsCollisionEvent event) {
-                logger.info("A: {},B : {}", event.getNodeA().getName(),
-                        event.getNodeB().getName());
-                logger.info("type: {}", event.getType());
-            }
-        });
 
         world = new Node("world");
         levelNode = new Node("level");
         character = new Node("character");
+
         jaime = assetManager.loadModel("Models/Jaime/Jaime.j3o");
         jaime.setName("jaime");
-
-        jaime.addControl(new CharacterControl(new SphereCollisionShape(1.6f), 0));
-        jaime.setLocalTranslation(Vector3f.ZERO);
-
-        PhysicsTestHelper.createPhysicsTestWorld(rootNode, assetManager, physicsSpace);
-
         walk = jaime.getControl(AnimControl.class).createChannel();
-//      jaime.getControl(AnimControl.class).getAnimationNames().forEach(System.out::println);
         jaime.getControl(AnimControl.class).addListener(new AnimEventListener() {
             @Override
             public void onAnimCycleDone(AnimControl control, AnimChannel channel, String animName) {
@@ -108,28 +110,32 @@ public class SimpleMain extends SimpleApplication implements ActionListener, Ana
                 logger.info("anim change, {}", animName);
             }
         });
-
         character.attachChild(jaime);
-        physicsSpace.addAll(character);
-        physicsSpace.addAll(jaime);
-
-//        walk.setLoopMode(LoopMode.Loop);
-//        walk.setAnim("Walk");
-
-        CharacterTestControl characterTestControl = new CharacterTestControl();
-        character.addControl(characterTestControl);
+        character.addControl(new CharacterTestControl());
         CharacterAppState characterAppState = new CharacterAppState(character);
         getStateManager().attach(characterAppState);
 
-        getStateManager().attach(new ItemQueueAppState());
-        getStateManager().attach(new MapAppState());
+
+//        getStateManager().attach(new ItemQueueAppState());
+//        getStateManager().attach(new MapAppState());
+//        getStateManager().attach(new TransitionSceneAppState());
+        getStateManager().attach(new StartAppState());
+        getStateManager().attach(new ClientAppState());
 
         rootNode.attachChild(character);
+
+        setDisplayStatView(false);
+        setDisplayFps(false);
+        setPauseOnLostFocus(false);
+        GuiGlobals.initialize(this);
+        GuiGlobals globals = GuiGlobals.getInstance();
+        BaseStyles.loadGlassStyle();
+        globals.getStyles().setDefaultStyle("glass");
     }
 
 
-    BufferedReader bufferedReader;
     long start = System.currentTimeMillis();
+    boolean is = false;
     @Override
     public void simpleUpdate(float tpf) {
             TaskEntity task = new TaskEntity();
@@ -143,17 +149,8 @@ public class SimpleMain extends SimpleApplication implements ActionListener, Ana
             task.setCurrentTag(true);
             task.setRangeEntities(rangeEntities);
 
-        if(System.currentTimeMillis() - start > 2000) {
-            logger.info("box child: {}", rootNode.getChildren().size());
-            logger.info("jamie pos: {}", character.getLocalTranslation());
-            start = System.currentTimeMillis();
-            character.move(1, 0, 0);
-        }
-
-
-
-//            getStateManager().getState(ItemQueueAppState.class).addTaskEntities(task);
-//            getStateManager().getState(MapAppState.class).makeTag("TestChild");
+//          getStateManager().getState(ItemQueueAppState.class).addTaskEntities(task);
+//          getStateManager().getState(MapAppState.class).makeTag("TestChild");
         }
 
     private void initInput() {
@@ -162,15 +159,9 @@ public class SimpleMain extends SimpleApplication implements ActionListener, Ana
 
         //分为action , analog
         //每个action或者analog 都有一个code列表
-//        inputManager.addListener(character.getControl(CharacterTestControl.class)
-//                .getActionListener(), keyMapping.getActionMapping().stream().
-//                map(e->e.getName()).toArray(String[] :: new));
         inputManager.addListener(this, keyMapping.getActionMapping().stream().
                 map(e->e.getName()).toArray(String[] :: new));
 
-//        inputManager.addListener(character.getControl(CharacterTestControl.class)
-//                .getAnalogListener(), keyMapping.getAnalogMapping().stream()
-//                .map(e->e.getName()).toArray(String[] :: new));
         inputManager.addListener(this, keyMapping.getAnalogMapping().stream()
                 .map(e->e.getName()).toArray(String[] :: new));
 
@@ -201,5 +192,10 @@ public class SimpleMain extends SimpleApplication implements ActionListener, Ana
     @Override
     public void onAnalog(String name, float value, float tpf) {
         logger.info("analog : name-> {}, time-> {}", name, value);
+    }
+
+    @Override
+    public void destroy() {
+        super.destroy();
     }
 }

@@ -5,23 +5,23 @@ option java_outer_classname = "LoginProto";
 
 message ConnectionMessage {
   enum DataType {
-    LoginType = 1;
-    DetectVersion = 2;
-    UpdateAsset = 3;
-    Position = 4;
-    FileReceive = 5;
-    ReceiveInfo = 6;
-    RequestInfo = 7;
-    PlayerList = 8;
-    PlayerInfo = 9;
-    TaskInfo = 10;
-    Login = 11;
+    LoginType = 0;
+    DetectVersion = 1;
+    UpdateAsset = 2;
+    Position = 3;
+    FileReceive = 4;
+    ReceiveInfo = 5;
+    RequestInfo = 6;
+    PlayerList = 7;
+    PlayerInfo = 8;
+    TaskInfo = 9;
+    Login = 10;
   }
 
   required DataType data_type = 1;
+  optional RequestInfo request_info = 2;
 
   oneof dataBody {
-    Login login = 2;
     DetectVersion detect_version = 3;
     UpdateAsset update_asset = 4;
     Position position = 5;
@@ -29,9 +29,10 @@ message ConnectionMessage {
     ReceiveInfo receive_info = 7;
     PlayerList player_list = 8;
     PlayerInfo player_info = 9;
-    RequestInfo request_info = 10;
     TaskInfo task_info = 11;
+    Login login = 12;
   }
+
 }
 
 message DetectVersion {
@@ -63,12 +64,14 @@ message ReceiveInfo {
         TIME_OUT = 5;
         BUFF = 6;
         FAIL = 7;
+        NONE = 8;
     };
    enum ReceiveType {
         UNIVERSAL = 0;
         FILE_RECEIVE = 1;
         LOGIN_RECEIVE = 2;
         TOKEN_RECEIVE = 3;
+        VERSION_RECEIVE = 4;
     };
     optional ReceiveType receive_type = 1;
     optional ReceiveStatus receive_status = 2;

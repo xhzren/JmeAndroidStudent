@@ -1,11 +1,16 @@
 package cn.xhzren.netty.client;
 
+import cn.xhzren.netty.SimpleMain;
+import cn.xhzren.netty.appstates.PlayerListAppState;
+import cn.xhzren.netty.appstates.TransitionSceneAppState;
+import cn.xhzren.netty.entity.LocalAccountData;
 import cn.xhzren.netty.entity.LoginProto.*;
 import cn.xhzren.netty.entity.LoginProto.ReceiveInfo.*;
 import cn.xhzren.netty.entity.LoginProto.ConnectionMessage.*;
 import cn.xhzren.netty.servers.RedisHelper;
 import cn.xhzren.netty.util.JsonUtils;
 import cn.xhzren.netty.util.MessageBuild;
+import com.alibaba.fastjson.JSONObject;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import org.slf4j.Logger;
@@ -15,33 +20,39 @@ public class LoginClientHandler extends SimpleChannelInboundHandler<ConnectionMe
 
     static Logger logger = LoggerFactory.getLogger(LoginClientHandler.class);
 
-    private PlayerList playerList;
-
     public static String token;
 
+    private SimpleMain app;
+
+    public LoginClientHandler(SimpleMain app) {
+        this.app = app;
+    }
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, ConnectionMessage msg) {
-        System.out.println(msg.getReceiveInfo().getReceiveType());
-        if(msg.getReceiveInfo().getReceiveType() == ReceiveType.LOGIN_RECEIVE) {
-            if(msg.getReceiveInfo().getReceiveStatus() == ReceiveStatus.SUCCESS) {
+        if (msg.getReceiveInfo().getReceiveType() == ReceiveType.LOGIN_RECEIVE) {
+            if (msg.getReceiveInfo().getReceiveStatus() == ReceiveStatus.SUCCESS) {
                 logger.info("login success: {}", msg.getReceiveInfo().getContent());
                 token = msg.getReceiveInfo().getContent();
-                JsonUtils.localData.put("token", token);
+                LocalAccountData newToken = new LocalAccountData();
+                newToken.setToken(token);
+                newToken.setUsername(msg.getLogin().getName());
+                newToken.setActive(true);
+                JsonUtils.localData.add(newToken);
                 JsonUtils.writeLocalData();
 
-                ConnectionMessage message = MessageBuild.requestInfoBuild(token, RequestInfo.RequestType.PLAYER_LIST).build();
-                ctx.writeAndFlush(message);
+                //hide login
+//                app.getStateManager().getState(TransitionSceneAppState.class)
+//                        .isClose = true;
+                app.getStateManager().attach(new PlayerListAppState());
+            } else {
+                app.getStateManager().getState(TransitionSceneAppState.class)
+                        .popupTips(msg.getReceiveInfo().getContent());
             }
-        }else if(msg.getDataType() == DataType.PlayerList) {
-            PlayerList playerList = msg.getPlayerList();
-            playerList.getPlayerInfoList().forEach((e)-> {
-                logger.info("player : {}", e);
-            });
-            this.playerList = playerList;
-            ctx.pipeline().addLast(new TaskClientHandler());
-        }
-        else {
+        } else if (msg.getDataType() == DataType.PlayerList) {
+            app.getStateManager().getState(PlayerListAppState.class)
+                    .makePlayerList(msg.getPlayerList());
+        } else {
             ctx.fireChannelRead(msg);
         }
     }
@@ -50,12 +61,5 @@ public class LoginClientHandler extends SimpleChannelInboundHandler<ConnectionMe
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
         super.channelReadComplete(ctx);
     }
-
-    public PlayerList getPlayerList() {
-        return playerList;
-    }
-
-    public void setPlayerList(PlayerList playerList) {
-        this.playerList = playerList;
-    }
 }
+

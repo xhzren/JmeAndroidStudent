@@ -15,8 +15,8 @@ public class ConnectionClientInitialHandle extends ChannelInitializer<SocketChan
         ch.pipeline().addLast(new ProtobufDecoder(LoginProto.ConnectionMessage.getDefaultInstance()));
         ch.pipeline().addLast(new ProtobufVarint32LengthFieldPrepender());
         ch.pipeline().addLast(new ProtobufEncoder());
-        ch.pipeline().addLast(new StatusClientHandler());
-        ch.pipeline().addLast(DetectVersionClientHandler.class.getName(), new DetectVersionClientHandler());
-        ch.pipeline().addLast(new LoginClientHandler());
+//        ch.pipeline().addLast(new StatusClientHandler());
+//        ch.pipeline().addLast(DetectVersionClientHandler.class.getName(), new DetectVersionClientHandler());
+//        ch.pipeline().addLast(new LoginClientHandler());
     }
 }

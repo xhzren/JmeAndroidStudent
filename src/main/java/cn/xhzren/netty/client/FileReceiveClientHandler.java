@@ -34,7 +34,6 @@ public class FileReceiveClientHandler extends SimpleChannelInboundHandler<Connec
                 logger.info("共用时: {}", System.currentTimeMillis() - spawnTime);
 //                ctx.writeAndFlush(buildMessage(ReceiveStatus.SUCCESS, ReceiveType.FILE_RECEIVE));
                 ctx.pipeline().remove(this);
-                ctx.pipeline().addLast(new LoginClientHandler());
             }
 //            ctx.writeAndFlush(buildMessage(ReceiveStatus.CONTINUE, ReceiveType.FILE_RECEIVE));
         }

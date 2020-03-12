@@ -7,8 +7,13 @@ import cn.xhzren.netty.util.JsonUtils;
 import cn.xhzren.netty.util.MessageBuild;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class TaskClientHandler extends SimpleChannelInboundHandler<ConnectionMessage> {
+
+    static Logger logger = LoggerFactory.getLogger(TaskClientHandler.class);
+
 
     private ChannelHandlerContext ctx;
 
@@ -23,7 +28,7 @@ public class TaskClientHandler extends SimpleChannelInboundHandler<ConnectionMes
     }
 
     public void addTask(TaskInfo taskInfo) {
-        ConnectionMessage message = MessageBuild.requestInfoBuild(JsonUtils.localData.getString("token"), RequestInfo.RequestType.ADD_TASK)
+        ConnectionMessage message = MessageBuild.requestInfoBuild(RequestInfo.RequestType.ADD_TASK)
                 .setDataType(DataType.TaskInfo).setTaskInfo(taskInfo).build();
         ctx.writeAndFlush(message);
     }
