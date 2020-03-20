@@ -1,11 +1,8 @@
 package cn.xhzren.test.rocketmqtest;
 
-import io.netty.buffer.ByteBuf;
-
 import java.io.File;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
-import java.nio.channels.Channel;
 import java.nio.channels.FileChannel;
 
 public class LookLogFile {

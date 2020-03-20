@@ -22,7 +22,6 @@ public class CameraMovementFunctions {
     public static final FunctionId F_MOVE = new FunctionId(
             GROUP_MOVEMENT, "F_MOVE");
 
-    //捕获输入映射
     public static InputMapper.Mapping MOUSE_X_LOOK;
     public static InputMapper.Mapping MOUSE_Y_LOOK;
 

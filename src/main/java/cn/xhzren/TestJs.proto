@@ -1,0 +1,9 @@
+syntax = "proto2";//protobuf版本
+option java_package = "cn.xhzren";
+option java_outer_classname = "RoomMessage";
+message Room {
+  required string id = 1;
+  optional string host = 2;
+  optional string plotId = 3;
+  optional string capacity = 4;
+}

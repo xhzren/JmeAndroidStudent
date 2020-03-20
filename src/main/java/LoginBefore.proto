@@ -130,7 +130,6 @@ message PlayerInfo {
 message Position {
     optional int32 x = 1;
     optional int32 y = 2;
-    optional int32 z = 3;
 }
 
 message box {
